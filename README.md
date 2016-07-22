@@ -8,7 +8,7 @@ It's my collection of tips, tricks and scripts that I used to save in OneNote, E
 ##Wait, wait! There's already way better tools and collections like this out there!
 Ok.
 
-##OMg, based on your activity it's clear you're a super newb to GitHub and have NO idea what you're doing
+##OMg, based on your activity it's clear you're a super newb to GitHub and have NO idea what you're doing!!!
 Correct.
 
 ##So...who the H are you?
