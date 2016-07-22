@@ -1,5 +1,6 @@
-# bpatty
-##**B**rian's **P**entesting **a**nd **T**echnical **T**ips for **Y**ou
+#**B**rian's **P**entesting **a**nd **T**echnical **T**ips for **Y**ou
+
+#FAQ:
 
 ##What the H is this?
 
