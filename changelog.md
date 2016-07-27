@@ -1,2 +1,9 @@
-#06/22/16: 
+#Change log:
+
+##06/27/16: 
+Inserted sections on:
+* Virtual machine setup
+* Vulnerability scanners
+
+##06/22/16: 
 Kicked this beast off!
