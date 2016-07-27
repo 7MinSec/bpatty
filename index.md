@@ -1,13 +1,13 @@
 # Table of Contents
 ##Command-line tools
-###[Linux](/cmdline/linux/index.md) - cat, wget, zip and more!
+* [Linux](/cmdline/linux/index.md) - cat, wget, zip and more!
 
 ##[Raspberry Pi](/rasperrypi/index.md)
 Notes on creating/updating software and distros that run on RPis
 
 ##Ubiquiti 
 Their network gear is some of my fav'! Here's some tips/tricks on setting up and configuring...
-###[EdgeRouterX](ubiquiti/edgerouterx/index.md)
+* [EdgeRouterX](ubiquiti/edgerouterx/index.md)
 
 ##[Virtual machine setup](/vm-setup/index.md)
 Information on getting a Kali pentesting box setup with Burp and other tools.
