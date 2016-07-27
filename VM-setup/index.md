@@ -22,23 +22,18 @@ http://www.howtogeek.com/189974/how-to-share-your-computers-files-with-a-virtual
 ###Additional addons
 Consider installing these optional add-ons (source: The Hacker Playbook 2), which can be easily copied/pasted/run using the commands below:
  
-* **Backdoor factory** - patch PE, ELF, Mach-O binaries with shellcode
+**Backdoor factory** - patch PE, ELF, Mach-O binaries with shellcode
 
-`git clone https://github.com/secretsquirrel/the-backdoor-factory.git /opt/the-backdoor-factory`
+    git clone https://github.com/secretsquirrel/the-backdoor-factory.git /opt/the-backdoor-factory
+    cd /opt/the-backdoor-factory
+    ./install.sh
 
-`cd /opt/the-backdoor-factory`
+**HTTPScreenShot**
 
-`./install.sh`
-
-* **HTTPScreenShot**
-
-`pip install selenium`
-
-`git clone https://github.com/breenmachine/httpscreenshot.git /opt/httpsscreenshot`
-
-`cd /opt/httpscreenshot`
-
-`chmod +x install-dependencies.sh && ./install-dependencies.sh`
+    pip install selenium
+    git clone https://github.com/breenmachine/httpscreenshot.git /opt/httpsscreenshot
+    cd /opt/httpscreenshot
+    chmod +x install-dependencies.sh && ./install-dependencies.sh
  
 *The above commands are for 64-bit VMs.  If you have 32-bit machines, do:*
 
