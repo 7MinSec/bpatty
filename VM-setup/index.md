@@ -272,3 +272,9 @@ https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/
 
 #VMWare Fusion notes
 <a id="vmwarefusion"></a> 
+##Change DHCP scope for vmnet1/vmnet8
+See [this article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1026510) but essentially you want to edit the `/Library/Preferences/VMware\ Fusion/networking` file to reflect the new DHCP range.  Specifically, edit this line (sometimes I have issues unless I shut down fusion completely):
+
+    answer VNET_8_HOSTONLY_SUBNET 192.168.227.0
+ 
+ 
