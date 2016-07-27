@@ -1,8 +1,11 @@
 #Virtual Machines
-This section is about initial setup of virtual machines. 
+This section is about initial setup of virtual machines and VM software. 
  
-##Kali
+ * [Kali basic config](#kali)
+ * [VMWare Fusion notes](#vmwarefusion)
  
+##Kali basic config
+<a id="kali"></a> 
 ###Initial install/setup
  
 1. Download/install from Kali.org.
@@ -266,3 +269,6 @@ Consider installing these extra Firefox addons (optional):
 
 **Wappalyzer** - identifies technologies in use on a given site
 https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/
+
+#VMWare Fusion notes
+<a id="vmwarefusion"></a> 
