@@ -1,7 +1,12 @@
 #Change log:
 
-#In progress:
-* Clean up the VM-setup thing and get rid of `` and do more "four space" stuff in the Web app place I think
+#Todo list:
+* Clean the ` and convert to "4 spaces*
+ * Left off at: * **Spiderfoot** - open source footprinting tool
+* Insert info on SWAKS
+* Insert info on bro install
+* Insert info on IPTables
+* Insert info on OpenDNS
 
 ##06/27/16: 
 Inserted sections on:

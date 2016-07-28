@@ -37,19 +37,15 @@ Consider installing these optional add-ons (source: The Hacker Playbook 2), whic
  
 *The above commands are for 64-bit VMs.  If you have 32-bit machines, do:*
 
-`wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-linux-i686.tar.bz2`
-
-`bzip2 -d phantomjs-1.9.8-linux-i686.tar.bz2`
-
-`tar xvf phantomjs-1.9.8-linux-i686.tar`
-
-`cp phantomjs-1.9.8-linux-i686 /bin/phantomjs /usr/bin/`
+    wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-linux-i686.tar.bz2
+    bzip2 -d phantomjs-1.9.8-linux-i686.tar.bz2
+    tar xvf phantomjs-1.9.8-linux-i686.tar
+    cp phantomjs-1.9.8-linux-i686 /bin/phantomjs /usr/bin/
  
-* **SMBExec** - Rapid psexec style attack with samba tools
+**SMBExec** - Rapid psexec style attack with samba tools
 
-`git clone https://github.com/pentestgeek/smbexec.git /opt/smbexec`
-
-`cd /opt/smbexec && ./install.sh`
+    git clone https://github.com/pentestgeek/smbexec.git /opt/smbexec
+    cd /opt/smbexec && ./install.sh`
 
   * Select 1
   * Select 4
@@ -57,122 +53,96 @@ Consider installing these optional add-ons (source: The Hacker Playbook 2), whic
 
 Done.
 
-* **Masscan** - fastest Internet port scanner in 'da world!
+**Masscan** - fastest Internet port scanner in 'da world!
 
-`apt-get install git gcc make libpcap-dev`
-
-`git clone https://github.com/robertdavidgraham/masscan.git /opt/masscan`
-
-`cd /opt/masscan`
-
-`make`
-
-`make install`
+    apt-get install git gcc make libpcap-dev
+    git clone https://github.com/robertdavidgraham/masscan.git /opt/masscan`
+    cd /opt/masscan
+    make
+    make install
  
-* **Gitrob** - recon for GitHub organizations
+**Gitrob** - recon for GitHub organizations
 
-`git clone https://github.com/michenriksen/gitrob.git /opt/gitrob`
-
-`gem install bundler`
-
-`service postgresql start`
-
-`su postgres`
-
-`createuser -s gitrob --pwprompt
-createdb -O gitrob gitrob`
-
-`exit`
-
-`cd /opt/gitrob/bin`
-
-`gem install gitrob`
+    git clone https://github.com/michenriksen/gitrob.git /opt/gitrob`
+    gem install bundler
+    service postgresql start
+    su postgres
+    createuser -s gitrob --pwprompt
+    createdb -O gitrob gitrob
+    exit
+    cd /opt/gitrob/bin
+    gem install gitrob
  
-* **CMSmap** - Python open source CMS scanner that automates process of detecting security flaws.
+**CMSmap** - Python open source CMS scanner that automates process of detecting security flaws.
 
-`git clone https://github.com/Dionach/CMSmap /opt/CMSmap`
+    git clone https://github.com/Dionach/CMSmap /opt/CMSmap
  
-* **Wpscan** - scans Wordpress blogs.
+**Wpscan** - scans Wordpress blogs.
 
-`git clone https://github.com/wpscanteam/wpscan.git /opt/wpscan`
-
-`cd /opt/wpscan && ./wpscan.rb --update`
+    git clone https://github.com/wpscanteam/wpscan.git /opt/wpscan
+    cd /opt/wpscan && ./wpscan.rb --update
  
-* **Eyewitness** - takes screenshots of stuff.
+**Eyewitness** - takes screenshots of stuff.
 
-`git clone https://github.com/ChrisTruncer/EyeWitness.git /opt/EyeWitness`
+    git clone https://github.com/ChrisTruncer/EyeWitness.git /opt/EyeWitness
  
-* **Printer exploit finder**
+**Printer exploit finder**
 
-`git clone https://github.com/MooseDojo/praedasploit /opt/praedasploit`
+    git clone https://github.com/MooseDojo/praedasploit /opt/praedasploit
  
-* **SQLmap** - SQL injection tool.
+**SQLmap** - SQL injection tool.
 
-`git clone https://github.com/sqlmapproject/sqlmap /opt/sqlmap`
+    git clone https://github.com/sqlmapproject/sqlmap /opt/sqlmap
  
-* **Recon-ng!**
-`git clone https://bitbucket.org/LaNMaSteR53/recon-ng.git /opt/recon-ng`
+**Recon-ng!**
+git clone https://bitbucket.org/LaNMaSteR53/recon-ng.git /opt/recon-ng
  
-* **Discover** - automates various pentesting tasks.
+**Discover** - automates various pentesting tasks.
 
-`git clone https://github.com/leebaird/discover.git /opt/discover`
-
-`cd /opt/discover && ./setup.sh`
+    git clone https://github.com/leebaird/discover.git /opt/discover
+    cd /opt/discover && ./setup.sh
  
-* **Beef** - browser-hooking fun.
+**Beef** - browser-hooking fun.
 
-`git clone https://github.com/beefproject/beef /opt/beef`
- 
-`cd /opt`
-
-`wget https://raw.github.com/beefproject/beef/a6a7536e/install-beef`
-
-`chmod +x install-beef`
-
-`./install-beef`
+    git clone https://github.com/beefproject/beef /opt/beef
+    cd /opt
+    wget https://raw.github.com/beefproject/beef/a6a7536e/install-beef
+    chmod +x install-beef
+    ./install-beef
  
 * **Responder** - listens for LLMNR, NBT-NS and MDNS.
 
-`git clone https://github.com/SpiderLabs/Responder.git /opt/Responder`
+git clone https://github.com/SpiderLabs/Responder.git /opt/Responder
  
-* **Custom scripts from The Hacker Playbook 2**:
-`git clone https://github.com/cheetz/Easy-P.git /opt/Easy-P`
+**Custom scripts from The Hacker Playbook 2**:
 
-`git clone https://github.com/cheetz/Password_Plus_One /opt/Password_Plus_One`
-
-`git clone https://github.com/cheetz/PowerShell_Popup /opt/PowerShell_Popup`
-
-`git clone https://github.com/cheetz/icmpshock /opt/icmpshock`
-
-`git clone https://github.com/cheetz/brutescrape /opt/brutescrape`
-
-`git clone https://www.github.com/cheetz/reddit_xss /opt/reddit_xss`
+    git clone https://github.com/cheetz/Easy-P.git /opt/Easy-P
+    git clone https://github.com/cheetz/Password_Plus_One /opt/Password_Plus_One
+    git clone https://github.com/cheetz/PowerShell_Popup /opt/PowerShell_Popup
+    git clone https://github.com/cheetz/icmpshock /opt/icmpshock
+    git clone https://github.com/cheetz/brutescrape /opt/brutescrape
+    git clone https://www.github.com/cheetz/reddit_xss /opt/reddit_xss
  
-* **Forked versions of Powersploit and Powertools**
+**Forked versions of Powersploit and Powertools**
 
-`git clone https://github.com/cheetz/PowerSploit /opt/HP_PowerSploit`
-
-`git clone https://github.com/cheetz/PowerTools /opt/HP_PowerTools`
-
-`git clone https://github.com/cheetz/nishang /opt/nishang`
-
-`wget http://ptscripts.googlecode.com/svn/trunk/dshashes.py -O /opt/NTDSXtract/dshashes.py`
+    git clone https://github.com/cheetz/PowerSploit /opt/HP_PowerSploit
+    git clone https://github.com/cheetz/PowerTools /opt/HP_PowerTools
+    git clone https://github.com/cheetz/nishang /opt/nishang
+    wget http://ptscripts.googlecode.com/svn/trunk/dshashes.py -O /opt/NTDSXtract/dshashes.py
  
-* **DSHashes** - extracts user hashes in a format for NTDSXtract
+**DSHashes** - extracts user hashes in a format for NTDSXtract
 
-`wget http://ptscripts.googlecode.com/svn/trunk/dshashes.py -O /opt/NTDSXtract /dshashes.py`
+    wget http://ptscripts.googlecode.com/svn/trunk/dshashes.py -O /opt/NTDSXtract /dshashes.py
  
-* **Sparta** (already in Kali 2)
+**Sparta** (already in Kali 2)
 
-`git clone https://github.com/secforce/sparta.git /opt/sparta`
-
-`apt-get install python-elixir`
-
-`apt-get install ldap-utils rwho rsh-client X11-apps finger`
+    git clone https://github.com/secforce/sparta.git /opt/sparta
+    apt-get install python-elixir
+    apt-get install ldap-utils rwho rsh-client X11-apps finger
  
-* **NoSQLMap** - automated testing for MongoDB database servers and Webapps
-
-`git clone https://github.com/tcstool/NoSQLMap.git /opt/NoSQLMap`
+**NoSQLMap** - automated testing for MongoDB database servers and Webapps
+    
+    git clone https://github.com/tcstool/NoSQLMap.git /opt/NoSQLMap
  
 * **Spiderfoot** - open source footprinting tool
 `mkdir /opt/spiderfoot/ && cd /opt/spiderfoot`
