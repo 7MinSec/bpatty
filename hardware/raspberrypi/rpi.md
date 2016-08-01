@@ -10,6 +10,7 @@ To image an SD with an RPi image on a Mac:
     sudo dd if=kali-2.1.2-rpi.img of=/dev/disk2 bs=1m
  
 Once the pi boots, I SSH in and reset the root password and generate new keys:
+
     rm /etc/ssh/ssh_host_*
     dpkg-reconfigure openssh-server
     service ssh restart
