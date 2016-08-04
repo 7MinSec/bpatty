@@ -1,82 +1,56 @@
 #Logging and Alerting
 Here's some stuff I figured out about logging/alerting systems and software
 
-#Nagios
-I went through an install of Nagios on Ubuntu 14 (heavily borrowed from [this Digital Ocean article](https://www.digitalocean.com/community/tutorials/how-to-install-nagios-4-and-monitor-your-servers-on-ubuntu-14-04)).  
+##Graylog
+Heavily borrowed from [this article](http://docs.graylog.org/en/2.0/pages/installation/os/ubuntu.html) and also [this one](http://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/how-to-install-graylog-on-ubuntu-16-04.html).
 
-First, install the prerequisites:
+###Install prerequisites:
 
-     sudo apt-get -y install apache2 mysql-server php5-mysql php5 libapache2-mod-php5 php5-mcrypt
-     
-Install other required packages:
+    apt-get install apt-transport-https openjdk-8-jre-headless uuid-runtime pwgen
 
-     sudo apt-get install build-essential libgd2-xpm-dev openssl libssl-dev xinetd apache2-utils unzip
-     
-Get a nagios user/group setup:
+###Install Mongodb:
 
-    sudo useradd nagios
-    sudo groupadd nagcmd
-    sudo usermod -a -G nagcmd nagios
+    apt-get install mongodb-server
 
-Download Nagios:
+###Install Elastisearch stuff:
 
-    wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.1.1.tar.gz
+    wget -qO - https://packages.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+    echo "deb https://packages.elastic.co/elasticsearch/2.x/debian stable main" | sudo tee -a /etc/apt/sources.list.d/elasticsearch-2.x.list
+    sudo apt-get update && sudo apt-get install elasticsearch
     
-Extract Nagios:
+###Edit Elastisearch config file:
 
-    tar xvf nagios-*.tar.gz
+    pico /etc/elasticsearch/elasticsearch.yml
     
-Install sendmail:
+ Uncomment the *cluster.name* and set to *graylog*
+ 
+###Start Elastisearch:
 
-    ./configure --with-nagios-group=nagios --with-command-group=nagcmd 
+    sudo /bin/systemctl daemon-reload
+    sudo /bin/systemctl enable elasticsearch.service
+    sudo /bin/systemctl restart elasticsearch.service
+
+###Install Graylog:
+
+    wget https://packages.graylog2.org/repo/packages/graylog-2.0-repository_latest.deb
+    sudo dpkg -i graylog-2.0-repository_latest.deb
+    sudo apt-get update && sudo apt-get install graylog-server
+
+###Edit server.conf
+    pico /etc/graylog/server/server.conf
     
-Configure the install:
+Fill in `password_secret_` (with `pwgen -N 1 -s 96`) and `root_password_sha2` fields (with `echo -n yourpassword | sha256sum`) for sure.  Also, set:
 
-    ./configure --with-nagios-group=nagios --with-command-group=nagcmd --with-mail=/usr/sbin/sendmail
-    
-Compile Nagios:
+    is_master = true
+    elasticsearch_shards = 1
+    root_email = "your@email.address"
+    root_timezone = UTC
+    rest_listen_uri = http://your.local.ip.address:12900/
+    web_listen_uri = http://your.local.ip.address:9000/
 
-    make all
-    
-Install extra Nagios stuff like scripts and config files:
+###Enable Graylog during system startup
 
-    sudo make install
-    sudo make install-commandmode
-    sudo make install-init
-    sudo make install-config
-    sudo /usr/bin/install -c -m 644 sample-config/httpd.conf /etc/apache2/sites-available/nagios.conf
-    
-Download plugins
-
-    cd ..
-    wget http://www.nagios-plugins.org/download/nagios-plugins-2.1.1.tar.gz
-    tar xvf nagios-plug*.tar.gz
-    cd nagios-plugins-2.1.1/
-    
-Configure plugins:
-
-    ./configure --with-nagios-user=nagios --with-nagios-group=nagios --with-openssl
-    
-Make and make/install:
-
-    make
-    sudo make install
-    
-Get NRPE:
-
-Download latest from [Source Forge](http://downloads.sourceforge.net/project/nagios/nrpe-3.x/), then...
-
-    tar xvf nrpe-*.tar.gz
-    cd nrpe-*
-    
-Configure NRPE:
-
-    ./configure --enable-command-args --with-nagios-user=nagios --with-nagios-group=nagios --with-ssl=/usr/bin/openssl --with-ssl-lib=/usr/lib/x86_64-linux-gnu
-    
-Build and install everything!!!!111(!!!!)!)!!!
-
-    make all
-    sudo make install
-    sudo make install-xinetd
-    sudo make install-daemon-config
+    sudo systemctl daemon-reload
+    sudo systemctl enable graylog-server.service
+    sudo systemctl start graylog-server.service
     
