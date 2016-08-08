@@ -1,7 +1,7 @@
 #Table of Contents
 ##Command-line tools
-* [Linux](/cmdline/linux/index.md) - cat, wget, zip and more!
-* [Mac](/cmdline/mac/index.md) - diskutil and other goodness!
+* [Linux](/cmdline/linux/linux.md) - cat, wget, zip and more!
+* [Mac](/cmdline/mac/mac.md) - diskutil and other goodness!
 
 
 ##Hardware
@@ -10,6 +10,7 @@ Notes on creating/updating software and distros that run on RPis, such as Kali.
 
 ###Ubiquiti 
 Their network gear is some of my fav'! Here's some tips/tricks on setting up and configuring...
+
 * [EdgeRouterX](ubiquiti/edgerouterx/index.md)
 
 ##Pentesting

@@ -208,7 +208,7 @@ https://github.com/mdsecresearch/Publications/blob/master/cheatsheets/RedRelease
 ## ncrack
 An app for brute-forcing credentials in RDP, SSH, etc.  An example of brute-forcing RDP:
 
-ncrack -v -u administrator -P /opt/SecLists/Passwords/rockyou.txt -p 3389 f.q.d.n
+    ncrack -v -u administrator -P /opt/SecLists/Passwords/rockyou.txt -p 3389 f.q.d.n
 
 ## netcat
 Here's a great [cheat sheet](https://www.sans.org/security-resources/sec560/netcat_cheat_sheet_v1.pdf) from SANS.
@@ -348,35 +348,37 @@ From the manual:
 
     python sslyze.py --regular www.target1.com
 
-This is what you'll want to use most of the time. It performs a regular HTTP scan. It's a shortcut for --sslv2 --sslv3 --tlsv1 --reneg --resum --certinfo=basic --hide_rejected_ciphers --http_get.
+This is what you'll want to use most of the time. It performs a regular HTTP scan. It's a shortcut for `--sslv2` `--sslv3` `--tlsv1` `--reneg` `--resum` `--certinfo=basic` `--hide_rejected_ciphers` `--http_get`.
 
 Options:
 
-OpenSSL Cipher Suites
---sslv2 --sslv3 --tlsv1 : Lists the SSL 2.0, 3.0 and TLS 1.0 OpenSSL cipher suites supported by the server.
+*OpenSSL Cipher Suites*
 
---tlsv1_1 --tlsv1_2 : Lists the TLS 1.1 and 1.2 OpenSSL cipher suites supported by the server. Requires OpenSSL 1.0.1 or later.
+`--sslv2 --sslv3 --tlsv1` : Lists the SSL 2.0, 3.0 and TLS 1.0 OpenSSL cipher suites supported by the server.
 
---http_get : Option - For each cipher suite, sends an HTTP GET request after completing the SSL handshake and returns the HTTP status code.
+`--tlsv1_1 --tlsv1_2` : Lists the TLS 1.1 and 1.2 OpenSSL cipher suites supported by the server. Requires OpenSSL 1.0.1 or later.
 
---hide_rejected_ciphers : Option - Hides the (usually long) list of cipher suites that were rejected by the server.
+`--http_get` : Option - For each cipher suite, sends an HTTP GET request after completing the SSL handshake and returns the HTTP status code.
 
-Session Renegotiation
+`--hide_rejected_ciphers` : Option - Hides the (usually long) list of cipher suites that were rejected by the server.
 
---reneg : Checks whether the server is vulnerable to insecure renegotiation. Requires OpenSSL 0.9.8m or later.
+*Session Renegotiation*
+
+`--reneg` : Checks whether the server is vulnerable to insecure renegotiation. Requires OpenSSL 0.9.8m or later.
 
 Session Resumption
---resum : Tests the server for session resumption support, using both session IDs and TLS session tickets (RFC 5077).
+`--resum` : Tests the server for session resumption support, using both session IDs and TLS session tickets (RFC 5077).
 
---resum_rate : Estimates the average rate of successful session resumptions by performing 100 session resumptions.
+`--resum_rate` : Estimates the average rate of successful session resumptions by performing 100 session resumptions.
 
-Server Certificate
---certinfo=basic : Verifies the server's certificate validity against Mozilla's trusted root store, and prints relevant fields of the certificate.
+*Server Certificate*
+
+`--certinfo=basic` : Verifies the server's certificate validity against Mozilla's trusted root store, and prints relevant fields of the certificate.
  
 ##swaks
-Is an awesome cmd-line email client
+Is an awesome cmd-line email client.
 
-swaks --to you@yourdomain.com --from "someemail@someplace.com" --server smtp.gmail.com:587 -tls --auth-user someemail@someplace.com --auth-password 'YOURPASSWORDGOESHERE' --header "Subject: Some subject" --body 'This is the body of the message dude!'
+    swaks --to you@yourdomain.com --from "someemail@someplace.com" --server smtp.gmail.com:587 -tls --auth-user someemail@someplace.com --auth-password 'YOURPASSWORDGOESHERE' --header "Subject: Some subject" --body 'This is the body of the message dude!'
 
 ##wget
 A non-interactive file-getter from the Interwebs.  Example:
@@ -385,7 +387,7 @@ A non-interactive file-getter from the Interwebs.  Example:
 
 Helpful flags:
 
-* `--no-check-certificate` - ignores SSL certificates
+`--no-check-certificate` - ignores SSL certificates
 
 ##zip
 I always forget how to zip up a whole folder while password-protecting it, but this'll do it!
@@ -394,10 +396,10 @@ I always forget how to zip up a whole folder while password-protecting it, but t
      
 To break it down, this zips and encrypts a .zip file of folder named **name-of-dir-to-be-zipped**
 
-* -e enables encryption for your zip file. This is what makes it ask for the password.
+* `-e` enables encryption for your zip file. This is what makes it ask for the password.
 
-* -r makes the command recursive, meaning that all the files inside the folder will be added to the zip file.
+* `-r` makes the command recursive, meaning that all the files inside the folder will be added to the zip file.
 
-* name-of-your.zip is the name of the output file.
+* `name-of-your.zip` is the name of the output file.
 
-* name-of-dir-to-be-zipped is the folder you want to zip.
+* `name-of-dir-to-be-zipped` is the folder you want to zip.
