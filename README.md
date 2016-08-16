@@ -12,7 +12,7 @@
 Ok.
 
 ##OMg, based on your activity it's clear you're a super newb to GitHub and have NO idea what you're doing!!!
-Correct.  I *just* learned about the whole branch/push/pull thing...I'll stop putting so much stuff right in the master branch all the time.  But I'm new to this so BACK OFF OK?!  ;-)
+Correct. 
 
 ##So...who the H are you?
 Hi, I'm [Brian](http://brianjohnson.tv) and I blog/podcast about security at [7 Minute Security](https://7ms.us).

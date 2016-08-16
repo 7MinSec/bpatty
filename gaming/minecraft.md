@@ -1,7 +1,4 @@
-#Gaming
-Install scripts/tips/etc. for various games
-
-##Minecraft
+#Minecraft
 Once I get a Linux server up and running, here's my quick script for getting Minecraft up and running (heavily borrowed from [this Digital Ocean article](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-minecraft-server-on-linux)):
 
 	mkdir /minecraft

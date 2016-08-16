@@ -1,8 +1,16 @@
 #Table of Contents
-##Command-line tools
-* [Linux](cmdline/linux/linux.md) - cat, wget, zip and more!
-* [Mac](cmdline/mac/mac.md) - diskutil and other goodness!
 
+---
+
+##Command-line tools
+###[Linux](cmdline/linux/index.md)
+ 
+###Mac
+* **To be organized**
+
+##Gaming
+###Minecraft
+How to setup a [Minecraft server](gaming/minecraft.md).
 
 ##Hardware
 ###Raspberry Pi
@@ -13,7 +21,7 @@ Stuff I know about RPis, including:
 ###Ubiquiti 
 Their network gear is some of my fav'! Here's some tips/tricks on setting up and configuring...
 
-* [EdgeRouterX](ubiquiti/edgerouterx/erx.md)
+* [Edge Router X](hardware/ubiquiti/edgerouterx/erx.md)
 
 ##Pentesting
 ###[Pentest procedural/administrative stuff](pentesting/admin/index.md)
