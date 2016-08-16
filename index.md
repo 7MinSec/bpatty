@@ -5,8 +5,7 @@
 ##Command-line tools
 ###[Linux](cmdline/linux/linux.md)
  
-###Mac
-* **To be organized**
+###[Mac](cmdline/mac/mac.md)
 
 ##Gaming
 ###Minecraft
