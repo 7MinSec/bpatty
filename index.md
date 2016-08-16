@@ -3,7 +3,7 @@
 ---
 
 ##Command-line tools
-###[Linux](cmdline/linux/index.md)
+###[Linux](cmdline/linux/linux.md)
  
 ###Mac
 * **To be organized**

@@ -13,7 +13,8 @@
 * [hydra](cmdline/linux/hydra.md) 
 * [iptables](cmdline/linux/iptables.md)
 * [john (the ripper)](cmdline/linux/johntheripper.md)
-* 
+
+##Still organizing everything below into its own pages...pardon the dust
  
 ## mimikatz
 A great tool for gathering credential data from Windows systems.
