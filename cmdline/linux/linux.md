@@ -1,18 +1,18 @@
 #Linux command line tools
 
-* [asciinema](cmdline/linux/asciinema.md)
-* [bluto](cmdline/linux/bluto.md)
-* [cat](cmdline/linux/cat.md)
-* [curl](cmdline/linux/curl.md)
-* [dirb](cmdline/linux/dirb.md)
-* [du](cmdline/linux/du.md)
-* [egress-check](cmdline/linux/egress-check.md)
-* [grep](cmdline/linux/grep.md)
-* [gpg](cmdline/linux/gpg.md)
-* [hashcat](cmdline/linux/hashcat.md)
-* [hydra](cmdline/linux/hydra.md) 
-* [iptables](cmdline/linux/iptables.md)
-* [john (the ripper)](cmdline/linux/johntheripper.md)
+* [asciinema](asciinema.md)
+* [bluto](bluto.md)
+* [cat](cat.md)
+* [curl](curl.md)
+* [dirb](dirb.md)
+* [du](du.md)
+* [egress-check](egress-check.md)
+* [grep](grep.md)
+* [gpg](gpg.md)
+* [hashcat](hashcat.md)
+* [hydra](hydra.md) 
+* [iptables](iptables.md)
+* [john (the ripper)](johntheripper.md)
 
 ##Still organizing everything below into its own pages...pardon the dust
  
