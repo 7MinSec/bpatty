@@ -84,5 +84,10 @@ Info on setting up OpenVAS and other vuln scanners.
 ###[Webapp pentesting](pentesting/webapp/index.md)
 Info on configuring Burp, Bapp plugins, etc.
 
+##Scripts
+Lil' scripts to do this, that and the other thing
+
+* [Kali-essentials.sh](scripts/kali-essentials.sh) - a big "git clone a bunch of stuff" script that I run right after installing a fresh Kali box
+
 ###Wireless pentesting
 * [How to capture WPA handshake](pentesting/wireless/wpa.md)
