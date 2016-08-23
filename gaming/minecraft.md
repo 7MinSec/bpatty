@@ -15,5 +15,5 @@ Then hit *Ctrl+a* , *d* to detach from the "screen"
 
 To reattach screen type *screen -R*
 
-pico *server.properties* to tweak the server
+Edit *server.properties* to tweak the server properties.
 

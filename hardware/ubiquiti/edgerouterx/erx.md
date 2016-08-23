@@ -46,3 +46,5 @@ Then, let your AP get "adopted" by the cloud access controller following [this a
 
     set-inform http://ip.address-of.my-cloud.controller:8080/inform
 
+###Sections to add:
+* Installing a LetsEncrypt cert
