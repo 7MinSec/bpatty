@@ -51,7 +51,7 @@
 
 ###Windows
 
-* [robocopy](cmdline/windodws/robocopy.md)
+* [robocopy](cmdline/windows/robocopy.md)
 
 ##Gaming
 ###Minecraft
