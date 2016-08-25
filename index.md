@@ -45,12 +45,12 @@
 * [zip](cmdline/linux/zip.md)
  
 ###Mac
-
 * [diskutil](cmdline/mac/diskutil.md)
+* [md5](cmdline/mac/md5.md)
+* [openssl](cmdline/mac/openssl.md)
 
 
 ###Windows
-
 * [robocopy](cmdline/windows/robocopy.md)
 
 ##Gaming
@@ -84,10 +84,19 @@ Info on setting up OpenVAS and other vuln scanners.
 ###[Webapp pentesting](pentesting/webapp/index.md)
 Info on configuring Burp, Bapp plugins, etc.
 
+###Wireless pentesting
+* [How to capture a WPA handshake](pentesting/wireless/wpa.md)
+
 ##Scripts
 Lil' scripts to do this, that and the other thing
 
-* [Kali-essentials.sh](scripts/kali-essentials.sh) - a big "git clone a bunch of stuff" script that I run right after installing a fresh Kali box
+###Linux
 
-###Wireless pentesting
-* [How to capture WPA handshake](pentesting/wireless/wpa.md)
+* [disk-space-alert.sh](scripts/linux/disk-space-alert.sh) - uses [swaks](cmdline/linux/swaks.md) to send out an email alert when disk utilization reaches a certain threshold.
+* [kali-essentials.sh](scripts/linux/kali-essentials.sh) - a big "git clone a bunch of stuff" script that I run right after installing a fresh Kali box.
+* [kali-gitupdate.sh](scripts/linux/kali-gitupdate.sh) - will go through your Kali box and update any git repositories.
+
+#Web tech
+Like LAMP stuff, Ghost, Hugo and other thingies that get served up on Web technology.
+
+* [Hugo]
