@@ -14,4 +14,3 @@ git clone https://github.com/iSECPartners/sslyze.git /opt/sslyze
 git clone https://github.com/smicallef/spiderfoot.git /opt/spiderfoot
 git clone https://github.com/evilsocket/bettercap.git /opt/bettercap
 git clone https://github.com/byt3bl33d3r/MITMf.git /opt/mitmf
-git clone https://github.com/braimee/bpatty.git /opt/bpatty
