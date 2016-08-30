@@ -55,6 +55,31 @@ If you make iptables changes after this and they don't seem to stick, do this:
 
 Save a copy of iptables rules for later
 
-sudo iptables-save > name-of-file.txt
+    sudo iptables-save > name-of-file.txt
 
 See [this Digital Ocean article](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-iptables-on-ubuntu-12-04) for more information.
+
+##Sample basic configuration
+If I spin up a new Digital Ocean droplet, my starter config might be like the following, which locks down http/ssh access to only me while I test stuff out:
+
+    sudo apt-get install iptables-persistent
+    sudo service iptables-persistent start
+    sudo iptables -F
+    sudo iptables -A INPUT -i lo -j ACCEPT
+    sudo iptables -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s my.public.ip.address -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s my.public.ip.address -p tcp -m tcp --dport 80 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -P INPUT DROP
+    sudo iptables-save > /etc/iptables/rules.v4
+
+Then when I want to give "everybody" access to the Web site, I'll do this:
+
+    sudo iptables -L --line-numbers
+    
+Then for the HTTP rule, I yank it out with:
+
+    sudo iptables -D INPUT 3 (for rule 3)
+    
+Then I let "anybody" access HTTP with:
+
+    sudo iptables -A INPUT -p tcp --dport 22 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT

@@ -3,7 +3,7 @@ Whenever I get a new machine, here are some general things I do to update/secure
 
 * Download and install all latest OS/app updates, then set things to auto-patch wherever possible
 
-* Change screen saver to *Require password* when activated (see System Preferences -> Security & Privacy on the Mac side, Control Panel-->Personalization on the PC)
+* Change screen saver to require password when activated (see **System Preferences -> Security & Privacy** on the Mac side, **Control Panel ->Personalization** on the PC)
 * Use Firefox or Chrome as primary browser and install:
  * uBlock Origin
  * LastPass plugin

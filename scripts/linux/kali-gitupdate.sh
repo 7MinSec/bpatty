@@ -1,5 +1,6 @@
 #!/bin/bash
 # This script is to update all git repositories on your Kali box
+# Author unknown - if you know whose it is let me know and I'll gladly give credit! -braimee
  
 # Get current directory
 CUR_DIR=$(pwd)
