@@ -8,3 +8,7 @@ Searching a file for an *exact* match:
 Searching the current dir and all sub-dirs for something, like 
 
     grep word-you-are-searching-for -r *
+
+If you want to see what line a given string appears on in a file, do something like:
+
+    grep -n brianjohnson /usr/share/wordlists/rockyou.txt

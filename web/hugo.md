@@ -85,9 +85,10 @@ Restart Apache to make these changes stick:
     service apache2 reload
 
     
+Then I have a script that looks like this to quickly build/rebuild my Hugo site:    
     
-    
-    
-    hugo --theme=geo --buildDrafts
+
+    cd /path/to/where/my/hugo/blog/is
+    hugo --theme=NAME-OF-THEME --buildDrafts=true
     
     

@@ -83,3 +83,46 @@ Then for the HTTP rule, I yank it out with:
 Then I let "anybody" access HTTP with:
 
     sudo iptables -A INPUT -p tcp --dport 22 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    
+##Configuration for a Unifi hosted controller:
+This config opens the necessary ports so that *just* your IP address (identified by *my.public.ip.address*), as well as the servers for the Uptime Robot service, has access to the necessary ports:
+
+    sudo iptables -F
+    sudo iptables -A INPUT -i lo -j ACCEPT
+    sudo iptables -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s MY.PUBLIC.IP.ADDRESS -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s MY.PUBLIC.IP.ADDRESS -p tcp -m tcp --dport 8081 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s MY.PUBLIC.IP.ADDRESS -p tcp -m tcp --dport 8080 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s MY.PUBLIC.IP.ADDRESS -p tcp -m tcp --dport 8443 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s MY.PUBLIC.IP.ADDRESS -p tcp -m tcp --dport 8880 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s MY.PUBLIC.IP.ADDRESS -p tcp -m tcp --dport 8843 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s MY.PUBLIC.IP.ADDRESS -p tcp -m tcp --dport 27117 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s MY.PUBLIC.IP.ADDRESS -p tcp -m tcp --dport 80 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s MY.PUBLIC.IP.ADDRESS -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine5.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine6.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine7.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine8.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine9.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine10.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine11.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine12.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine13.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine14.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine15.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine16.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine17.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s remote1.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine2.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine3.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine4.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine5.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine6.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine7.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine8.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine9.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine10.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -s engine11.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables-save > /etc/iptables/rules.v4
+    sudo iptables -P INPUT DROP
+    sudo iptables-save > /etc/iptables/rules.v4

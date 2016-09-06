@@ -5,6 +5,7 @@ git clone https://bitbucket.org/LaNMaSteR53/recon-ng.git /opt/recon-ng
 git clone https://github.com/stufus/egresscheck-framework.git /opt/egress
 git clone https://github.com/drwetter/testssl.sh.git /opt/testssl
 git clone https://github.com/nccgroup/chuckle.git /opt/chuckle
+wget https://github.com/CoreSecurity/impacket/blob/impacket_0_9_15/examples/smbrelayx.py /opt/chuckle/
 git clone https://github.com/stasinopoulos/commix.git /opt/commix
 git clone https://github.com/ChrisTruncer/EyeWitness /opt/eyewitness
 git clone https://github.com/SpiderLabs/Responder /opt/responder
@@ -14,3 +15,4 @@ git clone https://github.com/iSECPartners/sslyze.git /opt/sslyze
 git clone https://github.com/smicallef/spiderfoot.git /opt/spiderfoot
 git clone https://github.com/evilsocket/bettercap.git /opt/bettercap
 git clone https://github.com/byt3bl33d3r/MITMf.git /opt/mitmf
+git clone https://github.com/Veil-Framework/Veil-Evasion /opt/veil-evasion

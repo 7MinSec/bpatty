@@ -1,9 +1,16 @@
+#September 6, 2016
+* Added smbrelayx to [kali-essentials](scripts/kali-essentials.sh) script 
+* Added some more info to [grep](cmdline/linux/grep.md)
+* Cleaned up [kali-essentials](scripts/linux/kali-essentials.sh) script and added download for *smbrelayx.py*
+* Split out Ubiquiti gear pages into [Edge Router X](hardware/ubiquiti/edgerouterx/erx.md) and UniFi
+* Added pages for [Nessus](pentesting/vulnerability-scanners/nessus.md) and [OpenVAS](pentesting/vulnerability-scanners/openvas.md) 
+* Updated [hugo](web/hugo.md) page
+
 #August 30, 2016
 * Added section on using [nmap](cmdline/linux/nmap.md) to scan for SQL stuff
 * Started section on [hugo](web/hugo.md)
 * Beefed up the [first time setup](best-practices/1sttimesetup.md) and [Internet safety](best-practices/internetsafety.md) documentation
 * Added sample config to [iptables](cmdline/linux/iptables.md)
-* 
 
 #August 24-25, 2016
 * Addition of [disk-space-alert.sh](scripts/linux/disk-space-alert.sh)

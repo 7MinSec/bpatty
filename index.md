@@ -1,14 +1,14 @@
 #Table of Contents
 
 ---
-##Best Practices (in my opinion ;-)
+#Best Practices (in my opinion ;-)
 * [Internet safety](best-practices/internetsafety.md) - general tips to stay safe(er) online
 * [1st time setup for a PC/Mac](best-practices/1sttimesetup.md) - a.k.a. "the first things I do after powering up a fresh machine"
 * [Wireless](#wireless) - what to do right after unboxing and plugging in your new wireless router
 
 
-##Command-line tools
-###Linux
+#Command-line tools
+##Linux
 
 * [asciinema](cmdline/linux/asciinema.md)
 * [bluto](cmdline/linux/bluto.md)
@@ -44,32 +44,38 @@
 * [wget](cmdline/linux/wget.md)
 * [zip](cmdline/linux/zip.md)
  
-###Mac
+##Mac
 * [diskutil](cmdline/mac/diskutil.md)
 * [md5](cmdline/mac/md5.md)
 * [openssl](cmdline/mac/openssl.md)
 
 
-###Windows
+##Windows
 * [robocopy](cmdline/windows/robocopy.md)
 
-##Gaming
-###Minecraft
+#Gaming
+##Minecraft
 How to setup a [Minecraft server](gaming/minecraft.md).
 
-##Hardware
-###Raspberry Pi
+#Hardware
+##Raspberry Pi
 Stuff I know about RPis, including:
 
 * [Installing Kali](hardware/raspberrypi/install-kali.md) - how to install distributions such as Kali Linux.
 
-###Pineapple
+##Pineapple
 * [Initial setup (Mark V)](hardware/pineapple/setup.md)
 
-###Ubiquiti 
+##Ubiquiti 
 Their network gear is some of my fav'! Here's some tips/tricks on setting up and configuring...
 
-* [Edge Router X](hardware/ubiquiti/edgerouterx/erx.md)
+###Edge Router X
+* [Basic install](hardware/ubiquiti/edgerouterx/erx.md) of the switch, configuration of XBox UPNP, and setting up isolated guest networks.
+
+###UniFi controller
+* [Setup a cloud-hosted UniFi controller](hardware/ubiquiti/unifi/install-hosted-unifi-controller)
+* Install a LetsEncrypt certificate (*coming soon*)
+
 
 ##Pentesting
 ###[Pentest procedural/administrative stuff](pentesting/admin/admin.md)
@@ -78,11 +84,13 @@ Like what to do on a pentest when you have no Internet access :-)
 ###[Virtual machine setup](pentesting/vm-setup/vm-setup.md)
 Information on getting a Kali pentesting box setup with Burp and other tools.
 
-###[Vulnerability scanners](pentesting/vulnerability-scanners/index.md) 
-Info on setting up OpenVAS and other vuln scanners.
+###Vulnerability scanners
+* [Nessus](vulnerability-scanners/nessus.md) - basic install on getting Lets Encrypt cert installed
+* [OpenVAS](vulnerability-scanners/openvas.md) - basic install on Kali
 
-###[Webapp pentesting](pentesting/webapp/index.md)
-Info on configuring Burp, Bapp plugins, etc.
+
+###Webapp pentesting
+[Basic burp configuration](pentesting/webapp/burp.md)
 
 ###Wireless pentesting
 * [How to capture a WPA handshake](pentesting/wireless/wpa.md)
@@ -96,7 +104,7 @@ Lil' scripts to do this, that and the other thing
 * [kali-essentials.sh](scripts/linux/kali-essentials.sh) - a big "git clone a bunch of stuff" script that I run right after installing a fresh Kali box.
 * [kali-gitupdate.sh](scripts/linux/kali-gitupdate.sh) - will go through your Kali box and update any git repositories.
 
-#Web tech
+#Web tech (blogs and whatnots)
 Like LAMP stuff, Ghost, Hugo and other thingies that get served up on Web technology.
 
-* [Hugo]
+* [Hugo](web/hugo.md)
