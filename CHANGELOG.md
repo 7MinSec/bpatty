@@ -1,3 +1,7 @@
+#September 13, 2016
+* Added section on [Limnoria](web/limnoria.md) IRC bot.
+* Addded section on [screen](cmdline/linux/screen.md) command.
+
 #September 6, 2016
 * Added smbrelayx to [kali-essentials](scripts/kali-essentials.sh) script 
 * Added some more info to [grep](cmdline/linux/grep.md)

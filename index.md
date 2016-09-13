@@ -104,7 +104,9 @@ Lil' scripts to do this, that and the other thing
 * [kali-essentials.sh](scripts/linux/kali-essentials.sh) - a big "git clone a bunch of stuff" script that I run right after installing a fresh Kali box.
 * [kali-gitupdate.sh](scripts/linux/kali-gitupdate.sh) - will go through your Kali box and update any git repositories.
 
-#Web tech (blogs and whatnots)
+
+#Web tech (blogs, bots and whatnots)
 Like LAMP stuff, Ghost, Hugo and other thingies that get served up on Web technology.
 
-* [Hugo](web/hugo.md)
+* [Hugo](web/hugo.md) - a popular blogging platform
+* [Limnoria](web/limnoria.md) - a popular IRC bot
