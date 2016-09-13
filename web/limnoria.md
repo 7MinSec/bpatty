@@ -67,6 +67,19 @@ The `600` is for how many seconds you want the news to be active. Quick ref:
 
     news remove #channelname 1    
 
+###"Praise" database
+A fun way to add praise "templates" when people do/say good things in the channel.
+
+####Add a praise
+The `$who` will be replaced by the user you elect to praise
+
+    !praise add #channel-name "Everybody should give $who electronic high-fives for being the best $who that $who can be."
+    
+####Praise a user
+In a channel, do this
+
+    !praise name-of-user
+
 ###"Quotes" database
 
 ####Add a quote
