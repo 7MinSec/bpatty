@@ -1,6 +1,12 @@
+#September 15, 2016
+* Cleaned up [nmap](cmdline/linux/nmap.md) sheet and added SSL checks
+* Added section on killing [screen](cmdline/linux/screen.md) sessions
+* Added section on [clickjacking](pentesting/webapp/clickjacking.md)
+* Added section on [docker](web/docker.md)
+
 #September 13, 2016
-* Added section on [Limnoria](web/limnoria.md) IRC bot.
-* Addded section on [screen](cmdline/linux/screen.md) command.
+* Added section on [Limnoria](web/limnoria.md) IRC bot
+* Added section on [screen](cmdline/linux/screen.md) command
 
 #September 6, 2016
 * Added smbrelayx to [kali-essentials](scripts/kali-essentials.sh) script 

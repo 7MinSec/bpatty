@@ -15,3 +15,8 @@ To see all open *screen* sessions:
 If you had one called *bot* for example, you could reattach to it with:
 
     screen -R bot
+    
+##Kill a screen session 
+I usually just have one session going so I like to *kill 'em all!!!* ;-)
+
+    killall screen

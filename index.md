@@ -4,8 +4,6 @@
 #Best Practices (in my opinion ;-)
 * [Internet safety](best-practices/internetsafety.md) - general tips to stay safe(er) online
 * [1st time setup for a PC/Mac](best-practices/1sttimesetup.md) - a.k.a. "the first things I do after powering up a fresh machine"
-* [Wireless](#wireless) - what to do right after unboxing and plugging in your new wireless router
-
 
 #Command-line tools
 ##Linux
@@ -17,8 +15,8 @@
 * [dirb](cmdline/linux/dirb.md)
 * [du](cmdline/linux/du.md)
 * [egress-check](cmdline/linux/egress-check.md)
-* [grep](cmdline/linux/grep.md)
 * [gpg](cmdline/linux/gpg.md)
+* [grep](cmdline/linux/grep.md)
 * [hashcat](cmdline/linux/hashcat.md)
 * [hydra](cmdline/linux/hydra.md) 
 * [iptables](cmdline/linux/iptables.md)
@@ -28,8 +26,10 @@
 * [netcat](cmdline/linux/netcat.md)
 * [nmap](cmdline/linux/nmap.md)
 * [openssl](cmdline/linux/openssl.md)
+* [recon-ng](cmdline/linux/recon-ng.md)
 * [responder](cmdline/linux/responder.md)
 * [scapy](cmdline/linux/scapy.md)
+* [scanpbnj](cmdline/linux/scanpbnj.md)
 * [testssl](cmdline/linux/testssl.md)
 * [tcpdump](cmdline/linux/tcpdump.md)
 * [recon-ng](cmdline/linux/recon-ng.md)
@@ -58,13 +58,14 @@
 How to setup a [Minecraft server](gaming/minecraft.md).
 
 #Hardware
+
+##Pineapple
+* [Initial setup (Mark V)](hardware/pineapple/pineapple.md)
+
 ##Raspberry Pi
 Stuff I know about RPis, including:
 
 * [Installing Kali](hardware/raspberrypi/install-kali.md) - how to install distributions such as Kali Linux.
-
-##Pineapple
-* [Initial setup (Mark V)](hardware/pineapple/setup.md)
 
 ##Ubiquiti 
 Their network gear is some of my fav'! Here's some tips/tricks on setting up and configuring...
@@ -74,11 +75,11 @@ Their network gear is some of my fav'! Here's some tips/tricks on setting up and
 
 ###UniFi controller
 * [Setup a cloud-hosted UniFi controller](hardware/ubiquiti/unifi/install-hosted-unifi-controller)
-* Install a LetsEncrypt certificate (*coming soon*)
+* [Install a LetsEncrypt certificate](hardware/ubiquiti/unifi/install-lets-encrypt-cert.md)
 
 
 ##Pentesting
-###[Pentest procedural/administrative stuff](pentesting/admin/admin.md)
+###[Procedural/administrative stuff](pentesting/admin/admin.md)
 Like what to do on a pentest when you have no Internet access :-)
 
 ###[Virtual machine setup](pentesting/vm-setup/vm-setup.md)
@@ -88,9 +89,9 @@ Information on getting a Kali pentesting box setup with Burp and other tools.
 * [Nessus](vulnerability-scanners/nessus.md) - basic install on getting Lets Encrypt cert installed
 * [OpenVAS](vulnerability-scanners/openvas.md) - basic install on Kali
 
-
 ###Webapp pentesting
-[Basic burp configuration](pentesting/webapp/burp.md)
+* [Burp configuration (basic)](pentesting/webapp/burp.md)
+* [Clickjacking](pentesting/webapp/clickjacking.md)
 
 ###Wireless pentesting
 * [How to capture a WPA handshake](pentesting/wireless/wpa.md)
@@ -108,5 +109,5 @@ Lil' scripts to do this, that and the other thing
 #Web tech (blogs, bots and whatnots)
 Like LAMP stuff, Ghost, Hugo and other thingies that get served up on Web technology.
 
-* [Hugo](web/hugo.md) - a popular blogging platform
-* [Limnoria](web/limnoria.md) - a popular IRC bot
+* [Hugo](web/hugo.md) - how to setup this popular blogging platform
+* [Limnoria](web/limnoria.md) - how to install and maintain this popular IRC bot

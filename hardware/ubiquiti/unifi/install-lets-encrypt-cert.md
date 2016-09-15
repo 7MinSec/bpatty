@@ -1,5 +1,5 @@
 # How to install Lets Encrypt SSL cert on Unifi Controller
-This article *heavily* borrowed from this excellent one: [http://www.stevejenkins.com/blog/2016/06/use-existing-ssl-certificate-linux-unifi-controller/](http://www.stevejenkins.com/blog/2016/06/use-existing-ssl-certificate-linux-unifi-controller/).
+Check out the [how-to video](https://7ms.us/7ms-227-lets-encrypt-installing-ssl-certs-for-nessus-and-ubiquiti-unifi-2/) I made for more help, but basically my video *heavily* borrowed from this excellent one: [http://www.stevejenkins.com/blog/2016/06/use-existing-ssl-certificate-linux-unifi-controller/](http://www.stevejenkins.com/blog/2016/06/use-existing-ssl-certificate-linux-unifi-controller/).
 
 Head to [https://certbot.eff.org](https://certbot.eff.org) and choose the proper platform.  In my case I chose *None of the Above* and *Ubuntu 14.04* in the menus at the top of the page.
 
@@ -23,5 +23,3 @@ Download Steve Jenkins' script [here](https://gist.github.com/stevejenkins/639ca
     # FOR LET'S ENCRYPT SSL CERTIFICATES ONLY
     LE_MODE=yes
 
-####Sections to add/update:
-* Link to my video when it's done
