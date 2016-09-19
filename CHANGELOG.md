@@ -1,3 +1,10 @@
+
+
+# September 16, 2016
+* Updated section on [docker](web/docker.md)
+* Updated [kali-essentials](scripts/linux/kali-essentials.sh) script
+* Updated [Limnoria](web/limnoria.md) help guide
+
 #September 15, 2016
 * Cleaned up [nmap](cmdline/linux/nmap.md) sheet and added SSL checks
 * Added section on killing [screen](cmdline/linux/screen.md) sessions

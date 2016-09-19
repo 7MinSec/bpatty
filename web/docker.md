@@ -31,7 +31,7 @@ After doing a `Ctrl+C` to stop the Web interface, if you run the same `docker` c
 
 You can remove it with:
 
-    docker rm eeecfa0ff3f58a4ed67a4fa045beae462a49fb7d9df9a30c0f259f90c1684d59 
+    docker rm rainmap 
 
 Then start it again with:
 
