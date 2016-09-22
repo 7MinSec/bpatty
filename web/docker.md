@@ -14,6 +14,9 @@ Head to [https://hub.docker.com/r/jgamblin/rainmap/](https://hub.docker.com/r/jg
     docker pull jgamblin/rainmap
 
 ###Run it
+
+    docker run -ti -p 8080:8080 --name rainmap jgamblin/rainmap
+
 Since rainmap stays "open" in the command line, I recommend you first use [screen](../cmdline/linux/screen.md) to setup a special session for it.  That way you can completely log out via SSH and the docker will stay running.
 
     screen -R rainmapscreen

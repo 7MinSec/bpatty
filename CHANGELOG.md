@@ -1,4 +1,7 @@
-
+#September 21, 2016
+* Added more goodies to [cat](cmdline/linux/cat.md) page
+* Added new section on [sed](cmdline/linux/sed.md)
+* Added [mysqldump](cmdline/linux/mysqldump.md) page
 
 # September 16, 2016
 * Updated section on [docker](web/docker.md)
