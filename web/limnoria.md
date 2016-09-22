@@ -124,6 +124,16 @@ So something like this should work:
 
     !quote add #channel-name "Brothers don't shake hands. Brothers gotta hug." - Tommy Callahan, Tommy Boy (http://www.imdb.com/title/tt0114694/quotes)
 
+###Say command
+
+With my version of Limnoria (2016.08.07) the `say` command wasn't working correctly.  I could `say` quotegrabs, but couldn't make the bot say something in a specific channel.  I found out the issue was the [Anonymous plugin has to be loaded](https://github.com/ProgVal/Limnoria/tree/2c1de2328bbf56741ea39541a293f1cc26496f68/plugins/Anonymous) like so:
+
+    !load anonymous
+    
+Then, you can make the bot `say` things by sending it a PM like so:
+
+    anonymous say #7ms Is this thing on?
+
 ###Success database
 Things the bot can say when it successfully understands a command.
 
