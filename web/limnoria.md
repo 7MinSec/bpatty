@@ -19,6 +19,11 @@ Run `supybot-wizard` which will walk you through the initial config of your bot.
 When you're ready to rock, issue this command: `supybot bot.conf` and you should see your bot pop up on IRC and join the channels you've instructed it to!
 
 ###Identify yourself as "boss"
+
+    user identify your-username your-password
+    
+Or
+
     identify your-username your-password
 
 ##Bot commands
@@ -133,6 +138,17 @@ With my version of Limnoria (2016.08.07) the `say` command wasn't working correc
 Then, you can make the bot `say` things by sending it a PM like so:
 
     anonymous say #7ms Is this thing on?
+    
+###Scheduler
+You can make the bot say things in the future.  For example, to say something an hour into the future:
+
+    scheduler add 3600  announce say #7ms Hello, this is just a test
+    
+To say something on a regular basis, use this context:
+
+    scheduler repeat hourlyhello 3600  announce say #7ms Hello, this is just an hourly test of the bot scheduling system.  If you're seeing this, stuff is working right.  If you don't see this, please report to an operator immediately!
+    
+The `hourlyhello` is just a name identifier for your reference.
 
 ###Success database
 Things the bot can say when it successfully understands a command.
@@ -140,3 +156,12 @@ Things the bot can say when it successfully understands a command.
 ####Add a "success":
 
     !success add #channel-name "Got it.  You and I are on the same page."
+    
+#Locking down the bot
+By setting your bot with this command (READ ALL THIS BEFORE YOU DO), it pretty much won't let *anybody* register, make it `learn` commands, etc.  What I'm testing right now is I first identified with my bot, then issued this:
+
+    admin capability add braimee user
+
+I *think* that then, going forward, I should be able to identify with the bot if necessary.  Otherwise, the command below locks things down *so* hard that you can't even ID with the bot.  So, use this command at your own risk:
+
+    !config supybot.capabilities.default False

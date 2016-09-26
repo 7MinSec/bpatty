@@ -1,3 +1,10 @@
+#September 24, 2016
+* Added information on using the "scheduler" feature of the [Limnoria](web/limnoria.md) bot.
+
+#September 23, 2016
+* Added another "black screen of death" resolution issue to [vm-setup.md](pentesting/vm-setup/vm-setup.md)
+* Added section on "locking down the bot" and how to schedule tasks to [Limnoria](web/limnoria.md)
+
 #September 21, 2016
 * Added more goodies to [cat](cmdline/linux/cat.md) page
 * Added new section on [sed](cmdline/linux/sed.md)
