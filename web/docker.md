@@ -49,4 +49,12 @@ Juice Shop, according to [OWASP](https://www.owasp.org/index.php/OWASP_Juice_Sho
 
     docker run -d -p 3000:3000 bkimminich/juice-shop
     
+###Make images/backups
+
+One thing I found during my hacking of Juice Shop was that my brute-force or sqlmap efforts would cause the container to die, and thus I'd have to restarted, which wiped out my scoreboard.  Using [this site](https://gist.github.com/thaJeztah/8d0e901bd21329d80cf2) (h/t hackern0v1c3 on IRC) taking a point-in time snapshot is pretty easy:
+
+    docker commit --message="This is the description of my snapshot" 130s9df83js09d a_short_description:093016
     
+The `130s...` is the id of the container you want to make an image of.
+
+
