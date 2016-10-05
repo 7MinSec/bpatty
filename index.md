@@ -15,6 +15,7 @@
 * [dirb](cmdline/linux/dirb.md)
 * [du](cmdline/linux/du.md)
 * [egress-check](cmdline/linux/egress-check.md)
+* [git](cmdline/linux/git.md)
 * [gpg](cmdline/linux/gpg.md)
 * [grep](cmdline/linux/grep.md)
 * [hashcat](cmdline/linux/hashcat.md)
@@ -29,12 +30,13 @@
 * [openssl](cmdline/linux/openssl.md)
 * [recon-ng](cmdline/linux/recon-ng.md)
 * [responder](cmdline/linux/responder.md)
-* [scapy](cmdline/linux/scapy.md)
 * [scanpbnj](cmdline/linux/scanpbnj.md)
+* [scapy](cmdline/linux/scapy.md)
 * [testssl](cmdline/linux/testssl.md)
 * [tcpdump](cmdline/linux/tcpdump.md)
 * [recon-ng](cmdline/linux/recon-ng.md)
 * [scanpbnj](cmdline/linux/scanpbnj.md)
+* [screen](cmdline/linux/screen.md)
 * [sed](cmdline/linux/sed.md)
 * [simplehttpserver](cmdline/linux/simplehttpserver.md)
 * [ssh-keygen](cmdline/linux/ssh-keygen.md)
@@ -53,6 +55,7 @@
 
 
 ##Windows
+* [PowerShell](cmdline/windows/powershell.md)
 * [robocopy](cmdline/windows/robocopy.md)
 
 #Gaming
@@ -84,6 +87,13 @@ Their network gear is some of my fav'! Here's some tips/tricks on setting up and
 ###[Procedural/administrative stuff](pentesting/admin/admin.md)
 Like what to do on a pentest when you have no Internet access :-)
 
+###Network Pentesting
+####Break out
+Learn how to [break out](pentesting/netpen/breakout.md) of restricted environments, such as Citrix portals and kiosks.
+
+####Privilege Escalation
+A collection of cheatsheets and how-tos for [privesc](pentesting/netpen/privesc.md)
+
 ###[Virtual machine setup](pentesting/vm-setup/vm-setup.md)
 Information on getting a Kali pentesting box setup with Burp and other tools.
 
@@ -103,10 +113,14 @@ Lil' scripts to do this, that and the other thing
 
 ###Linux
 
+* [backup-stuff.sh](scripts/linux/backup-stuff.sh) is a quick and easy script to make a .tgz file out of a folder full o' stuff
 * [disk-space-alert.sh](scripts/linux/disk-space-alert.sh) - uses [swaks](cmdline/linux/swaks.md) to send out an email alert when disk utilization reaches a certain threshold.
 * [kali-essentials.sh](scripts/linux/kali-essentials.sh) - a big "git clone a bunch of stuff" script that I run right after installing a fresh Kali box.
 * [kali-gitupdate.sh](scripts/linux/kali-gitupdate.sh) - will go through your Kali box and update any git repositories.
 
+
+##Training
+Check out these [vulnerable machine resources](pentesting/training/vulnerablemachines.md) which will help you practice and sharpen your pentest skills in a safe environment.
 
 #Web tech (blogs, bots and whatnots)
 Like LAMP stuff, Ghost, Hugo and other thingies that get served up on Web technology.

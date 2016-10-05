@@ -1,3 +1,14 @@
+#October 5, 2016
+* Added "find top offenders" to [md](cmdline/linux/du.md)
+* Started a page on [git](cmdline/linux/git.md)
+* Added some proxy information and some popular cheat sheets to [nmap](cmdline/linux/nmap.md)
+* Corrected typos and updated quick start guide for [sslyze](cmdline/linux/sslyze.md)
+* Started a new page on [PowerShell](cmdline/windows/powershell.md)
+* Added new page about [breaking out](pentesting/netpen/breakout.md) of Citrix/RDP environments
+* Added page on [privilege escalation](pentesting/netpen/privesc.md)
+* Added page on [vulnerable machines](pentesting/training/vulnerablemachines.md) that you can practice pentesting on
+* Added a Linux script to quickly and easily [backup things](scripts/linux/backup-stuff.sh)
+
 #September 24, 2016
 * Added information on using the "scheduler" feature of the [Limnoria](web/limnoria.md) bot.
 
