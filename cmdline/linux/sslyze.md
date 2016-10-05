@@ -1,7 +1,7 @@
 #sslyze
-https://code.google.com/p/sslyze/wiki/QuickStart
+Most of this is referenced from the [Quickstart](https://code.google.com/p/sslyze/wiki/QuickStart) hosted by Google.
 
-    sslyze --sslv2 --slv3 --tlsv1 --tlsv1_2 --tlsv1_1 --hide_rejected_ciphers f.q.d.n
+    sslyze --sslv2 --sslv3 --tlsv1 --tlsv1_2 --tlsv1_1 --hide_rejected_ciphers f.q.d.n
  
 From the manual:
 

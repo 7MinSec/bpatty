@@ -6,7 +6,9 @@ Port scanner + a zillion other things. Here's a great [cheat sheet](https://pent
 ###Basic thorough scan 
     -PE -PM -PS 21,22,23,25,26,53,80,81,110,111,113,135,139,143,179,199,443,445,465,514,548,554,587,993,995
     
+###Scan through a proxy
 
+    nmap 1.2.3.4 --proxy PROXYHOST:PORT
     
 ## Scripting engine
 
