@@ -1,3 +1,14 @@
+#October 26, 2016
+* Added "Sticky keys slayer" to [breaking out](pentesting/netpen/breakout.md) page
+* Started page on [proxychains](cmdline/linux/proxychains.md)
+* Added some additional tutorials to [recon-ng](cmdline/linux/recon-ng.md)
+* Beefed up [PowerShell](cmdline/windows/powershell.md) page
+* Added page on [Empire](pentesting/netpen/empire.md)
+* Added page on [Bloodhound](pentesting/netpen/bloodhound.md)
+* Expanded [vm-setup](pentesting/vm-setup/vm-setup.md) page to include tweak for stopping Kali from freaking going to sleep and locking the screen all the time
+* Added script to [change the MAC](scripts/mac/changemac.md) on your Mac
+* Updated the [kali-essentials](scripts/linux/kali-essentials.sh) script so tools are alphabetical...then I stop adding dupes :-)
+
 #October 5, 2016
 * Added "find top offenders" to [md](cmdline/linux/du.md)
 * Started a page on [git](cmdline/linux/git.md)

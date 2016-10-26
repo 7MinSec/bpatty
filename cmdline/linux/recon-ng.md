@@ -1,4 +1,7 @@
 # recon-ng
 Open source reconnaissance framework.
+
+* Here's a nice tutorial + video on it: [https://strikersecurity.com/blog/getting-started-recon-ng-tutorial/](https://strikersecurity.com/blog/getting-started-recon-ng-tutorial/)
  
-Here's a good primer video about it: [https://www.youtube.com/watch?v=CyKkun8dZjE](https://www.youtube.com/watch?v=CyKkun8dZjE)
+* And another: [https://www.youtube.com/watch?v=CyKkun8dZjE](https://www.youtube.com/watch?v=CyKkun8dZjE)
+

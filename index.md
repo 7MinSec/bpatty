@@ -28,14 +28,11 @@
 * [netcat](cmdline/linux/netcat.md)
 * [nmap](cmdline/linux/nmap.md)
 * [openssl](cmdline/linux/openssl.md)
+* [proxychains](cmdline/linux/proxychains.md)
 * [recon-ng](cmdline/linux/recon-ng.md)
 * [responder](cmdline/linux/responder.md)
 * [scanpbnj](cmdline/linux/scanpbnj.md)
 * [scapy](cmdline/linux/scapy.md)
-* [testssl](cmdline/linux/testssl.md)
-* [tcpdump](cmdline/linux/tcpdump.md)
-* [recon-ng](cmdline/linux/recon-ng.md)
-* [scanpbnj](cmdline/linux/scanpbnj.md)
 * [screen](cmdline/linux/screen.md)
 * [sed](cmdline/linux/sed.md)
 * [simplehttpserver](cmdline/linux/simplehttpserver.md)
@@ -91,6 +88,12 @@ Like what to do on a pentest when you have no Internet access :-)
 ####Break out
 Learn how to [break out](pentesting/netpen/breakout.md) of restricted environments, such as Citrix portals and kiosks.
 
+###Bloodhound
+Bloodhound is a great way to visually map out an AD environment - even if you've just got a limited shell.  Check out my [page](pentesting/netpen/bloodhound.md) on it.
+
+###Empire
+This post-exploitation PowerShell agent is absolutely awesome.  Check out my page on it [here](pentesting/netpen/empire.md)
+
 ####Privilege Escalation
 A collection of cheatsheets and how-tos for [privesc](pentesting/netpen/privesc.md)
 
@@ -114,6 +117,7 @@ Lil' scripts to do this, that and the other thing
 ###Linux
 
 * [backup-stuff.sh](scripts/linux/backup-stuff.sh) is a quick and easy script to make a .tgz file out of a folder full o' stuff
+* [changemac](scripts/mac/changemac.md) will change the MAC on your, um....Mac!
 * [disk-space-alert.sh](scripts/linux/disk-space-alert.sh) - uses [swaks](cmdline/linux/swaks.md) to send out an email alert when disk utilization reaches a certain threshold.
 * [kali-essentials.sh](scripts/linux/kali-essentials.sh) - a big "git clone a bunch of stuff" script that I run right after installing a fresh Kali box.
 * [kali-gitupdate.sh](scripts/linux/kali-gitupdate.sh) - will go through your Kali box and update any git repositories.

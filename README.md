@@ -8,8 +8,8 @@
 
 * **A Markdown viewer/editor** (*optional*) because I wrote most of this in [MacDown](http://macdown.uranusjr.com/).  [This site](https://www.maketecheasier.com/markdown-editors-linux/) lists some options if you need ideas.
 
-##Wait, wait! There's already way, way, WAY better documents, tools and collections like this out there!
-But none written by *me* so hah!  And please watch this: [https://www.youtube.com/watch?v=C_SFevIz1FI](https://www.youtube.com/watch?v=C_SFevIz1FI).
+##Wait, wait! There are already way, way, WAY better documents, tools and collections like this out there!
+My response (substitute "microphone" for "documentation project"): [https://youtu.be/C_SFevIz1FI?t=14](https://youtu.be/C_SFevIz1FI?t=14).
 
 ##OMg, based on your activity it's clear you're a super newb to GitHub and have NO idea what you're doing!!!
 Correct. 

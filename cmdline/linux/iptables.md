@@ -123,6 +123,5 @@ This config opens the necessary ports so that *just* your IP address (identified
     sudo iptables -A INPUT -s engine9.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
     sudo iptables -A INPUT -s engine10.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
     sudo iptables -A INPUT -s engine11.uptimerobot.com -p tcp -m tcp --dport 8834 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
-    sudo iptables-save > /etc/iptables/rules.v4
     sudo iptables -P INPUT DROP
     sudo iptables-save > /etc/iptables/rules.v4
