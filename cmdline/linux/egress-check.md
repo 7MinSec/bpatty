@@ -9,7 +9,7 @@ This is a nice tool for checking what ports are open between two network segment
 * Test both TCP and UDP by typing `set PROTOCOL all`
 * Type `get` and hit Enter to confirm your selections on PC1.
 * Now type `generate tcpdump` - you will be given a command to run on PC2 starting with `tcpdump -n -U -w /tmp/egress...` - run that command on PC2 now.
-* Back at PC1, type `generate python-cmd` to generate a Python one-liner to run on PC1 to pass traffic to PC2.  
+* Back at PC1, type `generate python-cmd` (or `generate powershell-cmd` for a PS one-liner) to generate a Python one-liner to run on PC1 to pass traffic to PC2.  
 * Type `exit` to leave the tool, then run the Python one-liner on PC1.
 * When the Python one-liner completes, go to PC2 and *Ctrl+C* the tcpdump job.
 * Then, run the two *tshark* commands (generated when you ran *generate tcpdump*) on PC2 in order to parse the TCP/UDP ports open between the two hosts.  For example, my commands were:

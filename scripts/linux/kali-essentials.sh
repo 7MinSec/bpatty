@@ -24,6 +24,9 @@ git clone https://github.com/ChrisTruncer/EyeWitness /opt/eyewitness
 #findsploit finds exploits in local and online databases
 git clone https://github.com/1N3/Findsploit.git /opt/findsploit
 
+#foospidy is a BIG BUNCH O' PAYLOADS for fuzzing and fun!
+git clone https://github.com/foospidy/payloads.git /opt/foospidy
+
 #mitmf is a mitm framework that I've not tried out yet
 git clone https://github.com/byt3bl33d3r/MITMf.git /opt/mitmf
 

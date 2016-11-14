@@ -1,3 +1,13 @@
+#November 14, 2016
+* Added syntax for creating PowerShell one-liners using [egress-check](cmdline/linux/egress-check.md)
+* Corrected some syntax for opening up ports using [iptables](cmdline/linux/iptables.md)
+* Added section on [scp](cmdline/linux/scp.md)
+* Added some training opportunities to [PowerShell](cmdline/windows/powershell.md) 
+* Added additional breakout tips/tricks to [breakout](pentesting/netpen/breakout.md) 
+* Added a whole bunch of "quick wins" to [privesc](pentesting/netpen/privesc.md)
+* Beefed up the [docker](web/docker.md) page and added section on [Quassel](web/docker.md/#quassel)
+* Corrected some typos in [Limnoria](web/limnoria.md)
+
 #October 26, 2016
 * Added "Sticky keys slayer" to [breaking out](pentesting/netpen/breakout.md) page
 * Started page on [proxychains](cmdline/linux/proxychains.md)

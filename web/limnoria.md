@@ -9,8 +9,10 @@ This area follows an install for Ubuntu 16.04 which is pretty straight forward w
     sudo pip install -r requirements.txt
     sudo python setup.py install
     
+Note: if `pip` is not installed, install it with `sudo apt-get install python-pip python-dev build-essential`
+    
 ###Add a basic user    
-Then continue with [this guide](http://doc.supybot.aperio.fr/en/latest/use/install.html) and add a basic user to your box, such as with `useradd brian`.  Then `su brian` and create a bot folder, like `mkdir ~/bot` and then `cd ~/bot`.
+Then continue with [this guide](http://doc.supybot.aperio.fr/en/latest/use/install.html) and add a basic user to your box, such as with `adduser brian` (then follow the .  Then `su brian` and create a bot folder, like `mkdir ~/bot` and then `cd ~/bot`.
 
 ###Run the bot creation wizard
 Run `supybot-wizard` which will walk you through the initial config of your bot.  When you're done, it will right the config file out to something like `bot.conf`.
@@ -142,7 +144,7 @@ Then, you can make the bot `say` things by sending it a PM like so:
 ###Scheduler
 You can make the bot say things in the future.  For example, to say something an hour into the future:
 
-    scheduler add 3600  announce say #7ms Hello, this is just a test
+    scheduler add 3600 announce say #7ms Hello, this is just a test
     
 To say something on a regular basis, use this context:
 

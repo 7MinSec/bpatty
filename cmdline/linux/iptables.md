@@ -82,7 +82,7 @@ Then for the HTTP rule, I yank it out with:
     
 Then I let "anybody" access HTTP with:
 
-    sudo iptables -A INPUT -p tcp --dport 22 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -p tcp --dport 80 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
     
 ##Configuration for a Unifi hosted controller:
 This config opens the necessary ports so that *just* your IP address (identified by *my.public.ip.address*), as well as the servers for the Uptime Robot service, has access to the necessary ports:

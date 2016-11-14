@@ -34,6 +34,7 @@
 * [scanpbnj](cmdline/linux/scanpbnj.md)
 * [scapy](cmdline/linux/scapy.md)
 * [screen](cmdline/linux/screen.md)
+* [scp](cmdline/linux/scp.md)
 * [sed](cmdline/linux/sed.md)
 * [simplehttpserver](cmdline/linux/simplehttpserver.md)
 * [ssh-keygen](cmdline/linux/ssh-keygen.md)
@@ -80,12 +81,12 @@ Their network gear is some of my fav'! Here's some tips/tricks on setting up and
 * [Install a LetsEncrypt certificate](hardware/ubiquiti/unifi/install-lets-encrypt-cert.md)
 
 
-##Pentesting
-###[Procedural/administrative stuff](pentesting/admin/admin.md)
-Like what to do on a pentest when you have no Internet access :-)
+#Pentesting
+##Pentesting - procedural/administrative stuff
+Some [administrative information](pentesting/admin/admin.md) to consider, like what to do on a pentest when you have no Internet access :-)
 
-###Network Pentesting
-####Break out
+##Pentesting - network-based ("netpen")
+###Break out
 Learn how to [break out](pentesting/netpen/breakout.md) of restricted environments, such as Citrix portals and kiosks.
 
 ###Bloodhound
@@ -94,25 +95,25 @@ Bloodhound is a great way to visually map out an AD environment - even if you've
 ###Empire
 This post-exploitation PowerShell agent is absolutely awesome.  Check out my page on it [here](pentesting/netpen/empire.md)
 
-####Privilege Escalation
+###Privilege Escalation
 A collection of cheatsheets and how-tos for [privesc](pentesting/netpen/privesc.md)
 
-###[Virtual machine setup](pentesting/vm-setup/vm-setup.md)
-Information on getting a Kali pentesting box setup with Burp and other tools.
+###Virtual machine setup
+Information on getting a [Kali pentesting box setup](pentesting/vm-setup/vm-setup.md) with Burp and other tools.
 
 ###Vulnerability scanners
 * [Nessus](vulnerability-scanners/nessus.md) - basic install on getting Lets Encrypt cert installed
 * [OpenVAS](vulnerability-scanners/openvas.md) - basic install on Kali
 
-###Webapp pentesting
+##Pentesting - webapp
 * [Burp configuration (basic)](pentesting/webapp/burp.md)
 * [Clickjacking](pentesting/webapp/clickjacking.md)
 
-###Wireless pentesting
+##Pentesting - wireless
 * [How to capture a WPA handshake](pentesting/wireless/wpa.md)
 
 ##Scripts
-Lil' scripts to do this, that and the other thing
+Lil' scripts to do this, that and the other thing.
 
 ###Linux
 
