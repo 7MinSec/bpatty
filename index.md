@@ -82,8 +82,11 @@ Their network gear is some of my fav'! Here's some tips/tricks on setting up and
 
 
 #Pentesting
-##Pentesting - procedural/administrative stuff
+##Pentesting - administrative/procedural stuff
 Some [administrative information](pentesting/admin/admin.md) to consider, like what to do on a pentest when you have no Internet access :-)
+
+##Pentesting - honeypots
+An essential part of active defense *against* hackers/pentesters is setting up honeypots such as [OpenCanary](pentesting/honeypots/opencanary.md) to alert you when services are connected to.
 
 ##Pentesting - network-based ("netpen")
 ###Break out

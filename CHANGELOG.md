@@ -1,3 +1,11 @@
+#November 21,2016
+* Expanded [Internet safety](best-practices/internetsafety.md) documentation
+* Added an nmap scan that includes *searchsploit* (thanks g0tmi1k!) to the [nmap](cmdline/linux/nmap.md) section
+* Added info on sending file attachments to [swaks](cmdline/linux/swaks.md) section
+* Added new section on implementing [OpenCanary](pentesting/honeypots/opencanary.md)
+* Added some cheat sheets and helpful blog links to the [Empire](pentesting/netpen/empire.md) page
+* Cleaned up [README](README.md)
+
 #November 14, 2016
 * Added syntax for creating PowerShell one-liners using [egress-check](cmdline/linux/egress-check.md)
 * Corrected some syntax for opening up ports using [iptables](cmdline/linux/iptables.md)
