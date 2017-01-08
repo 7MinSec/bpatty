@@ -1,5 +1,13 @@
 # nmap
 Port scanner + a zillion other things. Here's a great [cheat sheet](https://pentestlab.wordpress.com/2012/08/17/nmap-cheat-sheet/) to help you setup the most common kinds of scans.
+
+##A few great quick references:
+* [HighOnCoffee nmap cheat sheet (Highoncoffee)](https://highon.coffee/blog/nmap-cheat-sheet/)
+* [NixCraft's Top 30 Nmap Command Examples For Sys/Network Admins (Cyberciti.biz)](https://www.cyberciti.biz/networking/nmap-command-examples-tutorials/)
+* [Top 10 nmap Commands Every Sysadmin Should Know (Bencane.com)](http://bencane.com/2013/02/25/10-nmap-commands-every-sysadmin-should-know/)
+* [NMAP cheat sheet (Hackertarget.com)](https://hackertarget.com/nmap-cheatsheet-a-quick-reference-guide/)
+* [Information on timing and performance (nmap.org)](https://nmap.org/book/man-performance.html)
+* [Using timing templates in nmap (cyberpedia.in)](http://cyberpedia.in/using-timing-templates-in-nmap/)
       
 ## Basic scans
 
@@ -13,8 +21,26 @@ Port scanner + a zillion other things. Here's a great [cheat sheet](https://pent
 
 *Source: [CommandLineKungFu](http://www.commandlinefu.com/commands/view/18230/find-all-active-ip-addresses-in-a-network)*
 
-###Thorough scan 
-    -PE -PM -PS 21,22,23,25,26,53,80,81,110,111,113,135,139,143,179,199,443,445,465,514,548,554,587,993,995
+###Thorough and quick TCP scan:
+
+    nmap -p 1-65535 -sV -sS -T4 the.target.ip.address
+    
+###Scan of all ports while ignoring ping, using a target list of *targets.txt* and exporting output to all 3 formats (called OUTPUT) and also using very verbose output
+
+	nmap -p 1-65535 -sV -sS -T4 -Pn -iL targets.txt -oA OUTPUT -vv
+    
+###Scanning some popular/common open ports
+    nmap -PE -PM -PS 21,22,23,25,26,53,80,81,110,111,113,135,139,143,179,199,443,445,465,514,548,554,587,993,995
+    
+###Scan the top 1000 ports - both TCP/UDP - and export to all 3 formats (called OUTPUT)
+
+	nmap -vv -O -P0 -sTUV –top-ports 1000 -oA output
+
+*Thanks [Daniel Miessler](https://danielmiessler.com/blog/nmap-use-the-top-ports-option-for-both-tcp-and-udp-simultaneously/#gs.kgigV7M)*
+
+###UDP scan
+
+	nmap -p 1-65535 -sU the.target.ip.address
     
 ###Scan through a proxy
 

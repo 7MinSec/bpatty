@@ -1,69 +1,21 @@
 #Table of Contents
 
 ---
-#Best Practices (in my opinion ;-)
-* [Internet safety](best-practices/internetsafety.md) - general tips to stay safe(er) online
-* [1st time setup for a PC/Mac](best-practices/1sttimesetup.md) - a.k.a. "the first things I do after powering up a fresh machine"
 
-#Command-line tools
-##Linux
+#Certifications
+Some information about my experience with the following certs:
 
-* [asciinema](cmdline/linux/asciinema.md)
-* [bluto](cmdline/linux/bluto.md)
-* [cat](cmdline/linux/cat.md)
-* [curl](cmdline/linux/curl.md)
-* [dirb](cmdline/linux/dirb.md)
-* [du](cmdline/linux/du.md)
-* [egress-check](cmdline/linux/egress-check.md)
-* [git](cmdline/linux/git.md)
-* [gpg](cmdline/linux/gpg.md)
-* [grep](cmdline/linux/grep.md)
-* [hashcat](cmdline/linux/hashcat.md)
-* [hydra](cmdline/linux/hydra.md) 
-* [iptables](cmdline/linux/iptables.md)
-* [john (the ripper)](cmdline/linux/johntheripper.md)
-* [mimikatz](cmdline/linux/mimikatz.md)
-* [mysqldump](cmdline/linux/mysqldump.md)
-* [ncrack](cmdline/linux/ncrack.md)
-* [netcat](cmdline/linux/netcat.md)
-* [nmap](cmdline/linux/nmap.md)
-* [openssl](cmdline/linux/openssl.md)
-* [proxychains](cmdline/linux/proxychains.md)
-* [recon-ng](cmdline/linux/recon-ng.md)
-* [responder](cmdline/linux/responder.md)
-* [scanpbnj](cmdline/linux/scanpbnj.md)
-* [scapy](cmdline/linux/scapy.md)
-* [screen](cmdline/linux/screen.md)
-* [scp](cmdline/linux/scp.md)
-* [sed](cmdline/linux/sed.md)
-* [simplehttpserver](cmdline/linux/simplehttpserver.md)
-* [ssh-keygen](cmdline/linux/ssh-keygen.md)
-* [sslscan](cmdline/linux/sslscan.md)
-* [sslyze](cmdline/linux/sslyze.md)
-* [swaks](cmdline/linux/swaks.md)
-* [tcpdump](cmdline/linux/tcpdump.md)
-* [testssl](cmdline/linux/testssl.md)
-* [wget](cmdline/linux/wget.md)
-* [zip](cmdline/linux/zip.md)
- 
-##Mac
-* [diskutil](cmdline/mac/diskutil.md)
-* [md5](cmdline/mac/md5.md)
-* [openssl](cmdline/mac/openssl.md)
+* [CEH (Certified Ethical Hacker)](certifications/ceh.md)
+* [OSCP (Offensive Security Certified Professional)](certifications/oscp.md)
+* [OSWP (Offensive Security Wireless Professional)](certifications/oswp.md)
 
-
-##Windows
-* [PowerShell](cmdline/windows/powershell.md)
-* [robocopy](cmdline/windows/robocopy.md)
-
-#Gaming
-##Minecraft
-How to setup a [Minecraft server](gaming/minecraft.md).
+#Command Line Tools
+* Go to the [index](cmdline/index.md) as it's now too big of a list to fit on this page!
 
 #Hardware
 
 ##Pineapple
-* [Initial setup (Mark V)](hardware/pineapple/pineapple.md)
+* [Initial setup (Mark V)](hardware/pineapple/pineapple.md) - essentially this is about the first few things to do to set DIP switches, get the thing on the network, etc.
 
 ##Raspberry Pi
 Stuff I know about RPis, including:
@@ -85,21 +37,27 @@ Their network gear is some of my fav'! Here's some tips/tricks on setting up and
 ##Pentesting - administrative/procedural stuff
 Some [administrative information](pentesting/admin/admin.md) to consider, like what to do on a pentest when you have no Internet access :-)
 
+##Pentesting - defense/hardening
+Just getting this page started, but starting to cobble together some good [defensive measures](pentesting/netpen/defense-hardening.md) to recommend to customers after a pentest.
+
 ##Pentesting - honeypots
 An essential part of active defense *against* hackers/pentesters is setting up honeypots such as [OpenCanary](pentesting/honeypots/opencanary.md) to alert you when services are connected to.
 
 ##Pentesting - network-based ("netpen")
+###Bloodhound
+[Bloodhound](pentesting/netpen/bloodhound.md) is a great way to visually map out an AD environment - even if you've just got a limited shell.
+
 ###Break out
 Learn how to [break out](pentesting/netpen/breakout.md) of restricted environments, such as Citrix portals and kiosks.
 
-###Bloodhound
-Bloodhound is a great way to visually map out an AD environment - even if you've just got a limited shell.  Check out my [page](pentesting/netpen/bloodhound.md) on it.
+###Defense
+I started a page about pentesting [defense](pentesting/netpen/defense.md) focusing on mitigating common vulnerabilities/exploits we see on pentests.
 
 ###Empire
-This post-exploitation PowerShell agent is absolutely awesome.  Check out my page on it [here](pentesting/netpen/empire.md)
+[Empire](pentesting/netpen/empire.md), a post-exploitation PowerShell agent, is absolutely awesome.
 
 ###Privilege Escalation
-A collection of cheatsheets and how-tos for [privesc](pentesting/netpen/privesc.md)
+A collection of cheatsheets and how-tos for [privesc](pentesting/netpen/privesc.md).
 
 ###Virtual machine setup
 Information on getting a [Kali pentesting box setup](pentesting/vm-setup/vm-setup.md) with Burp and other tools.
@@ -107,13 +65,35 @@ Information on getting a [Kali pentesting box setup](pentesting/vm-setup/vm-setu
 ###Vulnerability scanners
 * [Nessus](vulnerability-scanners/nessus.md) - basic install on getting Lets Encrypt cert installed
 * [OpenVAS](vulnerability-scanners/openvas.md) - basic install on Kali
+* [Vulnerability databases](pentesting/vulnerability-scanners/vulnerability-databases.md) are a good place to check for vulnerabilities that Nessus/OpenVAS and others might not have built in.
 
 ##Pentesting - webapp
-* [Burp configuration (basic)](pentesting/webapp/burp.md)
-* [Clickjacking](pentesting/webapp/clickjacking.md)
+* [Burp configuration](pentesting/webapp/burp.md) - a quick "getting started" guide
+* [Clickjacking](pentesting/webapp/clickjacking.md) - an easy POC you can use if you need to whip up a screenshot of what a clickjacking vuln looks like on a site that doesn't properly use the `X-FRAME-OPTIONS: SAMEORIGIN` header
 
 ##Pentesting - wireless
 * [How to capture a WPA handshake](pentesting/wireless/wpa.md)
+
+##Resources
+###Best Practices (in my opinion ;-)
+* [Internet safety](resources/best-practices/internetsafety.md) - general tips to stay safe(er) online
+* [Setting up a secure PC/Mac](resources/best-practices/1sttimesetup.md) - a.k.a. "the first things I do after powering up a fresh machine"
+
+###[Blogs](resources/blogs.md)
+It would be impossible to list all the great security blogs out there, but these are some of my favs.
+
+###[Books](resources/books.md)
+I barely read anything that's not displayed on a screen, but when I *do*...
+
+###[Health and Wellness](resources/health-and-wellness.md)
+Lets face it, as IT/security people, sometimes our health is well-being is secondary to popping that box or getting that network gear installed.  
+
+###[Podcasts](resources/podcasts.md)
+Podcasts seem to be like opinions (everybody's got one!) but there are some great ones out there.
+
+###[Twitter peeps I follow](resources/twitter.md)
+Here are some folks/bots I follow on Twitter to try to stay on top of important infosec news and happenings.
+
 
 ##Scripts
 Lil' scripts to do this, that and the other thing.
@@ -128,10 +108,12 @@ Lil' scripts to do this, that and the other thing.
 
 
 ##Training
-Check out these [vulnerable machine resources](pentesting/training/vulnerablemachines.md) which will help you practice and sharpen your pentest skills in a safe environment.
+* [Programming and scripting](training/programming-and-scripting.md) has some good online sources for learning Python, PowerShell and the like
+* [Vulnerable machine resources](training/vulnerable-machines.md) will help you practice and sharpen your pentest skills in a safe (and legal!) environment
 
 #Web tech (blogs, bots and whatnots)
 Like LAMP stuff, Ghost, Hugo and other thingies that get served up on Web technology.
 
 * [Hugo](web/hugo.md) - how to setup this popular blogging platform
 * [Limnoria](web/limnoria.md) - how to install and maintain this popular IRC bot
+* [Minecraft](gaming/minecraft.md) - how to setup an MC server

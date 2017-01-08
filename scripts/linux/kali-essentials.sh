@@ -18,6 +18,9 @@ git clone https://github.com/stasinopoulos/commix.git /opt/commix
 #egress framework helps you test network segmentation easily with a few python commands
 git clone https://github.com/stufus/egresscheck-framework.git /opt/egress
 
+#empire is "a PowerShell and Python post-exploitation agent"
+git clone https://github.com/adaptivethreat/Empire.git /opt/empire
+
 #eyewitness is a nice recon tool for putting some great visualization behind nmap scans
 git clone https://github.com/ChrisTruncer/EyeWitness /opt/eyewitness
 
@@ -41,6 +44,9 @@ git clone https://bitbucket.org/LaNMaSteR53/recon-ng.git /opt/recon-ng
 
 #responder is awesome for LLMNR, NBT-NS and MDNS poisoning
 git clone https://github.com/lgandx/Responder.git /opt/responder
+
+#seclists is a "collection of multiple types of lists used during security assessments"
+git clone https://github.com/danielmiessler/SecLists.git /opt/seclists
 
 #sniper is a great automated recon scanner
 git clone https://github.com/1N3/Sn1per.git /opt/sniper
