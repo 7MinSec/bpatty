@@ -34,7 +34,7 @@ Port scanner + a zillion other things. Here's a great [cheat sheet](https://pent
     
 ###Scan the top 1000 ports - both TCP/UDP - and export to all 3 formats (called OUTPUT)
 
-	nmap -vv -O -P0 -sTUV –top-ports 1000 -oA output
+	nmap -vv -O -P0 -sTUV –top-ports 1000 -oA output the.target.ip.address
 
 *Thanks [Daniel Miessler](https://danielmiessler.com/blog/nmap-use-the-top-ports-option-for-both-tcp-and-udp-simultaneously/#gs.kgigV7M)*
 

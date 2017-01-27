@@ -1,6 +1,9 @@
 #Vulnerable Machines (and Apps)
 Looking to sharpen those hacking skills in a safe/legal environment?  Kudos!  Here are some places to do just that:
 
+##Damn Vulnerable Web Sockets
+This [vulnerable Web application](https://github.com/interference-security/DVWS) "which works on web sockets for client-server communication."
+
 ##Hack and Defend Your Web Site
 This is [the first course](http://course.hyperiongray.com/vcourse/) I ever took on Web app hacking and I *loved* it.  Good news for you is now it's free and covers setting up Burp, performing SQL injections, sqlmap, XSS and more!
 

@@ -8,6 +8,9 @@ git clone https://github.com/theZiz/aha.git /opt/aha
 #bettercap is a nice mitm framework - I did an episode on it here: https://7ms.us/7ms-228-fun-with-bettercap/
 git clone https://github.com/evilsocket/bettercap.git /opt/bettercap
 
+#b374k is a nice PHP shell.  Quick ref to compile a shell: php -f index.php -- -o myShell.php -p myPassword -s -b -z gzcompress -c 9
+git clone https://github.com/b374k/b374k.git /opt/b374k
+
 #chuckle is might handy when it comes to SMB relay exploitation
 git clone https://github.com/nccgroup/chuckle.git /opt/chuckle
 wget https://github.com/CoreSecurity/impacket/blob/impacket_0_9_15/examples/smbrelayx.py /opt/chuckle/
@@ -55,7 +58,7 @@ git clone https://github.com/1N3/Sn1per.git /opt/sniper
 git clone https://github.com/smicallef/spiderfoot.git /opt/spiderfoot
 
 #sslyze is a good tool for running ssl/tls checks
-git clone https://github.com/iSECPartners/sslyze.git /opt/sslyze
+git clone https://github.com/nabla-c0d3/sslyze.git /opt/sslyze
 
 #testssl is a great script for checking variou ssl/tls vulns
 git clone https://github.com/drwetter/testssl.sh.git /opt/testssl

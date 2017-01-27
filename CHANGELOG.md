@@ -1,5 +1,22 @@
 #2017
 
+##January 27, 2017
+* Typos corrected on [nmap](cmdline/linux/nmap.md)
+* Added page on [sqlmap](cmdline/linux/sqlmap.md)
+* Typo corrected on [testssl](cmdline/linux/testssl.md)
+* PSAttack added to [PowerShell](cmdline/windows/powershell.md)
+* Cleanup of [admin](pentesting/admin/admin.md)
+* Started page on [exploit-specific](pentesting/exploit-info/exploit-info.md) info, as I recently found myself researching MS10-070
+* Cleanup of [empire](pentesting/netpen/empire.md)
+* New page on [forensics](pentesting/netpen/forensics.md)
+* Added a few things to [privesc](pentesting/netpen/privesc.md)
+* Started a page on [tunneling](pentesting/netpen/tunneling.md) 
+* Started a [payloads and passwords](pentesting/payloads/payloads-and-passwords.md) page
+* Started page on [shells](pentesting/webapp/shells.md)
+* Beefed up the [first time setup](resources/best-practices/1sttimesetup.md) page
+* Cleaned up [kali-essentials](scripts/linux/kali-essentials.sh) script
+* Added Damn Vulnerable Web Sockets to [vulnerable machines](training/vulnerable-machines.md)
+
 ##January 8, 2017
 * Added pages about some popular certifications such as [Certified Ethical Hacker](certifications/ceh.md), [Offensive Security Certified Professional](certifications/oscp.md) and [Offensive Security Wireless Professional](certifications/oswp.md)
 * Added a page on pentesting [defense](pentesting/netpen/defense-hardening.md)

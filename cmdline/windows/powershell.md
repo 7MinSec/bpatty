@@ -44,6 +44,9 @@ Is on [Github](https://github.com/andyrobbins/PowerPath) and, according to [this
 ###PowerShell Suite
 Is [here](https://github.com/FuzzySecurity/PowerShell-Suite) and advertises itself as "There are great tools and resources online to accomplish most any task in PowerShell, sometimes however, there is a need to script together a util for a specific purpose or to bridge an ontological gap. This is a collection of PowerShell utilities I put together either for fun or because I had a narrow application in mind."
 
+###PSAttack
+[PSAttack](https://github.com/jaredhaight/PSAttack) states it is "A portable console aimed at making pentesting with PowerShell a little easier."
+
 ---
 #Additional things to add:
 * Veil

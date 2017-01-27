@@ -19,4 +19,5 @@ To test a bunch of hosts, you could make a `targets.txt` with something like:
     
 Then scan 'em all at once with:
 
-/opt/testssl/testssl.sh --file targets.txt | /opt/aha/aha > OUTPUT.html
+`/opt/testssl/testssl.sh --file targets.txt | /opt/aha/aha > OUTPUT.html`
+

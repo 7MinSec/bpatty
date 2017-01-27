@@ -37,8 +37,8 @@ Their network gear is some of my fav'! Here's some tips/tricks on setting up and
 ##Pentesting - administrative/procedural stuff
 Some [administrative information](pentesting/admin/admin.md) to consider, like what to do on a pentest when you have no Internet access :-)
 
-##Pentesting - defense/hardening
-Just getting this page started, but starting to cobble together some good [defensive measures](pentesting/netpen/defense-hardening.md) to recommend to customers after a pentest.
+##Pentesting - exploit info
+A [page](pentesting/exploit-info/exploit-info.md) dedicated to pentesting specific exploits (right now just focusing on MS10-070)
 
 ##Pentesting - honeypots
 An essential part of active defense *against* hackers/pentesters is setting up honeypots such as [OpenCanary](pentesting/honeypots/opencanary.md) to alert you when services are connected to.
@@ -51,18 +51,24 @@ An essential part of active defense *against* hackers/pentesters is setting up h
 Learn how to [break out](pentesting/netpen/breakout.md) of restricted environments, such as Citrix portals and kiosks.
 
 ###Defense
-I started a page about pentesting [defense](pentesting/netpen/defense.md) focusing on mitigating common vulnerabilities/exploits we see on pentests.
+I started a page about pentesting [defense](pentesting/netpen/defense-hardening.md) focusing on mitigating common vulnerabilities/exploits we see on pentests.
 
 ###Empire
 [Empire](pentesting/netpen/empire.md), a post-exploitation PowerShell agent, is absolutely awesome.
 
+###Forensics
+This page is dedicated to performing various types of [forensics](pentesting/netpen/forensics.md) as part of incident response or system analysis.
+
 ###Privilege Escalation
 A collection of cheatsheets and how-tos for [privesc](pentesting/netpen/privesc.md).
 
-###Virtual machine setup
+##Payloads and Passwords
+Started a [payloads and passwords](pentesting/payloads/payloads-and-passwords.md) page
+
+##Pentesting - Virtual machine setup
 Information on getting a [Kali pentesting box setup](pentesting/vm-setup/vm-setup.md) with Burp and other tools.
 
-###Vulnerability scanners
+##Pentesting - Vulnerability scanners
 * [Nessus](vulnerability-scanners/nessus.md) - basic install on getting Lets Encrypt cert installed
 * [OpenVAS](vulnerability-scanners/openvas.md) - basic install on Kali
 * [Vulnerability databases](pentesting/vulnerability-scanners/vulnerability-databases.md) are a good place to check for vulnerabilities that Nessus/OpenVAS and others might not have built in.
@@ -111,7 +117,7 @@ Lil' scripts to do this, that and the other thing.
 * [Programming and scripting](training/programming-and-scripting.md) has some good online sources for learning Python, PowerShell and the like
 * [Vulnerable machine resources](training/vulnerable-machines.md) will help you practice and sharpen your pentest skills in a safe (and legal!) environment
 
-#Web tech (blogs, bots and whatnots)
+##Web tech (blogs, bots and whatnots)
 Like LAMP stuff, Ghost, Hugo and other thingies that get served up on Web technology.
 
 * [Hugo](web/hugo.md) - how to setup this popular blogging platform
