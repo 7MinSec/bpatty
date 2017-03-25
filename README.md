@@ -19,3 +19,6 @@ In my dream situation: every 1-2 weeks.  In reality: every month.
 
 ## Who are you?
 Hi, I'm [Brian](http://brianjohnson.tv) and I blog/podcast about information security at [7 Minute Security](https://7ms.us).
+
+## I like what you're doing with this whole 7 Minute Security thing. How can I support these efforts?
+Thanks! Please consider becoming a [Patreon supporter](https://patreon.com/7ms).
