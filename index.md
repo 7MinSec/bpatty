@@ -35,6 +35,9 @@ A [page](pentesting/exploit-info/exploit-info.md) dedicated to pentesting specif
 ## Pentesting - honeypots
 An essential part of active defense *against* hackers/pentesters is setting up honeypots such as [OpenCanary](pentesting/honeypots/opencanary.md) to alert you when services are connected to.
 
+## Pentesting - lab
+[This page](pentesting/lab/index.md) will get you up and running with creating a VMWare ESXi pentest lab for ~$500!
+
 ## Pentesting - network-based ("netpen")
 ### Bloodhound
 [Bloodhound](pentesting/netpen/bloodhound.md) is a great way to visually map out an AD environment - even if you've just got a limited shell.
