@@ -40,6 +40,7 @@
 * [zip](cmdline/linux/zip.md)
  
 ## Mac
+* [createinstallmedia](cmdline/mac/createinstallmedia.md) - to create a bootable MacOS installer
 * [diskutil](cmdline/mac/diskutil.md)
 * [md5](cmdline/mac/md5.md)
 * [openssl](cmdline/mac/openssl.md)
