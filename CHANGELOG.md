@@ -1,4 +1,7 @@
 # 2017
+## X, XX
+* Added Patreon campaign to the [README](README.md)
+
 ## Sunday, March 26
 * New page on [tshark](cmdline/linux/tshark.md)
 * Addition of a good Varonis pentesting guide on the [blogs](resources/blogs.md) page
