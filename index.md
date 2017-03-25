@@ -1,3 +1,6 @@
+Table of contents:
+---
+
 # Command Line Tools
 * Go to the [index](cmdline/index.md) as it's now too big of a list to fit on this page!
 
