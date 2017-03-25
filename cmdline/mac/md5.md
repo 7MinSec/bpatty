@@ -1,4 +1,4 @@
-#md5
+# md5
 Good for generating md5 hashes.
 
      md5 name-of-file.ext

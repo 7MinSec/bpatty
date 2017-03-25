@@ -1,4 +1,4 @@
-#zip
+# zip
 I always forget how to zip up a whole folder while password-protecting it, but this'll do it!
 
     zip -er name-of-your.zip name-of-dir-to-be-zipped

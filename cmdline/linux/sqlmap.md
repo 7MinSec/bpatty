@@ -1,7 +1,7 @@
-#sqlmap
+# sqlmap
 The sqlmap [project](https://github.com/sqlmapproject/sqlmap) is an "automatic SQL injection and database takeover tool."
 
-##Usage
+## Usage
 * Check out the [wiki](https://github.com/sqlmapproject/sqlmap/wiki/Usage) for the down n' dirty command line Kung Fu
 * OWASP has a nice [automated audit using SQLmap](https://www.owasp.org/index.php/Automated_Audit_using_SQLMap) page with this handy general syntax:
 

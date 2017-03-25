@@ -1,6 +1,6 @@
-#First Time Setup of a PC/Mac
+# First time setup of a PC/Mac
 
-##Once it's out of the box...
+## Once it's out of the box...
 Whenever I get a new machine, here are some general things I do to update/secure it:
 
 * Download and install all latest OS/app updates, then set things to auto-patch wherever possible
@@ -21,5 +21,5 @@ Whenever I get a new machine, here are some general things I do to update/secure
 * Put tape over the Webcam
 * Backup your stuff! I like [CrashPlan](http://www.crashplan.com) and did a podcast episode on it [here](https://media.zencast.fm/embed/7-minute-security-podcast-podcast/27.mp3).
 
-##Mac-specific hardening
+## Mac-specific hardening
 * Consider this [MacOS Security and Privacy Guide](https://github.com/drduh/macOS-Security-and-Privacy-Guide) for further security on your Mac system.

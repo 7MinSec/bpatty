@@ -1,7 +1,7 @@
-#EdgeRouterX
+# EdgeRouterX
 A collection of tidbits for managing EdgeRouterX.  I did a full write-up on some of these things [here](https://7ms.us/7ms-217-installing-ubiquiti-edgerouter-x-and-ap-part-2/).
 
-##Xbox NAT setup
+## Xbox NAT setup
 First setup a static IP for your Xbox, then use the commands below (thank you [this post](https://community.ubnt.com/t5/EdgeMAX/Xbox-1-Strict-NAT-problem/td-p/1371769/page/2) for the solution!!!) The one important prerequisite is to set your Xbox up with a static IP address - in the example below I used 192.168.7.77.
 
     configure
@@ -20,5 +20,5 @@ First setup a static IP for your Xbox, then use the commands below (thank you [t
     set service upnp2 acl rule 20 local-port 0-65535
     set service upnp2 acl rule 20 subnet 192.168.7.77/32
 
-##Creating isolated guest networks
+## Creating isolated guest networks
 Follow [this KB article](https://help.ubnt.com/hc/en-us/articles/218889067-EdgeMAX-How-to-Protect-a-Guest-Network-on-EdgeRouter) to setup segmented VLANs.

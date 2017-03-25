@@ -1,5 +1,5 @@
-#Command Line Tools
-##Linux
+# Command Line Tools
+## Linux
 
 * [asciinema](cmdline/linux/asciinema.md)
 * [bluto](cmdline/linux/bluto.md)
@@ -39,12 +39,12 @@
 * [wget](cmdline/linux/wget.md)
 * [zip](cmdline/linux/zip.md)
  
-##Mac
+## Mac
 * [diskutil](cmdline/mac/diskutil.md)
 * [md5](cmdline/mac/md5.md)
 * [openssl](cmdline/mac/openssl.md)
 
 
-##Windows
+## Windows
 * [PowerShell](cmdline/windows/powershell.md)
 * [robocopy](cmdline/windows/robocopy.md)

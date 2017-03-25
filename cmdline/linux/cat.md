@@ -1,20 +1,20 @@
-#cat
+# cat
 A nice utility for concatenating and printing files.
 
-##Use cases:
+## Use cases:
 
-###Get unique words out of a file
+### Get unique words out of a file
 
 *This* command is nice if you've got a large file full of various text, numbers, etc. and you need an output of *just* unique words from it:
 
     cat comment_file.txt | tr " " "\n" | sort | uniq
 
 
-###Clear Linux terminal history
+### Clear Linux terminal history
 
     cat /dev/null /home/brian/.bash_history
 
-##Command line switches
+## Command line switches
 ### -s
 According to the man page, this will "squeeze multiple adjacent empty lines, causing the output to be single spaced.
 
@@ -30,4 +30,3 @@ If you run it through `cat -s spacey.txt` the output will be:
     Line 1
     (empty space)
     Line 2
-    

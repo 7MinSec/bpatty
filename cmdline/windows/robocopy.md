@@ -1,4 +1,4 @@
-#robocopy
+# robocopy
 Sometimes I have trouble copying things from my local drive to the network shares.  I found out this has to do with virus scanning on the server - it kills one of the files on the fly and thus mucks up my file-copying efforts.  In cases like these I use Robocopy to do the job.  Example:
 
     robocopy "C:\Users\me\my-big-subfolder" "P:\destination" /e /r:3

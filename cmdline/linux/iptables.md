@@ -1,4 +1,4 @@
-##iptables
+## iptables
 Here are some commands I find useful when working with my Digital ocean droplets:
 
 List all rules
@@ -59,7 +59,7 @@ Save a copy of iptables rules for later
 
 See [this Digital Ocean article](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-iptables-on-ubuntu-12-04) for more information.
 
-##Sample basic configuration
+## Sample basic configuration
 If I spin up a new Digital Ocean droplet, my starter config might be like the following, which locks down http/ssh access to only me while I test stuff out:
 
     sudo apt-get install iptables-persistent

@@ -1,5 +1,6 @@
-#openssl
-##To generate hashes:
+# openssl
+
+## To generate hashes:
 
     openssl sha1 name-of-file.ext
 

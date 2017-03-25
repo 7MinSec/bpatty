@@ -1,4 +1,4 @@
-##egresscheck-framework
+## egresscheck-framework
 This is a nice tool for checking what ports are open between two network segments.  So lets say you have PC1 on 192.168.0.10 and PC2 on a different subnet at 192.168.1.222..0
 
 * First [get the framework](https://github.com/stufus/egresscheck-framework).

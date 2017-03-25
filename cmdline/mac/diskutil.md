@@ -1,6 +1,6 @@
-##diskutil 
+# diskutil 
 
-### To format a USB drive with an ESXi installer:
+## To format a USB drive with an ESXi installer:
 I *heavily* borrowed this approach and associated commands [from this Github project](https://github.com/cbednarski/vmware-usb-osx/).  To prep:
 
 * Download the ESXi ISO file to a folder on your machine and name it *esxi.iso*

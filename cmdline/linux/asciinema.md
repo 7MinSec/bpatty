@@ -1,4 +1,4 @@
-#asciinema
+# asciinema
 Creates ascii "movies" that record keystrokes and output (good for when you're doing a lot of command line work and want to have log of it later).
  
 To install:

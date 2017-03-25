@@ -1,4 +1,4 @@
-#ChangeMAC
+# ChangeMAC
 This is a script designed to "Change Wifi interface MAC address on macOS >= 10.10"
 
 Be sure to check [github for the original](https://github.com/securitygeneration/scripts/blob/master/changeMAC.sh) but as of 10/13/16, the code is as follows: 

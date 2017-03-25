@@ -20,7 +20,3 @@ I created an audio/video walkthrough [here](https://7ms.us/7ms-220-installing-ub
 Then, let your AP get "adopted" by the cloud access controller following [this article](https://community.ubnt.com/t5/UniFi-Routing-Switching/USG-cloud-controller/td-p/1156708).  The key command to issue is:
 
     set-inform http://ip.address-of.my-cloud.controller:8080/inform
-
-#Sections to add:
-
-##Install a LetsEncrypt SSL certificate

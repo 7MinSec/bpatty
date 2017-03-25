@@ -1,4 +1,4 @@
-#Minecraft
+# Minecraft
 Once I get a Linux server up and running, here's my quick script for getting Minecraft up and running (heavily borrowed from [this Digital Ocean article](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-minecraft-server-on-linux)):
 
 	mkdir /minecraft
@@ -16,4 +16,3 @@ Then hit *Ctrl+a* , *d* to detach from the "screen"
 To reattach screen type *screen -R*
 
 Edit *server.properties* to tweak the server properties.
-

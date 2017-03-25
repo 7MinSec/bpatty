@@ -1,4 +1,4 @@
-#gpg
+# gpg
 
 This tool generates PGP keypairs.
  

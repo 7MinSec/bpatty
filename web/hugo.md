@@ -1,4 +1,4 @@
-#Hugo
+# Hugo
 
 ## Basic install on Digital Ocean w/Ubuntu 16.04
 
@@ -39,7 +39,7 @@ Started the server on port 80:
     
 ---
 
-#Under construction:
+# Under construction:
 The data following is under construction...
     
     

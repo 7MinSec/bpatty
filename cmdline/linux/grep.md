@@ -1,4 +1,4 @@
-#grep
+# grep
 A tool for finding words/lines matching a pattern. Some handy examples below:
 
 Searching a file for an *exact* match:
