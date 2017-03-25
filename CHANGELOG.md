@@ -1,6 +1,7 @@
 # 2017
 ## X, XX
 * Added Patreon campaign to the [README](README.md)
+* Added new page on [createinstallmedia](cmdline/mac/createinstallmedia.md)
 
 ## Sunday, March 26
 * New page on [tshark](cmdline/linux/tshark.md)
