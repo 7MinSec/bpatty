@@ -1,5 +1,5 @@
 # Environment-check.ps1
-# v0.1
+# v0.1 - March 27, 2017
 # by Brian Johnson (https://7ms.us)
 #
 # This script is designed to gather some helpful baseline information in an Active Directory environment.
