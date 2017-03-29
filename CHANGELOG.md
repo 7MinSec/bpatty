@@ -1,4 +1,12 @@
 # 2017
+## Wednesday, March 29
+* Added Patreon campaign to the [README](README.md)
+* Added new page on [createinstallmedia](cmdline/mac/createinstallmedia.md)
+* Added page on setting up a [pentesting lab](pentesting/lab/index.md) including...
+  * A [list of bogus AD users](pentesting/lab/lusers.csv)
+  * An [import script](pentesting/lab/import-ad-users.ps1) for sucking those users into an AD environment
+* Some additional sections to the [network defense](pentesting/netpen/defense-hardening.md) page
+
 ## Sunday, March 26
 * New page on [tshark](cmdline/linux/tshark.md)
 * Addition of a good Varonis pentesting guide on the [blogs](resources/blogs.md) page

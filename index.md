@@ -1,3 +1,6 @@
+Table of contents:
+---
+
 # Command Line Tools
 * Go to the [index](cmdline/index.md) as it's now too big of a list to fit on this page!
 
@@ -31,6 +34,9 @@ A [page](pentesting/exploit-info/exploit-info.md) dedicated to pentesting specif
 
 ## Pentesting - honeypots
 An essential part of active defense *against* hackers/pentesters is setting up honeypots such as [OpenCanary](pentesting/honeypots/opencanary.md) to alert you when services are connected to.
+
+## Pentesting - lab
+[This page](pentesting/lab/index.md) will get you up and running with creating a VMWare ESXi pentest lab for ~$500!
 
 ## Pentesting - network-based ("netpen")
 ### Bloodhound
