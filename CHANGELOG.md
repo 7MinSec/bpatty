@@ -1,5 +1,5 @@
 # 2017
-## Monday, March 27
+## Wednesday, March 29
 * Added Patreon campaign to the [README](README.md)
 * Added new page on [createinstallmedia](cmdline/mac/createinstallmedia.md)
 * Added page on setting up a [pentesting lab](pentesting/lab/index.md) including...
