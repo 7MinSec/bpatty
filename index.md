@@ -46,7 +46,7 @@ An essential part of active defense *against* hackers/pentesters is setting up h
 Learn how to [break out](pentesting/netpen/breakout.md) of restricted environments, such as Citrix portals and kiosks.
 
 ### Defense
-I started a page about pentesting [defense](pentesting/netpen/defense-hardening.md) focusing on mitigating common vulnerabilities/exploits we see on pentests.
+I started a page about pentesting [defense](pentesting/netpen/defense/defense-hardening.md) focusing on mitigating common vulnerabilities/exploits we see on pentests.
 
 ### Empire
 [Empire](pentesting/netpen/empire.md), a post-exploitation PowerShell agent, is absolutely awesome.
