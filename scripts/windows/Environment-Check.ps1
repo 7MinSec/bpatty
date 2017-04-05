@@ -22,6 +22,7 @@
 $Today = Get-Date -Format yyyy-MM-dd
 
 #Create a directory with today's date
+#New-Item -ItemType Directory -Path ".\$((Get-Date).ToString('yyyy-MM-dd'))"
 New-Item -ItemType Directory -Path ".\$Today"
 
 # Try to import the Active Directory module - we'll be making use of that
@@ -49,25 +50,25 @@ $PSVersionTable.PSVersion
 $PSVersionTable.PSVersion > $Today\PowerShell_Version.txt
 
 # Search for users with passwords that don't expire and dump to text file
-Search-ADAccount -PasswordNeverExpires | FT Name,Enabled -A > $Today\Users_Passwords_Dont_Expire.txt
+Search-ADAccount -PasswordNeverExpires | Sort Name | FT Name,Enabled -A > $Today\Users_Passwords_Dont_Expire.txt
 
 # Find disabled users and dump to text file
-Search-ADAccount -AccountDisabled | Select SAMAccountname | sort SAMAccountname > $Today\Users_Disabled.txt
+Search-ADAccount -AccountDisabled | Select SAMAccountname | Sort SAMAccountname > $Today\Users_Disabled.txt
 
 # Find users who have never logged in, and dump to what?  A text file.
-Search-ADAccount -AccountInactive -UsersOnly | Select SAMAccountname | sort SAMAccountname > $Today\Users_Never_Logged_In.txt
+Search-ADAccount -AccountInactive -UsersOnly | Select SAMAccountname | Sort SAMAccountname > $Today\Users_Never_Logged_In.txt
 
 # Get members of Domain Admins group...and plop into text file
-Get-ADGroupMember "Domain Admins" | Select Name > $Today\Groups_Domain_Admins.txt
+Get-ADGroupMember "Domain Admins" | Select Name | Sort Name > $Today\Groups_Domain_Admins.txt
 
 # Get members of Enterprise Admins group and export to .txt 
-Get-ADGroupMember "Enterprise Admins" | Select Name > $Today\Groups_Enterprise_Admins.txt
+Get-ADGroupMember "Enterprise Admins" | Select Name | Sort Name > $Today\Groups_Enterprise_Admins.txt
 
 # Get members of Administrators group...in a text file 
-Get-ADGroupMember "Administrators" | Select Name > $Today\Groups_Admins.txt
+Get-ADGroupMember "Administrators" | Select Name | Sort Name > $Today\Groups_Admins.txt
 
 # Get members of Schema Admins group....in a...text...file....
-Get-ADGroupMember "Schema Admins" | Select Name > $Today\Groups_Schema_Admins.txt
+Get-ADGroupMember "Schema Admins" | Select Name | Sort Name > $Today\Groups_Schema_Admins.txt
 
 # Export default domain policy to HTML to...you know what?  I don't think I need to tell you what kind of file this dumps to
 Get-ADDefaultDomainPasswordPolicy > $Today\GPO_Default_Domain.txt
