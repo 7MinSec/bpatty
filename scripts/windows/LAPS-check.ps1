@@ -27,10 +27,10 @@ Import-Module ActiveDirectory
 # Import-Module GroupPolicy
 
 # Pull list of enabled computers from AD, dump to .txt file
-get-adcomputer -filter "enabled -eq '$true'" | select -Expand name | sort-object > $today\AllComputers.txt
+Get-ADComputer -filter "enabled -eq '$true'" | select -Expand name | sort-object > $today\AllComputers.txt
 
 # Setting a variable of "servers" to be the list we will soon pull from AD.
-$servers = get-content $today\AllComputers.txt
+$servers = Get-Content $today\AllComputers.txt
 
 # Remove the list of pingable machines in case this is a repeat run
 Remove-Item $today\LAPS-PingCheck.csv -ErrorAction SilentlyContinue
@@ -50,14 +50,14 @@ foreach ($server in $servers){
 
 
 # Now we'll import that list of pingable machines and sort them into a list called LAPS-LiveHosts
-import-csv "$today\LAPS-pingcheck.csv"| where-object {$_.Status -eq "up"} | select -Expand Hostname | sort-object > $today\LAPS-LiveHosts.txt
+Import-Csv "$today\LAPS-pingcheck.csv"| where-object {$_.Status -eq "up"} | select -Expand Hostname | sort-object > $today\LAPS-LiveHosts.txt
 
 # Now we'll make a csv that checks if the LAPS path exists.  We'll remove any existing ones first...
 Remove-Item $today\LAPS-PathCheck.csv -ErrorAction SilentlyContinue
 Add-Content $today\LAPS-PathCheck.csv "Hostname,32-bit LAPS,64-bit LAPS,Installed Progs,Date and time"
 
 # The "livehosts" will be a list of hosts that respond to a ping
-$livehosts = get-content $today\LAPS-LiveHosts.txt
+$livehosts = Get-Content $today\LAPS-LiveHosts.txt
 
 # Lets loop through and check each host for 32-bit LAPS
 foreach ($livehost in $livehosts)
@@ -90,4 +90,4 @@ if ( (Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall
 
 # Finally, make a nice organized list of the path checks, sorted by host name
 Remove-Item $today\LAPS-PathCheck-Sorted.csv -ErrorAction SilentlyContinue
-import-csv $today\LAPS-PathCheck.csv | sort hostname | Export-csv -Path $today\LAPS-PathCheck-Sorted.csv
+Import-Csv $today\LAPS-PathCheck.csv | sort hostname | Export-Csv -Path $today\LAPS-PathCheck-Sorted.csv
