@@ -22,7 +22,6 @@
 $Today = Get-Date -Format yyyy-MM-dd
 
 #Create a directory with today's date
-#New-Item -ItemType Directory -Path ".\$((Get-Date).ToString('yyyy-MM-dd'))"
 New-Item -ItemType Directory -Path ".\$Today"
 
 # Try to import the Active Directory module - we'll be making use of that
