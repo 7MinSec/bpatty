@@ -46,7 +46,7 @@ An essential part of active defense *against* hackers/pentesters is setting up h
 Learn how to [break out](pentesting/netpen/breakout.md) of restricted environments, such as Citrix portals and kiosks.
 
 ### Defense
-I started a page about pentesting [defense](pentesting/netpen/defense-hardening.md) focusing on mitigating common vulnerabilities/exploits we see on pentests.
+I started a page about pentesting [defense](pentesting/netpen/defense/defense-hardening.md) focusing on mitigating common vulnerabilities/exploits we see on pentests.
 
 ### Empire
 [Empire](pentesting/netpen/empire.md), a post-exploitation PowerShell agent, is absolutely awesome.
@@ -116,10 +116,17 @@ Lil' scripts to do this, that and the other thing.
 ### Linux
 
 * [backup-stuff.sh](scripts/linux/backup-stuff.sh) is a quick and easy script to make a .tgz file out of a folder full o' stuff
-* [changemac](scripts/mac/changemac.md) will change the MAC on your, um....Mac!
 * [disk-space-alert.sh](scripts/linux/disk-space-alert.sh) - uses [swaks](cmdline/linux/swaks.md) to send out an email alert when disk utilization reaches a certain threshold.
 * [kali-essentials.sh](scripts/linux/kali-essentials.sh) - a big "git clone a bunch of stuff" script that I run right after installing a fresh Kali box.
 * [kali-gitupdate.sh](scripts/linux/kali-gitupdate.sh) - will go through your Kali box and update any git repositories.
+
+### Mac
+* [changemac](scripts/mac/changemac.md) will change the MAC on your, um....Mac!
+
+### Windows
+* [Environment-Check.ps1](bpatty/scripts/windows/Environment-Check.ps1) will gather some helpful baseline information in an Active Directory environment
+
+* [LAPS-check.ps1](bpatty/scripts/windows/LAPS-check.ps1) will check an AD environment to see if Local Administrator Password Solution is installed.
 
 ## Web tech (blogs, bots and whatnots)
 Like LAMP stuff, Ghost, Hugo and other thingies that get served up on Web technology.

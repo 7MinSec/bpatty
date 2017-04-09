@@ -22,7 +22,7 @@
 $Today = Get-Date -Format yyyy-MM-dd
 
 #Create a directory with today's date
-New-Item -ItemType Directory -Path ".\$Today"
+New-Item -ItemType Directory -Path ".\$((Get-Date).ToString('yyyy-MM-dd'))"
 
 # Try to import the Active Directory module - we'll be making use of that
 If(!(Get-Module -Name ActiveDirectory))
@@ -79,6 +79,7 @@ Get-ADDefaultDomainPasswordPolicy > $Today\GPO_Password_Policy.txt
 Get-GPOReport -All -ReportType HTML -Path $Today\GPO_ALL.html
 
 # Get list of computers
+
 Get-ADComputer -Properties * -Filter * | Export-csv -Path $Today\Computers_ALL.csv
 Get-ADComputer -Filter "Enabled -eq '$true'" | Select -Expand Name | Sort-Object > $Today\Computers_Enabled_Shortlist.txt
 Get-ADComputer -Filter "Enabled -eq '$false'" > $Today\Computers_Disabled.txt
