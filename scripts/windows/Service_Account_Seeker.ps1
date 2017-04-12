@@ -1,5 +1,6 @@
-﻿# Service_Account_Seeker
-#  
+# Service_Account_Seeker
+# v0.1 - Brian Johnson, https://7ms.us
+#
 # Q: What is this? 
 # A: A script to enumerate Windows servers out of Active Directory, 
 # ping them to ensure uptime, and capture details about each service account in use.
@@ -19,7 +20,7 @@ Write-Host "Ok, lets do this!" -ForegroundColor "green"
 Write-Host "`n"
 Write-host "`n"
 
-Write-Host "Importing ActiveDirectory module" -ForegroundColor "Green"
+Write-Host "Importing Active Directory module" -ForegroundColor "Green"
 Write-host "`n"
 Write-host "`n"
 
