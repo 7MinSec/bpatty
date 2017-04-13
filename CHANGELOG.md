@@ -1,4 +1,7 @@
 # 2017
+## Thursday, April 13
+I think it was silly to make a change log.  It's taking more work to maintain this than it's worth since the changes are coming fast and furious.  Probably best to just watch commits log [here](https://github.com/braimee/bpatty/commits/master).
+
 ## Wednesday, March 29
 * Added Patreon campaign to the [README](README.md)
 * Added new page on [createinstallmedia](cmdline/mac/createinstallmedia.md)
