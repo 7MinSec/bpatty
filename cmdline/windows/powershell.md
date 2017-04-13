@@ -13,7 +13,10 @@ A collection of resources on using/abusing Powershell.
 
 `get-hotfix | export-csv c:\temp\hotfixes.csv` - dumps a .CSV of all hotfixes installed on the machine.  Make sure to check the [privesc page](../../pentesting/netpen/privesc.md) as the host you're pentesting might be missing key patches that will give you an easy win!
 
-More to come...
+## Execution policy
+Use something like this to bypass ExecutionPolicy for single file:
+
+`PowerShell.exe -ExecutionPolicy Bypass -File name-of-script.ps1`
 
 ## Tools for pentesters
 
