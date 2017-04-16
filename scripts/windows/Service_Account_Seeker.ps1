@@ -53,11 +53,18 @@ Write-Host "This might take a while.  Grab a coffee.  Or 10." -ForegroundColor G
 foreach ($server in $servers)
 {
 if (Test-Connection -computer $server -count 2 -ErrorAction SilentlyContinue){
-Get-WmiObject win32_service -ComputerName $server | select-object __SERVER, name, startname, startmode | Export-Csv -Append -Path .\Service_Accounts.csv
-# Note: if the machine you're on runs Powershell 2, comment out the line above and UNcomment the line below. After running script, type "copy *csv merged.csv":
-# Get-WmiObject win32_service -ComputerName $server | select-object name, startname, startmode, __SERVER | Export-Csv -Path .\Services_$SERVER.csv
+	if ($PSVersionTable.PSVersion.Major -gt 2) {
+		Get-WmiObject win32_service -ComputerName $server | select-object __SERVER, name, startname, startmode | Export-Csv -Append -Path .\Service_Accounts.csv
+	}
+	else {
+		Get-WmiObject win32_service -ComputerName $server | select-object name, startname, startmode, __SERVER | Export-Csv -Path .\Services_$SERVER.tmp
+	}
 }
 else{}
+}
+if ($PSVersionTable.PSVersion.Major -le 2 ) {
+	copy *.tmp Service_Accounts.csv
+	del /f *.tmp
 }
 
 Write-Host "`n"
