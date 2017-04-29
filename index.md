@@ -1,8 +1,7 @@
 Table of contents:
 ---
 
-# Command Line Tools
-* Go to the [index](cmdline/index.md) as it's now too big of a list to fit on this page!
+# [Command Line Tools](cmdline/index.md)
 
 # Hardware
 
@@ -30,7 +29,7 @@ Their network gear is some of my fav'! Here's some tips/tricks on setting up and
 Some [administrative information](pentesting/admin/admin.md) to consider, like what to do on a pentest when you have no Internet access :-)
 
 ## Pentesting - exploit info
-A [page](pentesting/exploit-info/exploit-info.md) dedicated to pentesting specific exploits (right now just focusing on MS10-070)
+A [page](pentesting/exploit-info/exploit-info.md) dedicated to pentesting specific exploits (right now just focusing on MS10-070).
 
 ## Pentesting - honeypots
 An essential part of active defense *against* hackers/pentesters is setting up honeypots such as [OpenCanary](pentesting/honeypots/opencanary.md) to alert you when services are connected to.
@@ -39,6 +38,7 @@ An essential part of active defense *against* hackers/pentesters is setting up h
 [This page](pentesting/lab/index.md) will get you up and running with creating a VMWare ESXi pentest lab for ~$500!
 
 ## Pentesting - network-based ("netpen")
+
 ### Bloodhound
 [Bloodhound](pentesting/netpen/bloodhound.md) is a great way to visually map out an AD environment - even if you've just got a limited shell.
 
@@ -64,8 +64,8 @@ Started a [payloads and passwords](pentesting/payloads/payloads-and-passwords.md
 Information on getting a [Kali pentesting box setup](pentesting/vm-setup/vm-setup.md) with Burp and other tools.
 
 ## Pentesting - Vulnerability scanners
-* [Nessus](vulnerability-scanners/nessus.md) - basic install on getting Lets Encrypt cert installed
-* [OpenVAS](vulnerability-scanners/openvas.md) - basic install on Kali
+* [Nessus](pentesting/vulnerability-scanners/nessus.md) - basic install on getting Lets Encrypt cert installed
+* [OpenVAS](pentesting/vulnerability-scanners/openvas.md) - basic install on Kali
 * [Vulnerability databases](pentesting/vulnerability-scanners/vulnerability-databases.md) are a good place to check for vulnerabilities that Nessus/OpenVAS and others might not have built in.
 
 ## Pentesting - Webapp
@@ -127,6 +127,8 @@ Lil' scripts to do this, that and the other thing.
 * [Environment-Check.ps1](bpatty/scripts/windows/Environment-Check.ps1) will gather some helpful baseline information in an Active Directory environment
 
 * [LAPS-check.ps1](bpatty/scripts/windows/LAPS-check.ps1) will check an AD environment to see if Local Administrator Password Solution is installed.
+
+* [Service_Account_Seeker.ps1](bpatty/scripts/windows/Service_Account_seeker.ps1) is a script to enumerate Windows servers out of Active Directory, ping them to ensure uptime, and capture details about each service account in use.
 
 ## Web tech (blogs, bots and whatnots)
 Like LAMP stuff, Ghost, Hugo and other thingies that get served up on Web technology.

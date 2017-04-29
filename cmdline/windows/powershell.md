@@ -1,22 +1,45 @@
 # Powershell
 A collection of resources on using/abusing Powershell.
 
+## Quick ref guide for stuff I commonly do
+
+### Execution policy
+Use something like this to bypass ExecutionPolicy for single file:
+
+`PowerShell.exe -ExecutionPolicy Bypass -File name-of-script.ps1`
+
+### Get-Help
+Guess what?  It gets help! If you're just jumping into Powershell, you might want to run a `update-help` to get the latest help info sucked down to your machine.
+
+### Get-Hotfix
+This will help list/dump hotfix information from an installed machine.  Some examples:
+
+`get-hotfix | export-csv c:\temp\hotfixes.csv` 
+Dumps a .CSV of all hotfixes installed on the machine.  Make sure to check the [privesc page](../../pentesting/netpen/privesc.md) as the host you're pentesting might be missing key patches that will give you an easy win!
+
+`get-hotfix -id KB12345 -ComputerName SQL01`
+This will search to see if KB12345 is installed on a computer called **SQL01**
+
+### Get-ItemProperty
+Gets...you know...properties of an item.  One good use I've found for this is querying the version of .NET installed via:
+
+`Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full`
+
+You can do that remotely with this syntax:
+
+`Invoke-command -computer RemoteComputerName {Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\run}`
+
+### Get-WmiObject
+Helps query machines for info about their OS, hardware, etc.
+
+`Get-WmiObject win32_OperatingSystem -Computername SQL`
+This will get the OS type from a computer called **SQL**.  Reference the [Wikipedia page](https://en.wikipedia.org/wiki/Comparison_of_Microsoft_Windows_versions) on MS software versions to match up your results.  For instance **5.2.3790** is Windows 2003, SP2.
+
+
 ## Training opportunities
 
 * The SANS [PowerShell cheat sheet](https://pen-testing.sans.org/blog/2016/05/25/sans-powershell-cheat-sheet) rocks.
 * [Basics of Powershell Logging](https://attendee.gotowebinar.com/register/7471153301583943939) was a Webinar put on by Carlos Perez in the fall of 2016.  You can see the recording of this session by registering for the GoToWebinar.
-
-
-## Command line basics
-
-`get-help` - guess what?  It gets help! If you're just jumping into Powershell, you might want to run a `update-help` to get the latest help info sucked down to your machine.
-
-`get-hotfix | export-csv c:\temp\hotfixes.csv` - dumps a .CSV of all hotfixes installed on the machine.  Make sure to check the [privesc page](../../pentesting/netpen/privesc.md) as the host you're pentesting might be missing key patches that will give you an easy win!
-
-## Execution policy
-Use something like this to bypass ExecutionPolicy for single file:
-
-`PowerShell.exe -ExecutionPolicy Bypass -File name-of-script.ps1`
 
 ## Tools for pentesters
 
