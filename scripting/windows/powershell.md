@@ -8,6 +8,30 @@ Use something like this to bypass ExecutionPolicy for single file:
 
 `PowerShell.exe -ExecutionPolicy Bypass -File name-of-script.ps1`
 
+### Get-ADUserLastLogon
+It's often helpful to be able to see when an account has last logged on.  The following snippet (taken from [this TechNet article](https://technet.microsoft.com/en-us/library/dd378867(v=ws.10).aspx)) has us create a module called *Import-Module* and then specify a username to look for:
+
+    Import-Module ActiveDirectory
+ 
+    function Get-ADUserLastLogon([string]$userName)
+    {
+      $dcs = Get-ADDomainController -Filter {Name -like "*"}
+      $time = 0
+      foreach($dc in $dcs)
+      {
+        $hostname = $dc.HostName
+        $user = Get-ADUser $userName | Get-ADObject -Properties lastLogon
+        if($user.LastLogon -gt $time)
+        {
+          $time = $user.LastLogon
+        }
+      }
+      $dt = [DateTime]::FromFileTime($time)
+      Write-Host $username "last logged on at:" $dt }
+      Get-aduserlastlogon insert-username-here
+
+    get-aduserlastlogon NAME-OF-USER
+
 ### Get-Help
 Guess what?  It gets help! If you're just jumping into Powershell, you might want to run a `update-help` to get the latest help info sucked down to your machine.
 
@@ -34,7 +58,6 @@ Helps query machines for info about their OS, hardware, etc.
 
 `Get-WmiObject win32_OperatingSystem -Computername SQL`
 This will get the OS type from a computer called **SQL**.  Reference the [Wikipedia page](https://en.wikipedia.org/wiki/Comparison_of_Microsoft_Windows_versions) on MS software versions to match up your results.  For instance **5.2.3790** is Windows 2003, SP2.
-
 
 ## Training opportunities
 
@@ -72,8 +95,3 @@ Is [here](https://github.com/FuzzySecurity/PowerShell-Suite) and advertises itse
 
 ### PSAttack
 [PSAttack](https://github.com/jaredhaight/PSAttack) states it is "A portable console aimed at making pentesting with PowerShell a little easier."
-
----
-# Additional things to add:
-* Veil
-* More "basic" command line stuff

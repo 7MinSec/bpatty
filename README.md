@@ -1,9 +1,9 @@
 # **B**rian's **P**entesting **a**nd **T**echnical **T**ips for **Y**ou
 
 ## I just want go get started!
-Sure thing.  Head to the [index](index.md).
+Sure thing.  I've tried to lay this out in some sort of hierarchy that at least makes a little sense...*ahem*...at least to me :-/.  So dive into a folder that looks interesting and topics should get more granular the deeper you go.  
 
-## OK I'm slightly intrigued and/or confused.  What is this?
+## OK I'm slightly intrigued and/or confused.  What exactly is this?
 **B.P.A.T.T.Y.** (**B**rian's **P**entesting **a**nd **T**echnical **T**ips for **Y**ou) is my collection of tips, tricks and scripts that I used to save in OneNote, Evernote, Notepad, Stickies, Notepad++, Dropbox Paper...*deep breath*...Leafpad, Post-it notes, etc.  I made a big effort last year to throw all this crud in one place on [my blog](https://7ms.us/bpatty) but realized that for people (especially me) to actually *use* it, a github repository makes more sense.  So here we are!
 
 ## What are the pre-requisites?
@@ -12,7 +12,7 @@ Sure thing.  Head to the [index](index.md).
 * **A Markdown viewer/editor** (*optional*) because I wrote most of this in [MacDown](http://macdown.uranusjr.com/).  [This site](https://www.maketecheasier.com/markdown-editors-linux/) lists some options if you need ideas.
 
 ## Wait, wait! There are already way, way, WAY better documents, tools and collections like this out there!
-My response (substitute "microphone" for "documentation project"): [https://youtu.be/C_SFevIz1FI?t=14](https://youtu.be/C_SFevIz1FI?t=14).
+My response (substitute "microphone" for "documentation project") is [this](https://youtu.be/C_SFevIz1FI?t=14).
 
 ## How often does BPATTY get updated?
 In my dream situation: every 1-2 weeks.  In reality: every month.
