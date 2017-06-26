@@ -2,11 +2,13 @@
 How to get it up and running in Ubuntu 16.04.  
 
 ## Install Docker
+
     apt-get install docker.io
 
 Simple, yeah?
 
 ### Some quick reference docker commands:
+* List docker images that are currently running: `docker ps`
 * Export a docker to a .tar file: `docker save NAME > /tmp/NAME.tar`
 * Exec a command on a docker image: `docker exec -t -i abcd(HUGE LONG STRING)3fsdfslifjsdlifsjdfsdlf cat /etc/passwd`
    
