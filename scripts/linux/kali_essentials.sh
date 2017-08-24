@@ -39,6 +39,9 @@ git clone https://github.com/byt3bl33d3r/MITMf.git /opt/mitmf
 #PCCredz parses pcaps for sensitive data
 git clone https://github.com/lgandx/PCredz /opt/pcredz
 
+#Powersploit is "a collection of Microsoft PowerShell modules that can be used to aid penetration testers during all phases of an assessment"
+git clone https://github.com/PowerShellMafia/PowerSploit.git /opt/powersploit
+
 #PowerupSQL is a tool for discovering, enumerating and potentially pwning SQL servers!
 git clone https://github.com/NetSPI/PowerUpSQL.git /opt/powerupsql
 

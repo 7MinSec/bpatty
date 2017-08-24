@@ -17,8 +17,17 @@ Then continue with [this guide](http://doc.supybot.aperio.fr/en/latest/use/insta
 ### Run the bot creation wizard
 Run `supybot-wizard` which will walk you through the initial config of your bot.  When you're done, it will right the config file out to something like `bot.conf`.
 
+### A few security-ish things...
+Before you actually connect to IRC (see next section), I recommend you open up `bot.conf` and make one slight change:
+
+    supybot.plugins.Factoids.requireVoice: True
+    
+By setting this value to `True` only users with voice or above can make the bot learn/forget stuff.  Now that's a personal preference - mainly because I don't want people doing stuff like `!learn #7ms braimee is a moron`! or whatever :-)
+
 ### Connect your bot to IRC
 When you're ready to rock, issue this command: `supybot bot.conf` and you should see your bot pop up on IRC and join the channels you've instructed it to!
+
+Update: last time I did this, the bot log kept saying things like "only SASL blah blah accepted."  I had to open my `bot.conf` file and there were some fields there dealing with SASL username and password.  I set these to the bot name and password I had setup previously in the wizard, then ran `supybot bot.conf` again and BLAMO!  Connected.
 
 ### Identify yourself as "boss"
 
@@ -61,7 +70,7 @@ These are cheeky things your bot can say when a command isn't recognized.  Add t
 
 ### News database
 
-####Add a news article to the database
+#### Add a news article to the database
 
     news add #channel-name 600 This is the subject: and this is the text of full readout
     

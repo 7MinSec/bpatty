@@ -15,13 +15,15 @@
 # First we'll import the admpws.ps.  If you get an error on this step, you need to make sure you
 # run the LAPS.x64/LAPS.x86 MSI (whichever is appropriate) and then install the 
 # Management Tools > PowerShell Module option.
-Import-Modle AdmPwd.ps
+Import-Module AdmPwd.ps
 
 # Now import the Active Directory module
 Import-Module ActiveDirectory
 
+# I'm commenting this next part out because we actually don't want filter out servers as they'll get LAPS too
+# 
 # Next we'll pull all non-server AD objects and make a simple list of them called "workstations.txt"
-Get-ADComputer -Filter {OperatingSystem -NotLike "Windows Server*"} | select -Expand name | sort-object > .\workstations.txt
+#Get-ADComputer -Filter {OperatingSystem -NotLike "Windows Server*"} | select -Expand name | sort-object > .\workstations.txt
 
 # The workstations.txt will now be slurped into a variable called $workstations
 $workstations = Get-Content .\workstations.txt
