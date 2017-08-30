@@ -10,8 +10,8 @@
 # workstations for their local Administrator password, which will be an easy indicator that the LAPS
 # GPOs are installed and working properly on the target machines
 # 
-#
-
+# -----
+# 
 # First we'll import the admpws.ps.  If you get an error on this step, you need to make sure you
 # run the LAPS.x64/LAPS.x86 MSI (whichever is appropriate) and then install the 
 # Management Tools > PowerShell Module option.
