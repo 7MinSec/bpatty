@@ -1,12 +1,6 @@
 # Internet safety
 Here are some general tips I've assembled and sent out in various bits and pieces to friends, families, and enemies.  Wait, not enemies, but the first two.
 
-## Web browsing
-### Which Web browser should I use?
-* For non-techies: I recommend Chrome.  It will keep itself updated (I've seen instances where something (malware?) on a machine prevented Firefox from notifying about updates and the version has gotten stale - and thus vulnerable.
-* For everybody else: Chrome or Firefox.
-* For NOBODY: Internet Explorer or Edge.
-
 ## Email
  * Don't click on links.  
  * Don't open attachments.
@@ -64,3 +58,13 @@ When I was in college, a professor gave me a piece of advice that has stuck with
  * [Twitter](https://support.twitter.com/articles/76052)
  * [Facebook](https://www.facebook.com/help/204306713029340/)
  * [Instagram](https://instagram.com/accounts/manage_access)
+
+## Web browsing
+### Which Web browser should I use?
+* For non-techies: I recommend Chrome.  It will keep itself updated (I've seen instances where something (malware?) on a machine prevented Firefox from notifying about updates and the version has gotten stale - and thus vulnerable.
+* For everybody else: Chrome or Firefox.
+* For NOBODY: Internet Explorer or Edge.
+
+## Wireless
+### Don't use open/free wireless hotspots
+But if you have to, [keep these considerations in mind](https://thebestvpn.com/public-wifi-security/).  

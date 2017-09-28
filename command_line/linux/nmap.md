@@ -21,6 +21,10 @@ Port scanner + a zillion other things. Here's a great [cheat sheet](https://pent
 
 *Source: [CommandLineKungFu](http://www.commandlinefu.com/commands/view/18230/find-all-active-ip-addresses-in-a-network)*
 
+### Find active IPs in a network AND export to a nice clean text file:
+
+	nmap -n -sn -v 192.0.2.0/24 -oG - | awk '/Up$/{print $2}' > ips.txt
+
 ### Thorough and quick TCP scan:
 
     nmap -p 1-65535 -sV -sS -T4 the.target.ip.address
@@ -41,6 +45,7 @@ Port scanner + a zillion other things. Here's a great [cheat sheet](https://pent
 ### UDP scan
 
 	nmap -p 1-65535 -sU the.target.ip.address
+	
     
 ### Scan through a proxy
 

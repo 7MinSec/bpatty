@@ -3,6 +3,9 @@ A collection of resources on using/abusing Powershell.
 
 ## Quick ref guide for stuff I commonly do
 
+### Downloading files
+[This post](https://blog.jourdant.me/post/3-ways-to-download-files-with-powershell) offers "three methods for downloading files using PowerShell - weighed up with their pros and cons."
+
 ### Execution policy
 Use something like this to bypass ExecutionPolicy for single file:
 
@@ -73,7 +76,7 @@ This [module](https://github.com/p0w3rsh3ll/AutoRuns) "was designed to help do l
 Is a [PowerShell module](https://github.com/sans-blue-team/DeepBlueCLI) for hunt teaming via Windows event logs.
 
 ### Empire
-My write-up on Empire was getting lengthy, so I moved it to [its own page](../../pentesting/netpen/empire.md).
+My write-up on Empire was getting lengthy, so I moved it to [its own page](../../pentesting/network_pentesting/empire.md).
 
 ### Inveigh
 Is a "Windows PowerShell LLMNR/NBNS spoofer/man-in-the-middle [tool](https://github.com/Kevin-Robertson/Inveigh)."
