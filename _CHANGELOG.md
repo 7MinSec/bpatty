@@ -1,6 +1,10 @@
 # Change log
 It's a log of changes.  When things change in BATTY, they're logged here.
 
+## October 11
+* New page all about [lockpicking](pentesting/physical/lockpicking.md)
+* Added new [PowerShell for DFIR](https://www.youtube.com/watch?v=6fbotSZeFkQ&feature=youtu.be) video to [programming and scripting](resources/training/programming_and_scripting.md) page
+* [New script](scripts/windows/Nessus_SortyMcSortleton.ps1) to export Nessus data from a .csv into a more digestible format
 
 ## September 27
 * Added some more quick refs to [nmap](command_line/linux/nmap.md)

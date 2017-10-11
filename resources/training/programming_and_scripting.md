@@ -10,9 +10,10 @@ This [Cybrary](https://www.cybrary.it/course/secure-coding/#) course looks like 
 ### .Net
 * [Creating simple .Net applications in Windows, Linux and Mac](https://channel9.msdn.com/Niners/briacht)
 
-
 ### PowerShell
 * See my [PowerShell](../../scripts/windows/powershell.md) page for some quick ref kind of stuff.
+
+* [PowerShell for DFIR](https://www.youtube.com/watch?v=6fbotSZeFkQ&feature=youtu.be) looks like an awesome series brought to us by [@brakesec](https://twitter.com/brakesec).
 
 * [UnderTheWire.tech](http://www.underthewire.tech/) is a cool site to help people "...use Windows PowerShell in a variety of situations through innovative and fun wargames."
 
