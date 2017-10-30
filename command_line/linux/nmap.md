@@ -84,3 +84,8 @@ This will poll the host for basic sql information:
  This checks cert information, weak ciphers and SSLv2.
 
     nmap -p80,443 --script ssl-cert,ssl-enum-ciphers 1.2.3.4
+    
+## Other helpful nmap tools
+
+* [Ndiff](https://nmap.org/ndiff/) "is a tool to aid in the comparison of Nmap scans."
+* [Seccubus](https://www.seccubus.com/) "automates vulnerability scanning with: Nessus, OpenVAS, NMap, SSLyze, Medusa, SkipFish, OWASP ZAP and SSLlabs."

@@ -33,6 +33,9 @@ git clone https://github.com/1N3/Findsploit.git /opt/findsploit
 #foospidy is a BIG BUNCH O' PAYLOADS for fuzzing and fun!
 git clone https://github.com/foospidy/payloads.git /opt/foospidy
 
+#mailsniper is a great enumeration/pilfering tool to run against Exchange environments
+git clone https://github.com/dafthack/MailSniper.git /opt/mailsniper
+
 #mitmf is a mitm framework that I've not tried out yet
 git clone https://github.com/byt3bl33d3r/MITMf.git /opt/mitmf
 
