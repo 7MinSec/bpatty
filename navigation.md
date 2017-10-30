@@ -5,7 +5,8 @@ Just ignore this below for now.  I'm looking to make BPATTY into a wiki, and thi
 [Command line]()
 
 - **Linux**
--	[Linux](command_line/linux)
+- [asciinema](command_line/linux/asciinema.md)
+- [bluto](command_line/linux/bluto.md)
 -  ---
 - **Mac**
 -	[Mac](command_line/mac)
