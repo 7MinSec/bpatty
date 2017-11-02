@@ -1,6 +1,16 @@
 # Change log
 It's a log of changes.  When things change in BATTY, they're logged here.
 
+## November 2
+* I'm adding a bunch of files and tweaking a bunch of things to migrate this project into a wiki, so please don't mind the dust and mess
+* Added a [2add.md](2add.md) which is just a quick notebook of things I eventually wanna shove into BPATTY
+* A starter page on how to install [arpwatch](command_line/linux/arpwatch.md)
+* I'm attempting to shovel all Linux command line individual pages into one mega [index.md](command_line/linux/index.md) to rule them all
+* The [navigation](navigation.md) page will eventually help you navigate BPATTY when it goes into all-out wiki mode
+* Added some egress filtering information to [defense and hardening](pentesting/blue_team/defense_and_hardening.md)
+* Added Mubix's open source pentesting resources to [red team resources](pentesting/red_team/red_team_resources.md)
+* Added some additional Kali post-install tips to the [virtual machine setup](pentesting/virtual_machine_setup/virtual_machine_setup.md) section
+
 ## October 30
 * Added some more helpful nmap commands/flags to the [nmap](command_line/linux/nmap.md) page
 * Added new page all about [wpscan](command_line/linux/wpscan.md)

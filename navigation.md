@@ -1,6 +1,5 @@
 BPATTY
 ======
-Just ignore this below for now.  I'm looking to make BPATTY into a wiki, and this file will help with that.  Again, just ignore...nothing to see here.
 
 [Command line]()
 
