@@ -1,0 +1,7 @@
+{
+    "useSideMenu": true,
+    "lineBreaks": "gfm",
+    "additionalFooterText": "By <a href='http://www.devalias.net/'>Glenn '/dev/alias' Grant</a><br />",
+    "anchorCharacter": "&para;",
+    "title": "My Shiny New MDwiki"
+}
