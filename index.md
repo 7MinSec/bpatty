@@ -11,9 +11,6 @@ I made a big effort last year to throw all this crud in one place on [my blog](h
 
 I sincerely hope BPATTY can help you in your IT and infosec journey.  If you have any suggestions/edits for BPATTY contact, please [raise an issue](https://github.com/braimee/bpatty/issues) and I'll respond!
 
-Thanks
--Brian
-
 Any similarities to a "beef" patty?
 --------
 Just in that they are both delicious and not necessarily healthy for you.
@@ -35,8 +32,3 @@ Hi, I'm [Brian](http://brianjohnson.tv) and I blog/podcast about information sec
 I want to electronically punch you in the neck!
 --------
 Head to the [7MS Slack channel](https://slackpass.io/7minsec) and punch away!
-
-I like what you're doing with this whole 7 Minute Security thing. How can I support these efforts?
---------
-
-Thanks! Please consider becoming a [Patreon supporter](https://patreon.com/7ms).
