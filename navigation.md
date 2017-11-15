@@ -3,8 +3,8 @@ BPATTY
 
 [Command line]()
 - **Linux**
--   [arpwatch](command_line/linux/arpwatch.md)
--   [asciinema](command_line/linux/asciinema.md)
+- [arpwatch](command_line/linux/arpwatch.md)
+- [asciinema](command_line/linux/asciinema.md)
 
 [Test menu 2]()
 
