@@ -54,3 +54,55 @@ https://www.bleepingcomputer.com/news/microsoft/windows-10s-controlled-folder-ac
 
 ## Using GPO to manage local administrator
 Here are some neat ideas on managing the local admins group via GPO. We have some of his setup in our environment and I’ve used similar concepts at a handful of clients. https://blogs.technet.microsoft.com/askpfeplat/2017/11/06/use-group-policy-preferences-to-manage-the-local-administrator-group/
+
+## Subdomain finder
+https://blog.appsecco.com/a-penetration-testers-guide-to-sub-domain-enumeration-7d842d5570f6?gi=d8c02f8bb063
+
+## Ping with an audible bell when a machine comes back up:
+
+ping -a ip
+
+# Burp stuff
+Create a folder called BurpProjectFiles
+
+Create a new one on disk.  Under the BurpProjectFiles dir.  Make a new project in there called NonAdmin_Juice_Shop.burp.  
+
+Take the defaults.
+
+Setup options:
+
+**Proxy**
+Intercept is off.  Go to options, go to Intercept Server responses and check "Intercept server responses - YES".  Also "unhide hidden form fields."  
+
+**Spider**
+Options tab - spider engine...put number of threads to 5.
+
+**Scanner**
+In Options, check "URL path folders" and "URL path name".  Click "url to body" and "body to url" to see if posts can be sent as GETs.
+
+Turn down number of threads to 5.  
+
+Under Active Scanning optimization: THOROUGH>
+
+In active scanning area, click SELECT ALL!
+
+*Left off on section 3 - Hybrid Spidering Your Web App*
+
+### Misc: fix NTLM in Burp:
+https://support.portswigger.net/customer/portal/questions/11516769-ntlm-authentication
+
+## Fix broken shared folders?
+https://docs.kali.org/general-use/install-vmware-tools-kali-guest
+
+## Security onion
+`sudo sostat` - gives detailed information on service status
+
+`sudo sostat-quick` guided tour of sostat output
+
+`sudo sostat-redacted` gives REDACTED information to share with our mailing list
+
+`/etc/nsm/rules/downloaded.rules` - rules downloaded by Pulledpork
+
+`/etc/nsm/pulledpork` - local rules
+
+`sudo so-allow` starts prompt for unblocking ports and stuff from firewall
