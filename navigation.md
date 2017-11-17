@@ -6,17 +6,19 @@ BPATTY
 - **Linux**
 - [Network](command_line/linux/network/index.md)
 - [Scan and attack](command_line/linux/scan-and-attack/index.md)
-- [bluto.md](command_line/linux/bluto.md)
-- [cat.md](command_line/linux/cat.md)
+- [System](command_line/linux/system/index.md)
+- ---
+- **Mac**
+- [System](command_line/mac/system/index.md)
+- ---
+- **Windows**
+- [System](command_line/windows/system/index.md)
 
-[Test menu 2]()
+[Second menu]()
 
 - **Another bolded thing**
-- [Link to something else](https://yahoo.com)
+- [Link to Yahoo](https://yahoo.com)
 
-- **Primers**
--	[Linux CLI 101](Tools/LinuxCLI101.md)
--	[Linux CLI](Tools/LinuxCLI.md)
--   [PowerShell Primer](Tools/PowerShell.md)
--	[PowerShell Get-WinEvent](Tools/Get-WinEvent.md)
--   ----
+[Third menu]()
+- **Some bold menu**
+-	[Some link to something](https://7ms.us)
