@@ -15,9 +15,11 @@ BPATTY
 - [System](command_line/windows/system/index.md)
 
 [Second menu]()
+
 - **Another bolded thing**
 - [Link to Yahoo](https://yahoo.com)
 
 [Third menu]()
+
 - **Some bold menu**
 -	[Some link to something](https://7ms.us)
