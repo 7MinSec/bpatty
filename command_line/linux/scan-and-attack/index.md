@@ -62,7 +62,7 @@ nmap
 --------
 Port scanner + a zillion other things. Here's a great [cheat sheet](https://pentestlab.wordpress.com/2012/08/17/nmap-cheat-sheet/) to help you setup the most common kinds of scans.
 
-## A few great quick references:
+### A few great quick references:
 * [HighOnCoffee nmap cheat sheet (Highoncoffee)](https://highon.coffee/blog/nmap-cheat-sheet/)
 * [NixCraft's Top 30 Nmap Command Examples For Sys/Network Admins (Cyberciti.biz)](https://www.cyberciti.biz/networking/nmap-command-examples-tutorials/)
 * [Top 10 nmap Commands Every Sysadmin Should Know (Bencane.com)](http://bencane.com/2013/02/25/10-nmap-commands-every-sysadmin-should-know/)
@@ -70,83 +70,83 @@ Port scanner + a zillion other things. Here's a great [cheat sheet](https://pent
 * [Information on timing and performance (nmap.org)](https://nmap.org/book/man-performance.html)
 * [Using timing templates in nmap (cyberpedia.in)](http://cyberpedia.in/using-timing-templates-in-nmap/)
 
-## Basic scans
+### Basic scans
 
-### Ping sweep
+#### Ping sweep
 
     nmap -sn 192.168.1.0/24
 
-### Find all active IPs in a network:
+#### Find all active IPs in a network:
 
     nmap -sP 192.168.1.0/24; arp-scan --localnet  | grep "192.168.1.[0-9]* *ether"
 
 *Source: [CommandLineKungFu](http://www.commandlinefu.com/commands/view/18230/find-all-active-ip-addresses-in-a-network)*
 
-### Find active IPs in a network AND export to a nice clean text file:
+#### Find active IPs in a network AND export to a nice clean text file:
 
 	nmap -n -sn -v 192.0.2.0/24 -oG - | awk '/Up$/{print $2}' > ips.txt
 
-### Thorough and quick TCP scan:
+#### Thorough and quick TCP scan:
 
     nmap -p 1-65535 -sV -sS -T4 the.target.ip.address
 
-### Scan of all ports while ignoring ping, using a target list of *targets.txt* and exporting output to all 3 formats (called OUTPUT) and also using very verbose output
+#### Scan of all ports while ignoring ping, using a target list of *targets.txt* and exporting output to all 3 formats (called OUTPUT) and also using very verbose output
 
 	nmap -p 1-65535 -sV -sS -T4 -Pn -iL targets.txt -oA OUTPUT -vv
 
-### Scanning some popular/common open ports
+#### Scanning some popular/common open ports
     nmap -PE -PM -PS 21,22,23,25,26,53,80,81,110,111,113,135,139,143,179,199,443,445,465,514,548,554,587,993,995
 
-### Scan the top 1000 ports - both TCP/UDP - and export to all 3 formats (called OUTPUT)
+#### Scan the top 1000 ports - both TCP/UDP - and export to all 3 formats (called OUTPUT)
 
 	nmap -vv -O -Pn -sTUV –top-ports 1000 -oN output the.target.ip.address
 
 *Thanks [Daniel Miessler](https://danielmiessler.com/blog/nmap-use-the-top-ports-option-for-both-tcp-and-udp-simultaneously/#gs.kgigV7M)*
 
-### UDP scan
+#### UDP scan
 
 	nmap -p 1-65535 -sU the.target.ip.address
 
 
-### Scan through a proxy
+#### Scan through a proxy
 
     nmap 1.2.3.4 --proxy PROXYHOST:PORT
 
-## Advanced scans
+### Advanced scans
 
-### Find low hanging fruit w/nmap + searchsploit
+#### Find low hanging fruit w/nmap + searchsploit
 
 	nmap -p- -sV -oX a.xml **ip**; searchsploit --nmap a.xml
 
 *Source: [g0tmi1k](https://twitter.com/g0tmi1k/status/793844870481846272)*
 
 
-## Scripting engine
+### Scripting engine
 
 `--script`
 
 Calls the scripting engine to do one of katrillions of things.
 
-### http-method
+#### http-method
 
 `http-methods`
 will show what http methods are available on a site such as track and trace.  Example:
 
     nmap -p 80,443 --script http-methods 1.2.3.4
 
-### ms-sql-info
+#### ms-sql-info
 
 This will poll the host for basic sql information:
 
     nmap f.q.d.n --script=ms-sql-info.nse
 
-### ssl-cert / ssl-enum-ciphers    
+#### ssl-cert / ssl-enum-ciphers    
 
  This checks cert information, weak ciphers and SSLv2.
 
     nmap -p80,443 --script ssl-cert,ssl-enum-ciphers 1.2.3.4
 
-## Other helpful nmap tools
+### Other helpful nmap tools
 
 * [Ndiff](https://nmap.org/ndiff/) "is a tool to aid in the comparison of Nmap scans."
 * [Seccubus](https://www.seccubus.com/) "automates vulnerability scanning with: Nessus, OpenVAS, NMap, SSLyze, Medusa, SkipFish, OWASP ZAP and SSLlabs."
@@ -213,7 +213,7 @@ sqlmap
 --------
 The sqlmap [project](https://github.com/sqlmapproject/sqlmap) is an "automatic SQL injection and database takeover tool."
 
-## Usage
+### Usage
 * Check out the [wiki](https://github.com/sqlmapproject/sqlmap/wiki/Usage) for the down n' dirty command line Kung Fu
 * OWASP has a nice [automated audit using SQLmap](https://www.owasp.org/index.php/Automated_Audit_using_SQLMap) page with this handy general syntax:
 
@@ -298,7 +298,7 @@ WPScan
 --------
 [WPScan](https://wpscan.org/) is "a black box WordPress vulnerability scanner."  Here's a down n' dirty usage guide:
 
-## Basic commands
+### Basic commands
 
 `wpscan --update` - run this first!  It updates the database!
 
@@ -310,10 +310,10 @@ WPScan
 
 `wpscan --url https://www.somesite.com -e ap,at,u,tt --throttle 1000 --threads 1 --request-timeout 60 --connect-timeout 60`
 
-## Brute forcing
+### Brute forcing
 `wpscan --url www.somesite.com --wordlist ~/rockyou.txt --username administrator` does a brute-force of the *administrator* username using the *rockyou.txt* word list
 
-## Enumerate stuff
+### Enumerate stuff
 `wpscan --url www.somesite.com --enumerate` runs all enumeration tools
 
 `-p` - enumerates plugins (**watch this setting carefully because you need to use `-ap` to enumerate *all* plugins!**)
@@ -326,7 +326,7 @@ WPScan
 
 `-tt` enumerates installed timthumbs
 
-## Extra helpful flags
+### Extra helpful flags
 
 `--throttle <milliseconds>` - for example, I've been using `--throttle 1000` in order to be a bit less intense on my target site.  If this is used, you should also set `--threads 1`
 
