@@ -97,7 +97,7 @@ Save a copy of iptables rules for later
 
 See [this Digital Ocean article](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-iptables-on-ubuntu-12-04) for more information.
 
-## Sample basic configuration
+### Sample basic configuration
 If I spin up a new Digital Ocean droplet, my starter config might be like the following, which locks down http/ssh access to only me while I test stuff out:
 
     sudo apt-get install iptables-persistent
@@ -122,7 +122,7 @@ Then I let "anybody" access HTTP with:
 
     sudo iptables -A INPUT -p tcp --dport 80 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
 
-##Configuration for a Unifi hosted controller:
+### Configuration for a Unifi hosted controller:
 This config opens the necessary ports so that *just* your IP address (identified by *my.public.ip.address*), as well as the servers for the Uptime Robot service, has access to the necessary ports:
 
     sudo iptables -F
@@ -183,23 +183,23 @@ tcpdump
 --------
 Here's one of my favorite resources for command line fun w/this tool: [http://www.rationallyparanoid.com/articles/tcpdump.html](http://www.rationallyparanoid.com/articles/tcpdump.html).
 
-## To capture a dump to a file:
+### To capture a dump to a file:
 
      tcpdump -v -w capture.cap
 
-## To capture traffic where a certain destination IP is communicated with:
+### To capture traffic where a certain destination IP is communicated with:
 
     tcpdump -n dst your.target.ip.address -v
 
-## To capture just certain traffic, such as all NTP related traffic, the format is like this:
+### To capture just certain traffic, such as all NTP related traffic, the format is like this:
 
     sudo tcpdump -i eth0 'port 123' -vv
 
-## To capture traffic between one host, such as the localhost, and an entire network (helpful during an nmap scan):
+### To capture traffic between one host, such as the localhost, and an entire network (helpful during an nmap scan):
 
     sudo tcpdump src host 192.168.0.5 and dst net 192.168.0.0/24
 
-## To capture traffic to a host with verbosity and also write it to a .cap file:
+### To capture traffic to a host with verbosity and also write it to a .cap file:
 
 	sudo tcpdump -n dst the.destination.ip.address -v -w somefile.cap
 

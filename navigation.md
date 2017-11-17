@@ -4,7 +4,7 @@ BPATTY
 [Command line]()
 
 - **Linux**
-- [Network](command_line/linux/network/index.md) - network tools dude
+- [Network](command_line/linux/network/index.md)
 - [Scan and attack](command_line/linux/scan-and-attack/index.md)
 - [bluto.md](command_line/linux/bluto.md)
 - [cat.md](command_line/linux/cat.md)
