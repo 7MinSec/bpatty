@@ -1,6 +1,9 @@
 # Change log
 It's a log of changes.  When things change in BATTY, they're logged here.
 
+## November 17
+* Please don't mind the mess!  I'm converting BPATTY to be a wiki so LOTS of stuff is gonna be moving a BUNCH for the next few days/weeks.
+
 ## November 2
 * I'm adding a bunch of files and tweaking a bunch of things to migrate this project into a wiki, so please don't mind the dust and mess
 * Added a [2add.md](2add.md) which is just a quick notebook of things I eventually wanna shove into BPATTY

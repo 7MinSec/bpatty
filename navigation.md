@@ -4,8 +4,10 @@ BPATTY
 [Command line]()
 
 - **Linux**
-- [arpwatch](command_line/linux/arpwatch.md)
-- [asciinema](command_line/linux/asciinema.md)
+- [Network](command_line/linux/network/index.md) - network tools dude
+- [Scan and attack](command_line/linux/scan-and-attack/index.md)
+- [bluto.md](command_line/linux/bluto.md)
+- [cat.md](command_line/linux/cat.md)
 
 [Test menu 2]()
 

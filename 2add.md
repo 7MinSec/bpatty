@@ -106,3 +106,14 @@ https://docs.kali.org/general-use/install-vmware-tools-kali-guest
 `/etc/nsm/pulledpork` - local rules
 
 `sudo so-allow` starts prompt for unblocking ports and stuff from firewall
+
+## Collab stuff
+This helped: https://www.slideshare.net/centralohioissa/jon-gorenflo-burp-collaborator
+
+This helped: https://portswigger.net/burp/help/collaborator_deploying#dns
+
+Open all the ports on Lightsail...then get a static IP...authentication
+
+sudo apt-get install openjdk-8-jre
+
+sudo java -Xms10m -Xmx200m -XX:GCTimeRatio=19 -jar burp.jar --collaborator-server

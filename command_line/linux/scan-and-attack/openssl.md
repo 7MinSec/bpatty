@@ -4,4 +4,4 @@ Command line utility to test for various SSL configs and vulns.  A great resourc
 
 To test for RC4 ciphers (yep, I still have to do that quite a bit!):
 
-    openssl s_client -cipher RC4 -connect site:port
+`openssl s_client -cipher RC4 -connect site:port`
