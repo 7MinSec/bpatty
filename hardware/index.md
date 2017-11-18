@@ -99,10 +99,10 @@ Finally, I resize the file system with the built-in `rpi-wiggle` script:
 Ubiquiti network gear
 --------
 
-# EdgeRouterX
+### EdgeRouterX
 A collection of tidbits for managing EdgeRouterX.  I did a full write-up on some of these things [here](https://7ms.us/7ms-217-installing-ubiquiti-edgerouter-x-and-ap-part-2/).
 
-### Xbox NAT setup
+#### Xbox NAT setup
 First setup a static IP for your Xbox, then use the commands below (thank you [this post](https://community.ubnt.com/t5/EdgeMAX/Xbox-1-Strict-NAT-problem/td-p/1371769/page/2) for the solution!!!) The one important prerequisite is to set your Xbox up with a static IP address - in the example below I used 192.168.7.77.
 
     configure
@@ -121,12 +121,12 @@ First setup a static IP for your Xbox, then use the commands below (thank you [t
     set service upnp2 acl rule 20 local-port 0-65535
     set service upnp2 acl rule 20 subnet 192.168.7.77/32
 
-### Creating isolated guest networks
+#### Creating isolated guest networks
 Follow [this KB article](https://help.ubnt.com/hc/en-us/articles/218889067-EdgeMAX-How-to-Protect-a-Guest-Network-on-EdgeRouter) to setup segmented VLANs.
 
-# Unifi Access Points
+### Unifi Access Points
 
-### Install a hosted UniFi controller
+#### Install a hosted UniFi controller
 I created an audio/video walkthrough [here](https://7ms.us/7ms-220-installing-ubiquiti-edgerouter-x-and-ap-part-3/) on this topic, but one of the most important things (to me) is to lock down your cloud access controller once it's setup.  For that I use the following iptables rules:
 
     sudo apt-get install iptables-persistent
@@ -147,4 +147,4 @@ I created an audio/video walkthrough [here](https://7ms.us/7ms-220-installing-ub
 
 Then, let your AP get "adopted" by the cloud access controller following [this article](https://community.ubnt.com/t5/UniFi-Routing-Switching/USG-cloud-controller/td-p/1156708).  The key command to issue is:
 
-    set-inform http://ip.address-of.my-cloud.controller:8080/informÂ
+    set-inform http://ip.address-of.my-cloud.controller:8080/inform
