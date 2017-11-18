@@ -17,6 +17,7 @@ BPATTY
 [Hardware](hardware/index.md)
 
 [Penetration Testing]()
+
 - [Administrative/Prep](pentesting/administrative_stuff/index.md)
 - [Blue Team (defense)](pentesting/blue_team/index.md)
 - [Exploit info](pentesting/exploit_info/index.md)
@@ -32,11 +33,13 @@ BPATTY
 - [Wireless](pentesting/wireless/index.md)
 
 [Resources]()
+
 - [This]()
 - [That]()
 - [The other]()
 
 [Scripts]()
+
 - Linux
 - Mac
 - Windows
