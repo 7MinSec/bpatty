@@ -14,4 +14,4 @@ BPATTY
 - **Windows**
 - [System](command_line/windows/system/index.md)
 
-[Hardware(hardware/index.md)
+[Hardware](hardware/index.md)
