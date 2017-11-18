@@ -117,3 +117,6 @@ Open all the ports on Lightsail...then get a static IP...authentication
 sudo apt-get install openjdk-8-jre
 
 sudo java -Xms10m -Xmx200m -XX:GCTimeRatio=19 -jar burp.jar --collaborator-server
+
+# Password policy - check on domain
+Issue `net accounts` commands
