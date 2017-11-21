@@ -58,6 +58,20 @@ An app for brute-forcing credentials in RDP, SSH, etc.  An example of brute-forc
 
     ncrack -v -u administrator -P /opt/SecLists/Passwords/rockyou.txt -p 3389 f.q.d.n
 
+nikto
+--------
+A great app for scanning sites for vulns!
+
+`nikto -h http://your.host.goes.here` - will give you a basic scan.
+
+If you find your scan timing out a lot or crashing from errors, try to be a bit more gentle.  Take a look at Nikto's [options page](https://cirt.net/nikto2-docs/options.html).  There's a `nikto.conf` file (for me it was in `/etc/nikto.conf`) with a *Failures* option set to *20*.  I set it to 100.  Then I did this:
+
+`nikto -h http://your.host.goes.here -Display -V -E -timeout 60`
+
+This shows verbose output of all errors as you hit them, and also sets timeout to 60 seconds for errors (rather than default of 20 (I think)) to help troubleshoot your scan further.  
+
+Another helpful tweak is the ``
+
 nmap
 --------
 Port scanner + a zillion other things. Here's a great [cheat sheet](https://pentestlab.wordpress.com/2012/08/17/nmap-cheat-sheet/) to help you setup the most common kinds of scans.

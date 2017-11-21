@@ -50,4 +50,4 @@ BPATTY
 - Mac (coming soon)
 - [Windows](scripts/windows/index.md)
 
-[Web tech]()
+[Web tech](web_tech/index.md)
