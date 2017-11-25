@@ -120,3 +120,15 @@ sudo java -Xms10m -Xmx200m -XX:GCTimeRatio=19 -jar burp.jar --collaborator-serve
 
 # Password policy - check on domain
 Issue `net accounts` commands
+
+## Fing
+Put in stuff about VLAN support as well as the external network test?
+
+## Sublister
+https://tools.kali.org/information-gathering/sublist3r
+
+## The case for NOT changing pw expiration?
+https://er.educause.edu/blogs/2017/10/time-for-password-expiration-to-die
+
+## Flushing DNS cache on Mac:
+https://help.dreamhost.com/hc/en-us/articles/214981288-Flushing-your-DNS-cache-in-Mac-OS-X-and-Linux

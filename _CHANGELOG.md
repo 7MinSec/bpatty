@@ -1,6 +1,10 @@
 # Change log
 It's a log of changes.  When things change in BATTY, they're logged here.
 
+## November 25
+* Happy Thanksgiving!
+* This GitHub project is now viewable in wiki form for easier digestion for the eyeballs!  Check out [bpatty.rocks](http://bpatty.rocks) to see it in all its wikified glory!  (Take Tylenol for any headaches; Midol for any cramps)
+
 ## November 17
 * Please don't mind the mess!  I'm converting BPATTY to be a wiki so LOTS of stuff is gonna be moving a BUNCH for the next few days/weeks.
 
