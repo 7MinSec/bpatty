@@ -43,7 +43,7 @@ Mkfile is handy in...making files!
 
 A great resource for that is [this site](http://osxdaily.com/2013/05/31/create-large-file-mac-os-x/) and here's an example I recently had to use:
 
-     mkfile -n size 20m big20meg.file
+     mkfile -n 20m big20meg.file
 
 The above command made a 20meg file called `big20meg.file`
 

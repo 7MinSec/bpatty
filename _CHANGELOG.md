@@ -1,6 +1,14 @@
 # Change log
 It's a log of changes.  When things change in BATTY, they're logged here.
 
+## December 4
+* Corrected an oopsie on the [mkfile](command_line/mac/system/index.md) page
+* Added a [common ports](pentesting/network_pentesting/commonports.jpg) pic to help as a pentesting quick reference
+* Added SimplySecurity to [recon page](pentesting/recon/index.md)
+* Started a real basic page on [reverse engineering](pentesting/reverse_engineering/index.md)
+* Beefed up the [Burp quick ref guide](pentesting/webapp/index.md)
+* Fixed and cleaned up a bunch of pages that had jacked up headings and navigation
+
 ## November 25
 * Happy Thanksgiving!
 * This GitHub project is now viewable in wiki form for easier digestion for the eyeballs!  Check out [bpatty.rocks](http://bpatty.rocks) to see it in all its wikified glory!  (Take Tylenol for any headaches; Midol for any cramps)

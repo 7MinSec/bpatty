@@ -2,11 +2,15 @@ Welcome to BPATTY by 7 Minute Security
 ==================
 <img src="7.png" alt="7ms logo" style="width: 400px;"/>
 
-What in the world is a "BPATTY?!" 
+WHERE'S THE CHANGELOG?!
+--------
+No need to shout.  It's [here](_CHANGELOG.md).
+
+What in the world is a "BPATTY?!"
 --------
 
 This is **BPATTY**, which stands for **B**rian's **P**entesting **a**nd **T**echnical **T**ips for **Y**ou.  It's basically my collection of tech/security tips, tricks and scripts that once upon a time I saved to OneNote, Evernote, Notepad, Stickies, Notepad++, Dropbox Paper...*deep breath*...Leafpad, Post-it notes, etc.  
- 
+
 I made a big effort last year to throw all this crud in one place on [my blog](https://7ms.us/) but realized that for people (especially me) to actually *use* it, a Github repository and Wiki makes more sense.  So here we are!
 
 I sincerely hope BPATTY can help you in your IT and infosec journey.  If you have any suggestions/edits for BPATTY contact, please [raise an issue](https://github.com/braimee/bpatty/issues) and I'll respond!

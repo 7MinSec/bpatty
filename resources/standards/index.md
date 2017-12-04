@@ -12,6 +12,11 @@ On this page, I'm trying to assemble a good list of free/cheap tools and techniq
 
 How to do it?
 
+### Control 2: Inventory of Authorized and Unauthorized Software
+
+* [CIS blog article on keeping a watchful eye on software](https://www.cisecurity.org/keeping-a-watchful-eye-on-software/?utm_campaign=Controls&utm_source=hs_email&utm_medium=email&utm_content=58833125&_hsenc=p2ANqtz-9gG2ml8z1d7HhLt1Zhb6pGRdx82H3TgaUGzOBsJS9q4DLjiKkAloj5VPLMbI65b1ZMwbU24MSpwO9srPJ-6ZcZNL-ryQ&_hsmi=58833125)
+* [Script to help inventory systems](https://github.com/CIS-CERT/CIS-ESP)
+
 #### Snipe-IT
 This looks to be a great open source tool that helps you keep track of all your stuff.
 
