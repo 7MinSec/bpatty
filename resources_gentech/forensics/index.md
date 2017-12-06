@@ -22,4 +22,4 @@ This page was just started 12/6/17 but will get cleaned up as I dig more into fo
 
 * Google [GRR](https://github.com/google/grr) is "an incident response framework focused on remote live forensics."
 
-* Couple of nice videos on forensics from the folks at Black Hills Infosec: [Live Forensics & Memory Analysis](https://www.youtube.com/watch?v=fEip9gl2MTA&t=3244s) and [Windows Live Forensics](https://www.youtube.com/watch?v=HcUMXxyYsnw)
+* Couple of nice videos on forensics from the folks at Black Hills Infosec: [Live Forensics & Memory Analysis](https://www.youtube.com/watch?v=fEip9gl2MTA&t=3244s) and [Windows Live Forensics](https://www.youtube.com/watch?v=HcUMXxyYsnw).  But perhaps my fav resource is the [Dropbox link](www.tinyurl.com/504extra2) they shared that has all sorts of goodies, including an .exe that simulates a backdoor.
