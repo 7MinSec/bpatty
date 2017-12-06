@@ -2,7 +2,7 @@
 
 Critical Security Controls
 --------
-If you're not familiar with the CSCs, one good place to start is this guide: [CIS Controls Implementation Guide for Small- and Medium-Sized Enterprises (SMEs)](https://www.cisecurity.org/white-papers/cis-controls-sme-guide/) - and you can just grab the PDF [here](https://www.cisecurity.org/wp-content/uploads/2017/09/CIS-Controls-Guide-for-SMEs.pdf).
+If you're not familiar with the CSCs, one good place to start is this guide: [CIS Controls Implementation Guide for Small- and Medium-Sized Enterprises (SMEs)](https://www.cisecurity.org/white-papers/cis-controls-sme-guide/) - and you can just grab the PDF [here](https://www.cisecurity.org/wp-content/uploads/2017/09/CIS-Controls-Guide-for-SMEs.pdf).  They've got a tool called [CIS-CAT](https://learn.cisecurity.org/cis-cat-landing-page) to help you benchmark systems against the CIS standards.
 
 On this page, I'm trying to assemble a good list of free/cheap tools and techniques to help orgs map to the CSC top 5/10/15/20.
 

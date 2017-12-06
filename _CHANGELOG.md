@@ -1,6 +1,10 @@
 # Change log
 It's a log of changes.  When things change in BATTY, they're logged here.
 
+## December 6
+* Reorg'd a bunch of stuff, so links are probably gonna break.  Sorry not sorry :-)
+* New page on [forensics](resources_gentech/forensics/index.md)
+
 ## December 4
 * Corrected an oopsie on the [mkfile](command_line/mac/system/index.md) page
 * Added a [common ports](pentesting/network_pentesting/commonports.jpg) pic to help as a pentesting quick reference

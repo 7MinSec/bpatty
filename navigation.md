@@ -24,7 +24,6 @@ BPATTY
 - [Honeypots](pentesting/honeypots/index.md)
 - [Lab setup](pentesting/lab_setup/index.md)
 - [Network pentesting](pentesting/network_pentesting/index.md)
-- [Reverse engineering](pentesting/reverse_engineering/index.md)
 - [Payloads and passwords](pentesting/payloads_and_passwords/index.md)
 - [Physical](pentesting/physical/index.md)
 - [Red team](pentesting/red_team/index.md)
@@ -33,10 +32,10 @@ BPATTY
 - [Webapp pentesting](pentesting/webapp/index.md)
 - [Wireless](pentesting/wireless/index.md)
 
-[Resources]()
+[Resources (pentesting)]()
 
 - [Best practices](resources/best_practices/index.md)
-- [Blog](resources/blogs/index.md)
+- [Blogs](resources/blogs/index.md)
 - [Books](resources/books/index.md)
 - [Conferences](resources/conferences/index.md)
 - [Health/wellness](resources/health_and_wellness/index.md)
@@ -44,6 +43,12 @@ BPATTY
 - [Standards](resources/standards/index.md)
 - [Training](resources/training/index.md)
 - [Twitter peeps I follow](resources/twitter/index.md)
+
+[Resources (general technical)]()
+
+- [Forensics](resources_gentech/forensics/index.md)
+- [Reverse engineering](resources_gentech/reverse_engineering/index.md)
+
 
 [Scripts]()
 

@@ -1,5 +1,13 @@
 # Hardware
 
+Fing Box
+------
+I covered this on the [podcast](https://7ms.us/7ms-285-the-quest-for-critical-security-controls-part-2/) and *really* like it.  It's a neat, cheap ($120) device that helps satisfy some of the CISecurity Critical Security Controls.
+
+One thing it *doesn't* do that I wish it did was support multiple VLANs.  As of 11/21/17 here's Fing's response to that question:
+
+>At the moment we aren't considering adding multi-VLAN support directly into the Fingbox, but if you are interested in something for small business clients we are planning to integrate the possibility to add Domotz Pro to your Fingbox so you can turn it into a full monitoring system including multi-vlan support as well as remote access to devices etc. If you want more information on Domotz, check out www.domotz.com which can give you an idea if this will be something that could be helpful for your clients.
+
 Pineapple
 -------
 Some stuff I tinker with on my old school Pineapple MK5
