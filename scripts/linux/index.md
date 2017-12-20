@@ -21,6 +21,7 @@ kali_hd_mode.sh
 [This script](kali_hd_mode.sh) puts Kali in HD resolution for easier viewing!
 
 kali_install_rdp.sh
+--------
 [This script](kali_install_rdp.sh) helps you get an RDP server service installed on Kali.
 
 ssott.py
