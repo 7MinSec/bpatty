@@ -25,7 +25,7 @@ kali_install_rdp.sh
 
 ssott.py
 --------
-[This script(ssott.py)] helps you automate some pentest recon stuff (like NMAPing, NIKTOing, DIRBing and the like and also get email updates as each phase of the scan completes)
+[This script](ssott.py) helps you automate some pentest recon stuff (like NMAPing, NIKTOing, DIRBing and the like and also get email updates as each phase of the scan completes)
 
 startup_email_alert.sh
 --------
