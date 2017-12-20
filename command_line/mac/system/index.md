@@ -68,3 +68,16 @@ Example:
 
    BMacBook:Public brian$ openssl sha1 Vulnhub-BillyMadisonBeta01.zip
    SHA1(Vulnhub-BillyMadisonBeta01.zip)= 422cd8fe6fe3ce8a69f609bb166a96c0e1caa210
+
+route
+-----
+
+To see your system's routing table:
+
+     netstat -nr
+
+If you need to add a route, you can do it like so:
+
+     sudo route -n add 192.168.200.0/24 192.168.2.1
+
+The example above is one I ran into when I was using OpenVPN and by default it was sending all traffic (even local) to through the VPN.  Basically anytime I tried to get to my 192.168.200.x subnet on my *local* network, it would come back as unavailable.  The command above forces my Mac to use my default gateway of 192.168.2.1 to get to the 192.168.200.x network.

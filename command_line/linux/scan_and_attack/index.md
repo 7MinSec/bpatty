@@ -245,6 +245,10 @@ Typical use:
 
 `sslscan --no-failed FULLY.QUALIFIED.DOMAIN.TLD`
 
+To get an export XML do:
+
+     sslscan --no-failed --xml=file.xml
+
 sslyze
 --------
 Most of this is referenced from the [Quickstart](https://code.google.com/p/sslyze/wiki/QuickStart) hosted by Google.
@@ -273,7 +277,8 @@ Options:
 
 `--reneg` : Checks whether the server is vulnerable to insecure renegotiation. Requires OpenSSL 0.9.8m or later.
 
-Session Resumption
+*Session Resumption*
+
 `--resum` : Tests the server for session resumption support, using both session IDs and TLS session tickets (RFC 5077).
 
 `--resum_rate` : Estimates the average rate of successful session resumptions by performing 100 session resumptions.
@@ -281,6 +286,10 @@ Session Resumption
 *Server Certificate*
 
 `--certinfo=basic` : Verifies the server's certificate validity against Mozilla's trusted root store, and prints relevant fields of the certificate.
+
+*Output to XML*
+
+`-xml=filename.xml` - so for example: `sslscan --regular -xml=output.xml SOME.FQDN.YOU-WANNA.SCAN`
 
 testssl
 --------

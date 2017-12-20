@@ -1,6 +1,10 @@
 # Change log
 It's a log of changes.  When things change in BATTY, they're logged here.
 
+## December 20
+* Basically moved a whole bunch of stuff around.  The details of which are...inconsequential.  
+* The addition of [SSOTT](scripts/linux/ssott.py) (Scan Some of the Things) - a new script to do some recon during pentests
+
 ## December 6
 * Reorg'd a bunch of stuff, so links are probably gonna break.  Sorry not sorry :-)
 * New page on [forensics](resources_gentech/forensics/index.md)

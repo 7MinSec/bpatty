@@ -34,7 +34,6 @@ BPATTY
 
 [Resources (pentesting)]()
 
-- [Best practices](resources/best_practices/index.md)
 - [Blogs](resources/blogs/index.md)
 - [Books](resources/books/index.md)
 - [Conferences](resources/conferences/index.md)
@@ -46,6 +45,7 @@ BPATTY
 
 [Resources (general technical)]()
 
+- [Best practices](resources/best_practices/index.md)
 - [Forensics](resources_gentech/forensics/index.md)
 - [Reverse engineering](resources_gentech/reverse_engineering/index.md)
 
