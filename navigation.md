@@ -16,7 +16,7 @@ BPATTY
 
 [Hardware](hardware/index.md)
 
-[Penetration Testing]()
+[Pentesting how-tos & guides]()
 
 - [Administrative/prep](pentesting/administrative_stuff/index.md)
 - [Blue team (defense)](pentesting/blue_team/index.md)
@@ -45,7 +45,7 @@ BPATTY
 
 [Resources (general technical)]()
 
-- [Best practices](resources/best_practices/index.md)
+- [Best practices](resources_gentech/best_practices/index.md)
 - [Forensics](resources_gentech/forensics/index.md)
 - [Reverse engineering](resources_gentech/reverse_engineering/index.md)
 
@@ -56,4 +56,5 @@ BPATTY
 - Mac (coming soon)
 - [Windows](scripts/windows/index.md)
 
-[Web tech](web_tech/index.md)
+[Web tech stuff]()
+- [Docker setup for Juice Shop & more](web_tech/index.md)

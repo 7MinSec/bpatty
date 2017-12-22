@@ -4,7 +4,7 @@ Welcome to BPATTY by 7 Minute Security
 
 WHERE'S THE CHANGELOG?!
 --------
-No need to shout.  It's [here](_CHANGELOG.md).
+No need to shout.  It's [here](https://github.com/braimee/bpatty/blob/master/_CHANGELOG.md).
 
 What in the world is a "BPATTY?!"
 --------
@@ -31,7 +31,7 @@ In my dream situation: every 1-2 weeks.  In reality: when I get to it.
 
 Who are you?
 --------
-Hi, I'm [Brian](http://brianjohnson.tv) and I blog/podcast about information security at [7 Minute Security](https://7ms.us).
+Hi, I'm [Brian](http://brianjohnson.tv) and I blog/podcast about information security at [7 Minute Security](https://7ms.us).  I also run a [security consulting company](https://7MinSec.com).
 
 I want to electronically punch you in the neck!
 --------
