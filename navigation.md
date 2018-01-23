@@ -22,9 +22,9 @@ BPATTY
 - ---
 - **Blue team**
 - [General (defense)](pentesting/blue_team/index.md)
-- [Local Administrator Password Solution](pentesting/blue_team/individuals/Local_Administrator_Password_Solution_LAPS.md)
-- [Network monitoring](pentesting/blue_team/individuals/network_monitoring.md)
-- [WEFFLES](pentesting/blue_team/individuals/weffles.md)
+- [Local Administrator Password Solution](pentesting/blue_team/_individuals/Local_Administrator_Password_Solution_LAPS.md)
+- [Network monitoring](pentesting/blue_team/_individuals/network_monitoring.md)
+- [WEFFLES](pentesting/blue_team/_individuals/weffles.md)
 - ---
 - [Exploit info](pentesting/exploit_info/index.md)
 - [Honeypots](pentesting/honeypots/index.md)
