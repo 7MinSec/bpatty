@@ -16,7 +16,7 @@ This page was just started 12/6/17 but will get cleaned up as I dig more into fo
 
 * A guide to [picking apart malicious stuff from macros](https://www.youtube.com/watch?v=A49S5xCnWsI)
 
-* Good article on [basics of Windows incidence response](https://jordanpotti.com/2017/01/20/basics-of-windows-incident-response/)
+* Good article on [basics of Windows incident response](https://jordanpotti.com/2017/01/20/basics-of-windows-incident-response/)
 
 * A neat looking site for teaching [the art of memory analysis](https://www.memoryanalysis.net/amf), complete with memory dumps and practice quizes.  
 

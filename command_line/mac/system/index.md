@@ -1,6 +1,6 @@
 # Mac system commands
 
-createinstallmedia.md
+createinstallmedia
 --------
 This command is handy for creating bootable OSX media.  The main help page I found for this tool is on [Apple's site](https://support.apple.com/en-us/HT201372) but the TLDR version is:
 

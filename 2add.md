@@ -132,3 +132,6 @@ https://er.educause.edu/blogs/2017/10/time-for-password-expiration-to-die
 
 ## Flushing DNS cache on Mac:
 https://help.dreamhost.com/hc/en-us/articles/214981288-Flushing-your-DNS-cache-in-Mac-OS-X-and-Linux
+
+## Sweet NSE scripts
+https://twitter.com/bonsaiviking/status/950772687655309313?ref_src=twcamp%5Eshare%7Ctwsrc%5Eios%7Ctwgr%5Ecom.google.inbox.ShareExtension

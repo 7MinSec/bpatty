@@ -1,6 +1,11 @@
 # Change log
 It's a log of changes.  When things change in BATTY, they're logged here.
 
+## January 23
+* Happy belated new year!
+* A bunch of grammar fixes, link repairs, spelling corrections and reorg
+* WEFFLES!  I was super pumped to finally be able to implement [WEFFLES](https://blogs.technet.microsoft.com/jepayne/2017/12/08/weffles/) which is "a fast, free, and effective Threat Hunting/Incident Response Console with Windows Event Forwarding and PowerBI."  I went through the install/setup and wrote out all the steps I followed [here](pentesting/blue_team/individuals/weffles.md)
+
 ## December 20
 * Basically moved a whole bunch of stuff around.  The details of which are...inconsequential.  
 * The addition of [SSOTT](scripts/linux/ssott.py) (Scan Some of the Things) - a new script to do some recon during pentests

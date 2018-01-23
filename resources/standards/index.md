@@ -42,11 +42,11 @@ Then import some stuff - see here for some samples: https://snipe-it.readme.io/d
 
 GDPR
 -------
+There's a [podcast episode](https://7ms.us/7ms-294-gdpr-me-asap/) where I talk about my first GDPR assessment, and here's also a few helpful links to get up to speed on GDPR:
 
-GDPR for dummies
-https://www.slideshare.net/CarolineBoscher/gdpr-for-dummies
+* [GDPR for dummies](http://www.dummies.com/education/politics-government/general-data-protections-regulation-gdpr/)
+* [GDPR for you](https://7ms.us/7ms-294-gdpr-me-asap/) is a great GDPR primer with some solid downloadables as well
 
-http://www.dummies.com/education/politics-government/general-data-protections-regulation-gdpr/
 
 NIST CSF (Cyber Security Framework)
 --------

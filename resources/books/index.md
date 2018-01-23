@@ -1,9 +1,9 @@
 # Books
 I barely read anything that's not displayed on a screen, but when I *do*...
 
-[The Hacker Playbook](http://www.amazon.com/Hacker-Playbook-Practical-Penetration-Testing/dp/1494932636)
+The Hacker Playbook
 -----
-I think if you've taken OSCP, this book would be a great next step for working on successful pentests.  I dedicated a whole [podcast episode](https://media.zencast.fm/embed/7-minute-security-podcast-podcast/34.mp3') to the book.
+I think if you've taken OSCP, [this book](http://www.amazon.com/Hacker-Playbook-Practical-Penetration-Testing/dp/1494932636) would be a great next step for working on successful pentests.  I dedicated a whole [podcast episode](https://media.zencast.fm/embed/7-minute-security-podcast-podcast/34.mp3') to the book.
 
 [The Hacker Playbook 2](http://www.amazon.com/Hacker-Playbook-Practical-Penetration-Testing/dp/1512214566)
 -----

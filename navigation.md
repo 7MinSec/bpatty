@@ -5,7 +5,7 @@ BPATTY
 
 - **Linux**
 - [Network](command_line/linux/network/index.md)
-- [Scan and attack](command_line/linux/scan-and-attack/index.md)
+- [Scan and attack](command_line/linux/scan_and_attack/index.md)
 - [System](command_line/linux/system/index.md)
 - ---
 - **Mac**
@@ -19,7 +19,13 @@ BPATTY
 [Pentesting how-tos & guides]()
 
 - [Administrative/prep](pentesting/administrative_stuff/index.md)
-- [Blue team (defense)](pentesting/blue_team/index.md)
+- ---
+- **Blue team**
+- [General (defense)](pentesting/blue_team/index.md)
+- [Local Administrator Password Solution](pentesting/blue_team/individuals/Local_Administrator_Password_Solution_LAPS.md)
+- [Network monitoring](pentesting/blue_team/individuals/network_monitoring.md)
+- [WEFFLES](pentesting/blue_team/individuals/weffles.md)
+- ---
 - [Exploit info](pentesting/exploit_info/index.md)
 - [Honeypots](pentesting/honeypots/index.md)
 - [Lab setup](pentesting/lab_setup/index.md)
@@ -49,7 +55,6 @@ BPATTY
 - [Forensics](resources_gentech/forensics/index.md)
 - [Reverse engineering](resources_gentech/reverse_engineering/index.md)
 
-
 [Scripts]()
 
 - [Linux](scripts/linux/index.md)
@@ -58,4 +63,4 @@ BPATTY
 
 [Web tech stuff]()
 
-- [Docker setup for Juice Shop & more](web_tech/index.md)
+- [Docker setup for Juice Shop & more](web_tech/web/index.md)

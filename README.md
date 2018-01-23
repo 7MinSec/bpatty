@@ -1,7 +1,9 @@
 # **B**rian's **P**entesting **a**nd **T**echnical **T**ips for **Y**ou
 
 ## I just want go get started!
-Sure thing.  I've tried to lay this out in some sort of hierarchy that at least makes a little sense...*ahem*...at least to me :-/.  So dive into a folder that looks interesting and topics should get more granular the deeper you go.  
+Sure thing.  The easiest way to read BPATTY is probably in wiki form which you can view by going to [http://bpatty.rocks](http://bpatty.rocks).
+
+I've tried to lay this out in some sort of hierarchy that at least makes a little sense...*ahem*...at least to me :-/.  So dive into a folder that looks interesting and topics should get more granular the deeper you go.  
 
 ## OK I'm slightly intrigued and/or confused.  What exactly is this?
 **B.P.A.T.T.Y.** (**B**rian's **P**entesting **a**nd **T**echnical **T**ips for **Y**ou) is my collection of tips, tricks and scripts that I used to save in OneNote, Evernote, Notepad, Stickies, Notepad++, Dropbox Paper...*deep breath*...Leafpad, Post-it notes, etc.  I made a big effort last year to throw all this crud in one place on [my blog](https://7ms.us/bpatty) but realized that for people (especially me) to actually *use* it, a github repository makes more sense.  So here we are!
@@ -18,10 +20,10 @@ My response (substitute "microphone" for "documentation project") is [this](http
 In my dream situation: every 1-2 weeks.  In reality: when I get to it.
 
 ## Who are you?
-Hi, I'm [Brian](http://brianjohnson.tv) and I blog/podcast about information security at [7 Minute Security](https://7ms.us).
+Hi, I'm [Brian](http://brianjohnson.tv) and I blog/podcast about information security at [7 Minute Security](https://7ms.us).  I also run [7 Minute Security, LLC](https://7MinSec.com).
 
-## I want to electronically punch you in the neck!
+## I want to electronically punch you in the neck, or talk more about security!
 Head to the [7MS Slack channel](https://slackpass.io/7minsec) and punch away!
 
 ## I like what you're doing with this whole 7 Minute Security thing. How can I support these efforts?
-Thanks! Please consider becoming a [Patreon supporter](https://patreon.com/7ms).
+Thanks! Please consider using [7 Minute Security, LLC](https://7MinSec.com) for your assessment, pentesting and/or training needs!
