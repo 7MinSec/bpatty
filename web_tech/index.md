@@ -25,7 +25,11 @@ Juice Shop, according to [OWASP](https://www.owasp.org/index.php/OWASP_Juice_Sho
 
 ##### Run it
 
-    docker run -d -p 3000:3000 bkimminich/juice-shop
+     docker run -d -p 3000:3000 bkimminich/juice-shop
+
+##### Run it with a 7 Minute Security theme!
+
+    docker run -d -e "NODE_ENV=7ms" -p 3000:3000 bkimminich/juice-shop
 
 ##### Make images/backups
 

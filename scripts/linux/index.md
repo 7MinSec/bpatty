@@ -24,6 +24,9 @@ kali_install_rdp.sh
 --------
 [This script](kali_install_rdp.sh) helps you get an RDP server service installed on Kali.
 
+openvpn_route_fix.sh
+[This script](openvpn_route_fix.sh) helps keep all your local subnets accessible when using an openvpn connection.
+
 ssott.py
 --------
 [This script](ssott.py) helps you automate some pentest recon stuff (like NMAPing, NIKTOing, DIRBing and the like and also get email updates as each phase of the scan completes)

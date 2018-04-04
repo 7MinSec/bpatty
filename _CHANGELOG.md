@@ -1,6 +1,12 @@
 # Change log
 It's a log of changes.  When things change in BATTY, they're logged here.
 
+## April 4
+* Addition of [Pwned Passwords](pentesting/blue_team/pwnedpasswords.md) guide
+* A new script to fix [OpenVPN routing issues](scripts/linux/openvpn_route_fix.sh)
+* Big update on the [LAPS reloaded](scripts/windows/LAPS_check_reloaded.ps1) script
+* A bunch o' other little misc fixes around the BPATTY
+
 ## January 23
 * Happy belated new year!
 * A bunch of grammar fixes, link repairs, spelling corrections and reorg

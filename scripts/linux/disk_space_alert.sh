@@ -1,4 +1,4 @@
-
+#!/bin/bash
 #Change the "70" (in "$usep -ge 70") to whatever percentage threshold you want the alert set at.
 #
 mkdir /scripts

@@ -1,37 +1,15 @@
-# LAPS-check2.ps1
+# LAPS-check_reloaded.ps1
+# Updated April 4, 2018.  Basically I was making this WAY too hard.  Now it's simpler :-)
 #
-# This is a second stab at making it a bit easier to figure out whether LAPS is deployed in your
-# environment or not.  
-# 
 # First, make sure you've got LAPS up and running.  See this blog/podcast for a how-to:
 # https://7ms.us/7ms-252-laps-local-administrator-password-solution/
 #
-# Once you've got LAPS installed on a bunch of machines, you can use the following script to query
-# workstations for their local Administrator password, which will be an easy indicator that the LAPS
-# GPOs are installed and working properly on the target machines
-# 
-# -----
-# 
-# First we'll import the admpws.ps.  If you get an error on this step, you need to make sure you
-# run the LAPS.x64/LAPS.x86 MSI (whichever is appropriate) and then install the 
-# Management Tools > PowerShell Module option.
-Import-Module AdmPwd.ps
+#
+# Check which machines have LAPS installed:
+Get-ADComputer -filter {ms-mcs-admpwdexpirationtime -like '*'} -Properties 'ms-mcs-admpwd','ms-mcs-admpwdexpirationtime' | select dnshostname,ms-mcs-admpwd > .\LAPS-yes.txt
 
-# Now import the Active Directory module
-Import-Module ActiveDirectory
+# Check which machines DON'T have LAPS installed:
+Get-ADComputer -filter {ms-mcs-admpwdexpirationtime -like '*'} -Properties 'ms-mcs-admpwd','ms-mcs-admpwdexpirationtime' | select dnshostname,ms-mcs-admpwd > .\LAPS-no.txt
 
-# I'm commenting this next part out because we actually don't want filter out servers as they'll get LAPS too
-# 
-# Next we'll pull all non-server AD objects and make a simple list of them called "workstations.txt"
-#Get-ADComputer -Filter {OperatingSystem -NotLike "Windows Server*"} | select -Expand name | sort-object > .\workstations.txt
-
-# The workstations.txt will now be slurped into a variable called $workstations
-$workstations = Get-Content .\workstations.txt
-
-# Using the $workstations variable we'll do a foreach loop that queries AD for the 
-# local Administrator password
-foreach ($workstation in $workstations)
-Get-AdmPwdPassword -ComputerName $workstation | 
-
-# If you don't see anything in the Password column, that means LAPS has not been
-# deployed to that workstation
+# Now we can compare the two files to find where LAPS is not deployed:
+Compare-Object -ReferenceObject (Get-Content .\LAPS-yes.txt) -DifferenceObject (Get-Content .\LAPS-no.txt) | where sideindicator -eq "=>" | select inputobject > .\LAPS-needed-report.txt

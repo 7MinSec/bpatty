@@ -16,7 +16,8 @@
 # 0.2  Apr 05, 2017   Xoke (https://keybase.io/xoke)
 # 0.3  Nov 08, 2017   Brian.  Added check for applied pw policy and tweaked
 # 										the Search-ADAccount portion of the script
-#
+# 0.4  April 4, 2018	Brian.  Added some checks for locked out accounts and exporting
+#											GPOs to XML as well as HTML
 ################################################################################
 
 # Set a variable of today using today's date
@@ -70,6 +71,9 @@ Get-ADGroupMember "Administrators" | Select Name | Sort Name > $Today\Groups_Adm
 # Get members of Schema Admins group....in a...text...file....
 Get-ADGroupMember "Schema Admins" | Select Name | Sort Name > $Today\Groups_Schema_Admins.txt
 
+# Get a list of locked out users
+Search-ADAccount -LockedOut > $Today\Locked_Out_Users.txt
+
 # Export default domain policy to HTML to...you know what?  I don't think I need to tell you what kind of file this dumps to
 Get-ADDefaultDomainPasswordPolicy > $Today\GPO_Default_Domain.txt
 
@@ -77,10 +81,13 @@ Get-ADDefaultDomainPasswordPolicy > $Today\GPO_Default_Domain.txt
 Get-ADDefaultDomainPasswordPolicy > $Today\GPO_Password_Policy.txt
 
 # Get the current password policy
-net accounts > Pw_Policy.txt
+net accounts > $Today\Local_Pw_Policy.txt
 
 # Exporting all GPOs to html
 Get-GPOReport -All -ReportType HTML -Path $Today\GPO_ALL.html
+
+# Exporting all GPOs to xml
+Get-GPOReport -All -ReportType xml -Path $Today\GPO_ALL.xml
 
 # Get list of computers
 

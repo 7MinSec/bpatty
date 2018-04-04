@@ -21,25 +21,29 @@ BPATTY
 - [Administrative/prep](pentesting/administrative_stuff/index.md)
 - ---
 - **Blue team**
-- [General (defense)](pentesting/blue_team/index.md)
+- [General Windows environment defenses](pentesting/blue_team/index.md)
+- [Honeypots](pentesting/honeypots/index.md)
 - [Local Administrator Password Solution](pentesting/blue_team/Local_Administrator_Password_Solution_LAPS.md)
 - [Network monitoring](pentesting/blue_team/network_monitoring.md)
+- [PwnedPasswords](pentesting/blue_team/pwnedpasswords.md)
 - [WEFFLES](pentesting/blue_team/weffles.md)
+- [Vulnerability scanners](pentesting/vulnerability_scanners/index.md)
 - ---
+- **Pentesting**
 - [Exploit info](pentesting/exploit_info/index.md)
-- [Honeypots](pentesting/honeypots/index.md)
+- [Forensics](resources_gentech/forensics/index.md)
 - [Lab setup](pentesting/lab_setup/index.md)
 - [Network pentesting](pentesting/network_pentesting/index.md)
 - [Payloads and passwords](pentesting/payloads_and_passwords/index.md)
 - [Physical](pentesting/physical/index.md)
 - [Red team](pentesting/red_team/index.md)
 - [Social engineering](pentesting/social_engineering/index.md)
-- [Vulnerability scanners](pentesting/vulnerability_scanners/index.md)
 - [Webapp pentesting](pentesting/webapp/index.md)
 - [Wireless](pentesting/wireless/index.md)
 
-[Resources (pentesting)]()
+[Resources (IT/security)]()
 
+- [Best practices](resources_gentech/best_practices/index.md)
 - [Blogs](resources/blogs/index.md)
 - [Books](resources/books/index.md)
 - [Conferences](resources/conferences/index.md)
@@ -49,18 +53,12 @@ BPATTY
 - [Training](resources/training/index.md)
 - [Twitter peeps I follow](resources/twitter/index.md)
 
-[Resources (general technical)]()
-
-- [Best practices](resources_gentech/best_practices/index.md)
-- [Forensics](resources_gentech/forensics/index.md)
-- [Reverse engineering](resources_gentech/reverse_engineering/index.md)
-
 [Scripts]()
 
 - [Linux](scripts/linux/index.md)
 - Mac (coming soon)
 - [Windows](scripts/windows/index.md)
 
-[Web tech stuff]()
+[Web tech]()
 
 - [Docker setup for Juice Shop & more](web_tech/index.md)

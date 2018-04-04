@@ -135,3 +135,84 @@ https://help.dreamhost.com/hc/en-us/articles/214981288-Flushing-your-DNS-cache-i
 
 ## Sweet NSE scripts
 https://twitter.com/bonsaiviking/status/950772687655309313?ref_src=twcamp%5Eshare%7Ctwsrc%5Eios%7Ctwgr%5Ecom.google.inbox.ShareExtension
+
+## Al-khaser
+Public malware techniques used in the wild: Virtual Machine, Emulation, Debuggers, Sandbox detection.
+
+https://github.com/LordNoteworthy/al-khaser
+
+## Free training from SecureIdeas
+https://blog.secureideas.com/2018/01/professionally-evil-web-app-pen-testing-101-course.html
+
+## Windows privesc guide:
+http://www.sploitspren.com/2018-01-26-Windows-Privilege-Escalation-Guide/
+
+## IDA Pro is free!
+https://www.hex-rays.com/products/ida/support/download_freeware.shtml
+
+## Fix keyring issue with Kali
+wget -q -O - https://archive.kali.org/archive-key.asc  | apt-key add
+
+## Add this to environment check .ps1
+https://adsecurity.org/?p=3700
+
+MISC STUFF
+https://posts.specterops.io/introducing-the-adversary-resilience-methodology-part-one-e38e06ffd604
+https://twitter.com/hacks4pancakes/status/967223000096559111?s=12
+https://twitter.com/vysecurity/status/967217863995076609?s=12
+https://www.troyhunt.com/ive-just-launched-pwned-passwords-version-2/
+https://twitter.com/lennyzeltser/status/967424069040852993?s=12
+https://twitter.com/jacksonvd/status/967770718640336896?s=12
+
+Bloodhound:
+https://github.com/BloodHoundAD/BloodHound/wiki/Getting-started
+
+https://blog.cptjesus.com/posts/newbloodhoundingestor
+
+https://www.scip.ch/en/?labs.20171102
+
+
+
+I have covered this extensively across presentations and ADSecurity blog posts. Here are a few:
+https://adsecurity.org/wp-content/uploads/2016/08/DEFCON24-2016-Metcalf-BeyondTheMCSE-RedTeamingActiveDirectory.pdf …
+https://adsecurity.org/?p=3719
+https://adsecurity.org/?p=3658
+
+
+https://t.co/ZKAHCuNton?ssr=true
+
+https://t.co/vN6saTX8Zt?ssr=true
+
+http://www.hackingarticles.in/understanding-guide-mimikatz/
+
+ATTACK Navigator
+https://www.mitre.org/capabilities/cybersecurity/overview/cybersecurity-blog/the-attck%E2%84%A2-navigator-a-new-open-source
+
+
+https://pen-testing.sans.org/blog/2017/08/21/pen-test-poster-white-board-powershell-find-juicy-stuff-in-file-system?utm_medium=Social&utm_source=Twitter&utm_content=SANSPenTest+BLOG+White+Board+PowerShell+Find+Juicy+Stuff&utm_campaign=SANS+Pen+Test
+
+
+BlueHat IL 2017: Marina Simakov & Tal Be'ery, Microsoft - YouTube
+https://www.youtube.com/watch?v=HE7X7l-k-A4
+
+Deeper WEF (WEFFLES) explanations:
+https://t.co/fKkfwPzq8f?ssr=true
+
+AD security is awesome:
+https://twitter.com/pyrotek3/status/971762070961127424?s=12
+
+Tron script to declutter/clean a machine:
+https://www.reddit.com/r/TronScript/
+
+Top 5 ways I got DA before lunch:
+https://medium.com/@adam.toscher/top-five-ways-i-got-domain-admin-on-your-internal-network-before-lunch-2018-edition-82259ab73aaa
+
+Lazy recon:
+https://github.com/nahamsec/lazyrecon
+
+Get domain admin from the outside:
+https://markitzeroday.com/pass-the-hash/crack-map-exec/2018/03/04/da-from-outside-the-domain.html
+
+Dump stuff:
+https://blog.stealthbits.com/extracting-password-hashes-from-the-ntds-dit-file/
+(There's another article for this I think)
