@@ -1,8 +1,7 @@
 # Microsoft LAPS (Local Administrator Password Solution)
 
-## Install/prep
 
-### Setup LAPS management workstation
+## Setup LAPS management workstation
 
 1. From the workstation where you will manage LAPS, log in as a domain admin.
 
@@ -10,7 +9,7 @@
 
 3. Run the **LAPS.x64.msi** and in the install, choose to install the **AdmPwd GPO Extension** (selected by default) but also the **Management Tools** by clicking the drop-down and selecting **Entire feature will be installed on local hard drive**.  After completing these steps you should now see Local Administrator Password Solution in the installed programs list).
 
-### Configure policy store for LAPS
+## Configure policy store for LAPS
 
 1. Copy `C:\Windows\PolicyDefinitions\AdmPwd.admx` to `\\yourdomain.com\sysvol\yourdomain.com\Policies\PolicyDefinitions\`
 
@@ -19,7 +18,7 @@
 
 Note, if your central store is not setup, you will want to follow [this article](https://support.microsoft.com/en-us/help/929841/how-to-create-the-central-store-for-group-policy-administrative-template-files-in-windows-vista) to get it configured first.
 
-### Configure AD for LAPS
+## Configure AD for LAPS
 
 1. Back at your administrative LAPS workstation, ensure you are running at least Powershell 3.x (run **$PSVersionTable.PSVersion** to determine that, then install [WMF 5.1](https://www.microsoft.com/en-us/download/details.aspx?id=54616) to quickly jump from older versions of PS to the current).
 
@@ -82,7 +81,7 @@ Note, if your central store is not setup, you will want to follow [this article]
 
 11.  Optionally, log out from your LAPS admin workstation.
 
-### Create GPO to deploy LAPS package
+## Create GPO to deploy LAPS package
 
 1. From a domain controller, open **Group Policy Management** and create a new GPO in *Group Policy Objects* but don't link it to anything yet.  Call it something smart like *Deploy LAPS*.  Configure it like so:
 
@@ -100,7 +99,7 @@ What I did in my test LAB is just link this policy (and the one discussed below)
 Select * from WIN32_OperatingSystem where ProductType="1" or ProductType="3"
 ````
 
-### Create GPO to enforce LAPS config
+## Create GPO to enforce LAPS config
 Next, create a GPO that's not linked to anything (reminder, you'll want to eventually apply this to servers and workstations but NOT domain controllers!).  The settings you need to config are:
 
 * **Computer Configuration > Policies > Administrative Templates > LAPS > Enable local admin password management > Enabled**.  This will, every 30 days, randomize the local admin with crazy 14-character password!
