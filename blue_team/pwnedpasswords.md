@@ -9,7 +9,7 @@ In February of 2018, Troy Hunt launched a [Pwned Passwords](https://www.troyhunt
 
 Troy and Cloudflare have teamed up to build an [API](https://haveibeenpwned.com/API/v2#PwnedPasswords) so that enterprises can integrate a [k-Anonymity](https://blog.cloudflare.com/validating-leaked-passwords-with-k-anonymity/) check with their applications and services.  For instance, if you wanted to see if the password *P@ssw0rd* (which has a SHA-1 hash of *21BD12DC183F740EE76F27B78EB39C8AD972A757*) exists in Troy's data set, you could make an API call to:
 
->Request URL: https://api.pwnedpasswords.com/range/21DB1
+> Request URL: https://api.pwnedpasswords.com/range/21DB1
 
 This request will return any hashes with *21DB1* as a prefix, such as:
 
@@ -33,9 +33,9 @@ Since the launch of Troy's project there has been a lot of interest in bringing 
 Below is a breakdown of installation instructions and impressions/thoughts on each solution:
 
 ### Option 1: PwnedPasswordsDLL
-Troy [tweeted](https://twitter.com/troyhunt/status/967854347613716480?lang=en) about this solution in late February, and the tweet points to user JacksonVD's [blog article](https://jacksonvd.com/checking-for-breached-passwords-in-active-directory/) which discusses the finer points of compiling his [open source DLL](https://github.com/JacksonVD/PwnedPasswordsDLL).  JacksonVD's blog and project page assume the end user has some Visual Studio experience, so I created the following instructions which do *not* make that assumption:
+Troy [tweeted](https://twitter.com/troyhunt/status/967854347613716480?lang=en) about this solution in late February, and the tweet points to user JacksonVD's [blog article](https://jacksonvd.com/checking-for-breached-passwords-in-active-directory/) which discusses the finer points of compiling his [open source DLL](https://github.com/JacksonVD/PwnedPasswordsDLL).  JacksonVD's blog and project page assume the end user has some Visual Studio experience, so I created the following instructions which do *not* make that assumption.
 
-1. Download Visual Studio Community 2017 from [here](https://www.visualstudio.com/downloads/). Note: you'll want to install **Windows 10 SDK** as well.
+1. Download Visual Studio Community 2017 from [here](https://www.visualstudio.com/downloads/). You'll want to install **Windows 10 SDK** as well.
 
 2. Download JacksonVD's [GitHub project](https://github.com/JacksonVD/PwnedPasswordsDLL) by visiting the project page and clicking **Clone or Download -> Download Zip** and saving the .zip file to your computer.  Unzip it to a folder on your machine, such as `C:\pwnedpasswords`.
 
@@ -56,10 +56,11 @@ Troy [tweeted](https://twitter.com/troyhunt/status/967854347613716480?lang=en) a
 
 8. Open `C:\pwnedpasswords\PwnedPasswordsDLL\dllmain.cpp` and search for a section that looks like this:
 
-    ````
-// String array of the file names + locations - you may customise if you wish
+ ````
+ // String array of the file names + locations - you may customise if you wish
 string str1[3] = { "C:\\pwned-passwords-1.0.txt", "C:\\pwned-passwords-update-1.txt", "C:\\pwned-passwords-update-2.txt" };
-    ````
+ ````
+
  You can edit these three paths to be various password files of your choosing.  For example, you can change `C:\\pwned-passwords-1.0.txt` to be the UNC path you established in step 7.  Remember that in the code, you need to use double slashes for each slash, so using the example in step 7, you'd want the path to look like `\\\\yourdomain.local\passwords`.  
 
  Then you can leave the other two paths as is, or create a file of SHA-1 hashes of your choosing to help verify the password checks are working.  For example, I created a file called `C:\brianspasswords.txt` and then used an [online SHA-1 generator](https://passwordsgenerator.net/sha1-hash-generator/) to make a hash of a verify specific password, such as *IsPwnedPasswordsW0rking?*, which results in a string of *0C83240100274C96976E4C62AE67C959531048F7*.  So to test this specific password out, I put the SHA-1 hash into `C:\brianspasswords.txt` and then changed the `C:\\pwned-passwords-update-1.txt` path to point to `brianspasswords.txt`
@@ -79,17 +80,18 @@ string str1[3] = { "C:\\pwned-passwords-1.0.txt", "C:\\pwned-passwords-update-1.
 
 13. There will likely be an existing entry that looks like:
 
-    ````
-scecli
-rassfm
-    ````
-Add `PwnedPasswordsDLL` (just the DLL name *without* the extension) so that the finished entry looks like this:
+ ````
+ scecli
+ rassfm
+ ````
 
-    ````
-scecli
-rassfm
-PwnedPasswordsDLL
-    ````
+ Add `PwnedPasswordsDLL` (just the DLL name *without* the extension) so that the finished entry looks like this:
+
+ ````
+ scecli
+ rassfm
+ PwnedPasswordsDLL
+ ````
 
 14. Reboot all domain controllers.
 

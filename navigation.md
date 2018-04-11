@@ -16,28 +16,26 @@ BPATTY
 
 [Hardware](hardware/index.md)
 
+[Blue teaming]
+- [Forensics](resources_gentech/forensics/index.md)
+- [General Windows environment defenses](blue_team/index.md)
+- [Honeypots](blue_team/honeypots.md)
+- [Local Administrator Password Solution](blue_team/Local_Administrator_Password_Solution_LAPS.md)
+- [Network monitoring](blue_team/network_monitoring.md)
+- [PwnedPasswords](blue_team/pwnedpasswords.md)
+- [WEFFLES](blue_team/weffles.md)
+
 [Pentesting how-tos & guides]()
 
 - [Administrative/prep](pentesting/administrative_stuff/index.md)
-- ---
-- **Blue team**
-- [General Windows environment defenses](pentesting/blue_team/index.md)
-- [Honeypots](pentesting/honeypots/index.md)
-- [Local Administrator Password Solution](pentesting/blue_team/Local_Administrator_Password_Solution_LAPS.md)
-- [Network monitoring](pentesting/blue_team/network_monitoring.md)
-- [PwnedPasswords](pentesting/blue_team/pwnedpasswords.md)
-- [WEFFLES](pentesting/blue_team/weffles.md)
-- [Vulnerability scanners](pentesting/vulnerability_scanners/index.md)
-- ---
-- **Pentesting**
 - [Exploit info](pentesting/exploit_info/index.md)
-- [Forensics](resources_gentech/forensics/index.md)
 - [Lab setup](pentesting/lab_setup/index.md)
 - [Network pentesting](pentesting/network_pentesting/index.md)
 - [Payloads and passwords](pentesting/payloads_and_passwords/index.md)
 - [Physical](pentesting/physical/index.md)
 - [Red team](pentesting/red_team/index.md)
 - [Social engineering](pentesting/social_engineering/index.md)
+- [Vulnerability scanners](pentesting/vulnerability_scanners/index.md)
 - [Webapp pentesting](pentesting/webapp/index.md)
 - [Wireless](pentesting/wireless/index.md)
 

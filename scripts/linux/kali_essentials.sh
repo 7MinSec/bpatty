@@ -18,6 +18,9 @@ wget https://github.com/CoreSecurity/impacket/blob/impacket_0_9_15/examples/smbr
 #Commix is a command-injection tool that I've never gotten to run successfully in any live pentests, but the examples sure look neat ;-)
 git clone https://github.com/stasinopoulos/commix.git /opt/commix
 
+#CrackMapExec is "A swiss army knife for pentesting networks" - https://www.youtube.com/watch?time_continue=10&v=Dd4ZAm2mwwA
+apt-get install crackmapexec
+
 #egress framework helps you test network segmentation easily with a few python commands
 git clone https://github.com/stufus/egresscheck-framework.git /opt/egress
 
@@ -32,6 +35,13 @@ git clone https://github.com/1N3/Findsploit.git /opt/findsploit
 
 #foospidy is a BIG BUNCH O' PAYLOADS for fuzzing and fun!
 git clone https://github.com/foospidy/payloads.git /opt/foospidy
+
+#hatecrack helps you crack hashes
+git clone https://github.com/trustedsec/hate_crack.git /opt/hatecrack
+
+#impacket is "a collection of Python classes for working with network protocols"
+#I currently primarily use it for ntlmrelayx.py
+git clone https://github.com/CoreSecurity/impacket.git /opt/impacket
 
 #mailsniper is a great enumeration/pilfering tool to run against Exchange environments
 git clone https://github.com/dafthack/MailSniper.git /opt/mailsniper

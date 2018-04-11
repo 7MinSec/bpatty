@@ -1,3 +1,6 @@
+# kali_install_rdp.sh
+# Updated November 11, 2017
+#
 # This is a primer on installing RDP on Kali.
 # I don't know why it was so hard for me, but it was.
 # I followed this article and snipped out pieces of it below.
