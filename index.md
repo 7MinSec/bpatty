@@ -2,10 +2,6 @@ Welcome to BPATTY by 7 Minute Security
 ==================
 <img src="7.png" alt="7ms logo" style="width: 400px;"/>
 
-WHERE'S THE CHANGELOG?!
---------
-No need to shout.  It's [here](https://github.com/braimee/bpatty/blob/master/_CHANGELOG.md).
-
 What in the world is a "BPATTY?!"
 --------
 
@@ -27,7 +23,7 @@ My response (substitute "microphone" for "documentation project") is [this](http
 
 How often does BPATTY get updated?
 --------
-In my dream situation: every 1-2 weeks.  In reality: when I get to it.
+Not as often as I'd like.  But check out the [change log](https://github.com/braimee/bpatty/blob/master/_CHANGELOG.md) if you want to keep tabs on things.
 
 Who are you?
 --------
