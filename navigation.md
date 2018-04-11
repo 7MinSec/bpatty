@@ -1,8 +1,9 @@
 BPATTY
 ======
+
 [Test]()
-- Test 1
-- Test 2
+- [Test 1](this)
+- [Test 2](that)
 
 [Command line]()
 
