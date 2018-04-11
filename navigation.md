@@ -2,6 +2,7 @@ BPATTY
 ======
 
 [Test]()
+
 - [Test 1](this)
 - [Test 2](that)
 
@@ -35,7 +36,7 @@ BPATTY
 - [Wireless](pentesting/wireless/index.md)
 
 [Blue team]()
-- **Test**
+
 - [CredDefense](blue_team/creddefense.md)
 - [Forensics](resources_gentech/forensics/index.md)
 - [General Windows environment defenses](blue_team/index.md)
