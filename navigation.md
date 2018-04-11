@@ -16,17 +16,6 @@ BPATTY
 
 [Hardware](hardware/index.md)
 
-[Blue team]()
-- **Test**
-- [CredDefense](blue_team/creddefense.md)
-- [Forensics](resources_gentech/forensics/index.md)
-- [General Windows environment defenses](blue_team/index.md)
-- [Honeypots](blue_team/honeypots.md)
-- [Local Administrator Password Solution](blue_team/Local_Administrator_Password_Solution_LAPS.md)
-- [Network monitoring](blue_team/network_monitoring.md)
-- [PwnedPasswords](blue_team/pwnedpasswords.md)
-- [WEFFLES](blue_team/weffles.md)
-
 [Pentesting how-tos & guides]()
 
 - [Administrative/prep](pentesting/administrative_stuff/index.md)
@@ -40,6 +29,17 @@ BPATTY
 - [Vulnerability scanners](pentesting/vulnerability_scanners/index.md)
 - [Webapp pentesting](pentesting/webapp/index.md)
 - [Wireless](pentesting/wireless/index.md)
+
+[Blue team]()
+- **Test**
+- [CredDefense](blue_team/creddefense.md)
+- [Forensics](resources_gentech/forensics/index.md)
+- [General Windows environment defenses](blue_team/index.md)
+- [Honeypots](blue_team/honeypots.md)
+- [Local Administrator Password Solution](blue_team/Local_Administrator_Password_Solution_LAPS.md)
+- [Network monitoring](blue_team/network_monitoring.md)
+- [PwnedPasswords](blue_team/pwnedpasswords.md)
+- [WEFFLES](blue_team/weffles.md)
 
 [Resources (IT/security)]()
 
