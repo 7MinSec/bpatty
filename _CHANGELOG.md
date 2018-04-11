@@ -1,5 +1,13 @@
-# Change log
-It's a log of changes.  When things change in BATTY, they're logged here.
+# Change log - 2018
+It's a log of changes.  When things change in BATTY, they're logged here. Loggy log log log. Hashtag log.  #log.
+
+## April 11
+* Updated and moved the [LAPS](blue_team/Local_Administrator_Password_Solution_LAPS.md) doc to reflect changes I learned about htis week!
+* Deleted a whole ton of files that have been consolidated into other docs
+* Moved the Blue Team area from Pentesting section to give it its own section/header in the navigation bar
+* Added a new document all about [Caldera](pentesting/network_pentesting/caldera.md)
+* Updated [Kali-essentials](scripts/linux/kali_essentials.sh) to include CrackMapExec, HateCrack and Impacket.
+* Updated the [LAPS install](scripts/windows/LAPS_check_reloaded.ps1) to um...ya know, actually work :-)
 
 ## April 4
 * Addition of [Pwned Passwords](pentesting/blue_team/pwnedpasswords.md) guide
