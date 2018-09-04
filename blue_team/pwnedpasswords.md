@@ -35,13 +35,13 @@ Below is a breakdown of installation instructions and impressions/thoughts on ea
 ### Option 1: PwnedPasswordsDLL
 Troy [tweeted](https://twitter.com/troyhunt/status/967854347613716480?lang=en) about this solution in late February, and the tweet points to user JacksonVD's [blog article](https://jacksonvd.com/checking-for-breached-passwords-in-active-directory/) which discusses the finer points of compiling his [open source DLL](https://github.com/JacksonVD/PwnedPasswordsDLL).  JacksonVD's blog and project page assume the end user has some Visual Studio experience, so I created the following instructions which do *not* make that assumption.
 
-1. Download Visual Studio Community 2017 from [here](https://www.visualstudio.com/downloads/). You'll want to install **Windows 10 SDK** as well.
+1. Download Visual Studio Community 2017 from [here](https://www.visualstudio.com/downloads/). You'll want to install **Desktop development with C++**, **Windows 8.1 SDK** as well as **Windows Universal CRT SDK**.
 
 2. Download JacksonVD's [GitHub project](https://github.com/JacksonVD/PwnedPasswordsDLL) by visiting the project page and clicking **Clone or Download -> Download Zip** and saving the .zip file to your computer.  Unzip it to a folder on your machine, such as `C:\pwnedpasswords`.
 
 3.  Download [Crypto++](https://www.cryptopp.com/#download) to your machine as well (for this test I used version [6.1.0](https://www.cryptopp.com/cryptopp610.zip)).  Unzip it to a folder on your machine, such as `C:\crypto`.
 
-4. Open Visual Studio, and open `C:\crypto\cryptest.sln`.  At the top of the Visual Studio window, **Debug** and **Win32** are selected.
+4. Open Visual Studio, and open `C:\crypto\cryptest.sln`.  You may be prompted to install some missing features.  Click **Install**.  At the top of the Visual Studio window, ensure **Debug** and **Win32** are selected.
 
 5. From the **Build** menu, choose **Batch Build**.  From the selections in the next pop-up box, choose:
 
@@ -50,7 +50,7 @@ Troy [tweeted](https://twitter.com/troyhunt/status/967854347613716480?lang=en) a
 
  Then click **Build**.
 
-6. Now open `C:\pwnedpasswords\PwnedPasswordsDLL.sln`.  At the top of the Visual Studio window, **Release** and **x64** are selected.
+6. Now open `C:\pwnedpasswords\PwnedPasswordsDLL.sln`.  At the top of the Visual Studio window, ensure **Release** and **x64** are selected.
 
 7. Download Troy Hunts 500M Pwned Passwords from [here](https://haveibeenpwned.com/Passwords).  Extract the .7z file to a central location, such as `\\yourdomain.local\passwords`.
 
@@ -68,7 +68,7 @@ string str1[3] = { "C:\\pwned-passwords-1.0.txt", "C:\\pwned-passwords-update-1.
 9. In Visual Studio click **Project -> PwnedPasswordsDLL Properties...** and make these changes:
 
  * **Configuration Properties -> VC++ Directories -> Include Directories** - do a **right-click** on the path and click **Edit**, then add `C:\crypto` and click **OK**.
- * **Configuration Properties -> VC++ Diretories -> Library Directories** - do a **right-click** on the path and click **Edit** and then insert the path `C:\crypto\x64\Output\Debug\` and click **OK**.
+ * **Configuration Properties -> VC++ Directories -> Library Directories** - do a **right-click** on the path and click **Edit** and then insert the path `C:\crypto\x64\Output\Debug\` and click **OK**.
   * **Configuration Properties -> Linker -> Input -> Additional Dependencies** - do a **right-click** on the path and click **Edit** and then insert the path `C:\crypto\x64\Output\Debug\cryptlib.lib` and click **OK.**
   * **Configuration Properties -> C/C++ -> Code Generation -> Runtime Library** - change to **Multi-threaded Debug (/MTd)
 

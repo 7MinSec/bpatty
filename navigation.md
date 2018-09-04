@@ -4,6 +4,7 @@ BPATTY
 [Blue team]()
 
 - [Caldera](blue_team/caldera.md)
+- [Cuckoo Sandbox](blue_team/cuckoo.md)
 - [CredDefense](blue_team/creddefense.md)
 - [Forensics](resources_gentech/forensics/index.md)
 - [General Windows environment defenses](blue_team/index.md)
@@ -57,7 +58,7 @@ BPATTY
 [Scripts]()
 
 - [Linux](scripts/linux/index.md)
-- Mac (coming soon)
+- [Mac](scripts/mac/index.md)
 - [Windows](scripts/windows/index.md)
 
 [Web tech]()

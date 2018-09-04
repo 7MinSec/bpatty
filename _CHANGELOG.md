@@ -1,6 +1,17 @@
 # Change log - 2018
 It's a log of changes.  When things change in BATTY, they're logged here. Loggy log log log. Hashtag log.  #log.
 
+## September 4
+* (*Finally some updates, am I right?*)
+* Addition of the [cuckoo sandbox](blue_team/cuckoo.md) how-to
+* Some updates/corrections/fixes to [LAPS](blue_team/Local_Administrator_Password_Solution_LAPS.md) how-to guide
+* Some updates/corrections/fixes to [PwnedPasswords](blue_team/pwnedpasswords.md) write-up
+* Some more command line examples added to [command line > linux > network](command_line/linux/network/index.md) cheatsheet
+* Updated the [DYI pentest lab](pentesting/lab_setup/index.md) doc with some additional fixes - including broken links
+* Updated [readme](README.md) to be slightly sarcastic
+* Added a new Mac scripting area!  First submission: a simple ping-with-log script called [pingythingy](scripts/mac/index.md)
+* Fixed a bunch of broken links in [Windows scripts](scripts/windows/index.md) area
+
 ## April 11
 * Updated and moved the [LAPS](blue_team/Local_Administrator_Password_Solution_LAPS.md) doc to reflect changes I learned about htis week!
 * Deleted a whole ton of files that have been consolidated into other docs

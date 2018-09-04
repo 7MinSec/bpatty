@@ -17,13 +17,13 @@ I've tried to lay this out in some sort of hierarchy that at least makes a littl
 My response (substitute "microphone" for "documentation project") is [this](https://youtu.be/C_SFevIz1FI?t=14).
 
 ## How often does BPATTY get updated?
-In my dream situation: every 1-2 weeks.  In reality: when I get to it.
+In my dream situation: every 1-2 weeks.  In reality: as often as I can make time.
 
 ## Who are you?
-Hi, I'm [Brian](http://brianjohnson.tv) and I blog/podcast about information security at [7 Minute Security](https://7ms.us).  I also run [7 Minute Security, LLC](https://7MinSec.com).
+Hi, I'm [Brian](http://brianjohnson.tv) and since 2014 I've published a podcast about information security at [7 Minute Security](https://7ms.us).  I also do security assessments, pentesting and training at [7 Minute Security, LLC](https://7MinSec.com).
 
 ## I want to electronically punch you in the neck, or talk more about security!
 Head to the [7MS Slack channel](https://slackpass.io/7minsec) and punch away!
 
 ## I like what you're doing with this whole 7 Minute Security thing. How can I support these efforts?
-Thanks! Please consider using [7 Minute Security, LLC](https://7MinSec.com) for your assessment, pentesting and/or training needs!
+Thanks! Please consider using [7 Minute Security, LLC](https://7MinSec.com/contact) for your assessment, pentesting and/or training needs!

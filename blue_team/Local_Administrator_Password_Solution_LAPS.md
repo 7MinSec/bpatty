@@ -120,6 +120,9 @@ Select * from WIN32_OperatingSystem where ProductType="1" or ProductType="3"
 
 ## Troubleshooting
 
+### What if my machines are set to refresh the LAPS password every X days and a machine is not on when that time passes?
+As far as I know, the machines check this value upon boot.  The way I tested it is I installed LAPS on a machine and used PowerShell to query its local admin password.  Then I setup a GPO to rotate the LAPS password every 24 hours. I immediately shut down the machine and powered it on a few days later.  The LAPS password had changed.
+
 ### OK so how do I know which machines have LAPS successfully deployed?
 To see *all* machines with LAPS installed, as well as their local admin password, run:
 

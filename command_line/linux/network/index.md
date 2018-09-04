@@ -203,6 +203,12 @@ Here's one of my favorite resources for command line fun w/this tool: [http://ww
 
 	sudo tcpdump -n dst the.destination.ip.address -v -w somefile.cap
 
+### To capture traffic from one host while excluding one or more ports:
+
+````
+tcpdump src 172.16.46.25 and port not 22 and port not 8834
+````
+
 tshark
 --------
 [tshark](https://www.wireshark.org/docs/man-pages/tshark.html) is a great utility for dumping and analyzing network traffic.
