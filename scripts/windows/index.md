@@ -18,7 +18,7 @@ Get_ADUserLastLogon.ps1
 
 Import_AD_Users.ps1
 -----
-[This script](import_ad_users.ps1) imports a [CSV file full of test users](lusers.csv) for use in a test AD environment.  See the [lab setup](pentesting/lab_setup/index.md) guide for more information.
+[This script](import_ad_users.ps1) imports a [CSV file full of test users](lusers.csv) for use in a test AD environment.  See the [lab setup](/pentesting/lab_setup/index.md) guide for more information.
 
 LAPS_check_reloaded.ps1
 -----
