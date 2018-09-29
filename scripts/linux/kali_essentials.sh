@@ -28,7 +28,7 @@ git clone https://github.com/stufus/egresscheck-framework.git /opt/egress
 git clone https://github.com/adaptivethreat/Empire.git /opt/empire
 
 #eyewitness is a nice recon tool for putting some great visualization behind nmap scans
-git clone https://github.com/ChrisTruncer/EyeWitness /opt/eyewitness
+git clone https://github.com/FortyNorthSecurity/EyeWitness.git /opt/eyewitness
 
 #findsploit finds exploits in local and online databases
 git clone https://github.com/1N3/Findsploit.git /opt/findsploit
@@ -57,6 +57,9 @@ git clone https://github.com/PowerShellMafia/PowerSploit.git /opt/powersploit
 
 #PowerupSQL is a tool for discovering, enumerating and potentially pwning SQL servers!
 git clone https://github.com/NetSPI/PowerUpSQL.git /opt/powerupsql
+
+#Printer Exploit Toolkit finds printer exploits!
+git clone https://github.com/RUB-NDS/PRET.git /opt/pret
 
 #recon-ng is a great tool for reconning all the things
 git clone https://bitbucket.org/LaNMaSteR53/recon-ng.git /opt/recon-ng
