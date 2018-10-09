@@ -18,6 +18,7 @@
 # 										the Search-ADAccount portion of the script
 # 0.4  April 4, 2018	Brian.  Added some checks for locked out accounts and exporting
 #											GPOs to XML as well as HTML
+# 
 ################################################################################
 
 # Set a variable of today using today's date

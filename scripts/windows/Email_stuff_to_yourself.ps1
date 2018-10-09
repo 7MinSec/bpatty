@@ -1,5 +1,5 @@
 # If you ever need to email stuff to yourself via Powershell, here's one way to do it!
-
+#
 $From = "some@email.com"
 $Creds = New-Object Management.Automation.PSCredential "some@email.com", ("YOUR-PASSWORD-HERE" | ConvertTo-SecureString -AsPlainText -Force)
 $To = "you@your.com"

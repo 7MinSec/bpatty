@@ -1,18 +1,19 @@
 # Nessus Sorty McSortleton v1.0
-# 
+#
 # This script was designed to take the default .csv export from a Nessus scan, remove
 # duplicates, and then create a final .csv with these columns:
 #
-# Plugin name, severity, plugin pub date, exploitability ease, synopsis, description, 
-# solution, see also, hosts, CVSS base score, CVSS temporal score, number of affected hosts, 
+# Plugin name, severity, plugin pub date, exploitability ease, synopsis, description,
+# solution, see also, hosts, CVSS base score, CVSS temporal score, number of affected hosts,
 # vulnerability age in days (does nothing), plugin ID
 #
-# Sources of awesomeness, help and mercy that helped me get this thing created: 
+# Sources of awesomeness, help and mercy that helped me get this thing created:
 # - SANS blog: https://isc.sans.edu/forums/diary/Nessus+and+Powershell+is+like+Chocolate+and+Peanut+Butter/20431/
 # - hackernovice on Slack (thank you kind sir!)
 # - Google (lots of it)
-# - StackOverflow thread I started: 
+# - StackOverflow thread I started:
 # https://stackoverflow.com/questions/46596513/powershell-extracting-a-comma-separated-list-of-ips
+#
 #
 
 # First lets import the unfiltered .csv that we exported right out of Nessus
@@ -35,10 +36,10 @@ $groups = $importedCSV | group -Property 'Plugin ID' | sort 'Plugin ID'
 #Create an empty array of objects to hold the records for the final result
 $results = @()
 
-#Loop through each Plugin ID group.  
+#Loop through each Plugin ID group.
 Foreach ($group in $groups) {
 # Setting some variables that we'll need later...I'm sure I could do this more easily but I'm a codenewb!
-    $cleanips = ($group.Group | Select -ExpandProperty 'Host IP' | Sort) -join ', ' 
+    $cleanips = ($group.Group | Select -ExpandProperty 'Host IP' | Sort) -join ', '
 	$pluginname = ($group.Group | Select -ExpandProperty 'Plugin Name' | Sort | select -uniq)
 	$sev = ($group.Group | Select -ExpandProperty 'Severity' | Sort | select -uniq)
 	$ppd = ($group.Group | Select -ExpandProperty 'Plugin Publication Date' | Sort | select -uniq)
@@ -50,7 +51,7 @@ Foreach ($group in $groups) {
 	$cvssbase = ($group.Group | Select -ExpandProperty 'CVSS Base Score' | Sort | select -uniq)
 	$cvsstemp = ($group.Group | Select -ExpandProperty 'CVSS Temporal Score' | Sort | select -uniq)
 	$vulnage = ($group.Group | Select -ExpandProperty 'Vulnerability Age in Days' | Sort | select -uniq)
-	
+
 # Add columns to the new CSV export:
 
     #Create a new empty object
@@ -69,7 +70,7 @@ Foreach ($group in $groups) {
 	$object | Add-Member -Name 'CVSS Base Score' -MemberType NoteProperty -Value $cvssbase
 	$object | Add-Member -Name 'CVSS Temporal Score' -MemberType NoteProperty -Value $cvsstemp
 	$object | Add-Member -Name 'Number of affected hosts' -MemberType NoteProperty -Value (([regex]::matches($cleanips,",").count) + 1)
-	$object | Add-Member -Name 'Vulnerability Age in Days' -MemberType NoteProperty -Value $vulnage	
+	$object | Add-Member -Name 'Vulnerability Age in Days' -MemberType NoteProperty -Value $vulnage
 	$object | Add-Member -Name 'Plugin ID' -MemberType NoteProperty -Value $group.Name
 
 	#Add the new object which now contains all of the relevant data to the array of objects.  This will be one record in the final results.

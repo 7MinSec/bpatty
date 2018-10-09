@@ -32,7 +32,7 @@ Plugin name, severity, plugin pub date, exploitability ease, synopsis, descripti
 
 powershell.md
 ------
-[This page](powershell) has some general PowerShell syntax and quick references.
+[This page](powershell.md) has some general PowerShell syntax and quick references.
 
 Service_Account_Seeker.ps1
 ---------
