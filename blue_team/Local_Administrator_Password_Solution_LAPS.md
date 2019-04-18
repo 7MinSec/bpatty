@@ -14,7 +14,7 @@
 1. Copy `C:\Windows\PolicyDefinitions\AdmPwd.admx` to `\\yourdomain.com\sysvol\yourdomain.com\Policies\PolicyDefinitions\`
 
 2. Copy `C:\Windows\PolicyDefinitions\en-us
-\AdmPwd.adml` to `\\yourdomain.com\sysvol\yourdomain.com\Policies\en-us\PolicyDefinitions\`.  
+\AdmPwd.adml` to `\\yourdomain.com\sysvol\yourdomain.com\Policies\PolicyDefinitions\en-us`.  
 
 Note, if your central store is not setup, you will want to follow [this article](https://support.microsoft.com/en-us/help/929841/how-to-create-the-central-store-for-group-policy-administrative-template-files-in-windows-vista) to get it configured first.
 

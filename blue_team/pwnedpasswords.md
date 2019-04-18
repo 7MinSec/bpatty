@@ -35,7 +35,7 @@ Below is a breakdown of installation instructions and impressions/thoughts on ea
 ### Option 1: PwnedPasswordsDLL
 Troy [tweeted](https://twitter.com/troyhunt/status/967854347613716480?lang=en) about this solution in late February, and the tweet points to user JacksonVD's [blog article](https://jacksonvd.com/checking-for-breached-passwords-in-active-directory/) which discusses the finer points of compiling his [open source DLL](https://github.com/JacksonVD/PwnedPasswordsDLL).  JacksonVD's blog and project page assume the end user has some Visual Studio experience, so I created the following instructions which do *not* make that assumption.
 
-1. Download Visual Studio Community 2017 from [here](https://www.visualstudio.com/downloads/). You'll want to install **Desktop development with C++**, **Windows 8.1 SDK** as well as **Windows Universal CRT SDK**.
+1. Download Visual Studio Community 2017 from [here](https://www.visualstudio.com/downloads/). You'll also want to install (if they're not selected/installed by default) **Desktop development with C++** on the left side, and then on the right side: **Windows 8.1 SDK and Windows Universal CRT SDK** and **Windows 10 SDK (10.0.15063.0)**.
 
 2. Download JacksonVD's [GitHub project](https://github.com/JacksonVD/PwnedPasswordsDLL) by visiting the project page and clicking **Clone or Download -> Download Zip** and saving the .zip file to your computer.  Unzip it to a folder on your machine, such as `C:\pwnedpasswords`.
 
@@ -52,7 +52,7 @@ Troy [tweeted](https://twitter.com/troyhunt/status/967854347613716480?lang=en) a
 
 6. Now open `C:\pwnedpasswords\PwnedPasswordsDLL.sln`.  At the top of the Visual Studio window, ensure **Release** and **x64** are selected.
 
-7. Download Troy Hunts 500M Pwned Passwords from [here](https://haveibeenpwned.com/Passwords).  Extract the .7z file to a central location, such as `\\yourdomain.local\passwords`.
+7. Download Troy Hunt's 500M Pwned Passwords from [here](https://haveibeenpwned.com/Passwords).  Extract the .7z file to a central location, such as `\\yourdomain.local\passwords`.
 
 8. Open `C:\pwnedpasswords\PwnedPasswordsDLL\dllmain.cpp` and search for a section that looks like this:
 
@@ -70,7 +70,7 @@ string str1[3] = { "C:\\pwned-passwords-1.0.txt", "C:\\pwned-passwords-update-1.
  * **Configuration Properties -> VC++ Directories -> Include Directories** - do a **right-click** on the path and click **Edit**, then add `C:\crypto` and click **OK**.
  * **Configuration Properties -> VC++ Directories -> Library Directories** - do a **right-click** on the path and click **Edit** and then insert the path `C:\crypto\x64\Output\Debug\` and click **OK**.
   * **Configuration Properties -> Linker -> Input -> Additional Dependencies** - do a **right-click** on the path and click **Edit** and then insert the path `C:\crypto\x64\Output\Debug\cryptlib.lib` and click **OK.**
-  * **Configuration Properties -> C/C++ -> Code Generation -> Runtime Library** - change to **Multi-threaded Debug (/MTd)
+  * **Configuration Properties -> C/C++ -> Code Generation -> Runtime Library** - change to **Multi-threaded Debug (/MTd)**
 
 10. In Visual Studio click **Build - > Build Solution**
 
@@ -106,6 +106,9 @@ string str1[3] = { "C:\\pwned-passwords-1.0.txt", "C:\\pwned-passwords-update-1.
 **No matter what password I pick, Windows says it doesn't meet the requirements for the domain password policy**
 Check your password policy for the *Minimum password age* setting.  If this is set to 1 and you've recently been resetting test users in AD, they may not have the ability to change their own password at all (until 24 hours pass).  You can change this setting to **0** to allow immediate password changes.
 
+**What if I want to do a slow rollout/test phase without installing this on all DCs?**
+You could put the DLL on just one DC, for example, then follow an article like [this one](https://www.itprotoday.com/windows-8/q-how-can-i-force-client-validate-its-logon-against-specific-domain-controller) which will let you point a test machine at a specific DC for authentication so you can test the DLL before rolling out to other DCs.
+
 ----
 
 ### Option 2: SafePass.me
@@ -126,15 +129,74 @@ Check your password policy for the *Minimum password age* setting.  If this is s
 7.  Should you need to disable SafePassMe, open `HKLM\System\CurrentControlSet\Control\Lsa\Notification packages`, remove the *SafePassMe* entry and reboot the DC(s).
 
 ---
+### Option 3: Pwned Passwords API
+With this option, you download [DLL](https://jacksonvd.com/checking-for-breached-passwords-ad-using-k-anonymity/) and install it on all domain controllers. Essentially the process is the same as the DLL option above.  Stick the DLL in `C:\Windows\System32` and open the `HKLM\System\CurrentControlSet\Control\Lsa\Notification packages` key and add the line *PwnedPasswordsDLL-API*.  Reboot.
 
-# Feature comparison table
+When people change their password, the first five characters of it will be send via the public API. For example, if you tried to change your password to *P@ssw0rd*, the first five characters of the password hash is *21BD1*, so an API call would go out with those characters and return all hashes that start with *21BD1*.  Then your *local* machine checks the full hash against all the matches that start with *21BD1* and either allow or forbid the password.
 
-|      | PwnedPasswordsDLL     | SafePass.Me
-| :------------- | :------------- | :-------------
-| Price       | Free       | ~$700
-| Install difficulty       | Moderate (requires you to build a DLL)      | Easy (.MSI installer)
-| Supports custom wordlists | Yes (SHA1 format) | Yes (plain text)
-| Open source | Yes | No
-| Support included | No - just through GitHub/blog posts | Yes
-| All password checks done offline | Yes | Yes
-| Disk space requirements | ~30GB for PwnedPassword database | ~500MB as SafePass claims to have a super-set of Troy's database, but claims it will "prevent *all* the passwords present in the dataset"
+## Pwned Passwords vs. Safepass.me - feature comparison table
+
+|      | PwnedPasswordsDLL     | SafePass.Me | Pwned Passwords API
+| :------------- | :------------- | :------------- | :-------------
+| Price       | Free       | Paid - check [SafePass.me](https://safepass.me) | Free
+| Install difficulty       | Moderate (requires you to build a DLL)      | Easy (.MSI installer) | Easy
+| Supports custom wordlists | Yes (SHA1 format) | Yes (plain text) | No
+| Open source | Yes | No | Yes
+| Support included | No - just through GitHub/blog posts | Yes | No - just through GitHub/blog posts
+| All password checks done offline | Yes | Yes | No
+| Disk space requirements | ~30GB for PwnedPassword database | ~500MB | A few KB
+
+## Creating customized wordlists
+Since the PwnedPasswords DLL option allows you (at least) 3 password file "slots," you could throw Troy's list in one, and then make custom lists for slots 2 or 3.  Here's an approach I've used for a few customers to make a custom list that aims to avoid any mention of their company name:
+
+1.	In Kali, use a tool like CeWL (https://github.com/digininja/CeWL) to create a custom wordlist.  For example, you could scrape a lot of keywords off a public Web site like so:
+
+````
+cewl.rb -d 2 -m 7 -w 7ms.us.txt https://7minsec.com -v
+````
+How this breaks down is:  
+* -d is the level of links deep the tool will crawl
+* -m is the minimum character length of words that will be grabbed
+* -w indicates an output file
+* -v is verbose
+
+2.	Once the wordlist is captured, you can "mangle" it using rsmangler (https://github.com/digininja/RSMangler) like so:
+
+````
+/opt/rsmangler/rsmangler.rb --file 7ms.txt > 7ms-mangled.txt
+````
+* *--file* tells rsmangler what wordlist to use
+* *> 7ms-mangled.txt* tells rsmangler to save the tool output into a specific file
+
+3.	You need to convert all the plain text words in 7ms-mangled.txt to SHA1, which can be done using hashblade (https://github.com/WalderlanSena/hashblade) like so:
+
+````
+hashblade -list -sha1 7ms-mangled.txt > 7ms-mangled-sha1.txt
+````
+
+* *-sha1* tells hashblade which hash function to use
+*	*> 7ms-mangled-sha1.txt* tells hashblade to save the tool output to a specific file
+
+4.	Use this to clean up hashblade output so it contains only hashes:
+
+````
+sed 's/Sha1 >>> //g' 7ms-mangled-sha1.txt > 7ms-custom1.txt
+````
+
+5.	Move 7ms-custom1.txt to C:\ (or save it as `C:\7mscustom2.txt`).  The domain controller will immediately start checking any future password changes against these two files.
+
+### Creating wordlists that contain a minimum amount of characters
+One of my customers wanted to only have passwords in the PwnedPasswords list that were 12 characters or greater (to keep the text file to a manageable size).
+
+I grabbed the [plain text version](https://hashes.org/leaks.php?id=515) of Pwned Passwords, and then ran
+
+````
+$data = get-content ".\big-list-o-passwords.txt"
+$amount = 12;
+$y= @()
+foreach($line in $data)
+{
+   if ( $line.length -gt 1){ $y += $line.substring(0,$amount) }
+}
+$y | Out-File .\12-or-more.txt
+````

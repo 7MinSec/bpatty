@@ -5,6 +5,9 @@
 #Aha helps take output from testssl.sh and make it nice and HTML-y
 git clone https://github.com/theZiz/aha.git /opt/aha
 
+#Awesome-nmap-grep makes it easy to grep nmap exports for just the data you need!
+git clone https://github.com/leonjza/awesome-nmap-grep.git /opt/awesome-nmap-grep
+
 #bettercap is a nice mitm framework - I did an episode on it here: https://7ms.us/7ms-228-fun-with-bettercap/
 git clone https://github.com/evilsocket/bettercap.git /opt/bettercap
 
@@ -20,6 +23,9 @@ git clone https://github.com/stasinopoulos/commix.git /opt/commix
 
 #CrackMapExec is "A swiss army knife for pentesting networks" - https://www.youtube.com/watch?time_continue=10&v=Dd4ZAm2mwwA
 apt-get install crackmapexec
+
+#Deathstar is a tool for automating domain admin (see https://gist.github.com/braimee/e3e462b634715ae06121c82d49c274e9)
+git clone https://github.com/byt3bl33d3r/DeathStar.git /opt/deathstar
 
 #egress framework helps you test network segmentation easily with a few python commands
 git clone https://github.com/stufus/egresscheck-framework.git /opt/egress

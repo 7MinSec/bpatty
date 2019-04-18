@@ -1,5 +1,16 @@
-# Change log - 2018
+# Change log - 2019
 It's a log of changes.  When things change in BATTY, they're logged here. Loggy log log log. Hashtag log.  #log.
+
+## April 18
+* (*Some updates...FINALLY, I know!*)
+* The [LAPS](blue_team/Local_Administrator_Password_Solution_LAPS.md) documentation got a few typo/path fixes
+* [Pwned Passwords](blue_team/pwnedpasswords.md) page got a ton of updates, including a feature comparison table, a write-up on using the Pwned Passwords DLL/API option, information on building custom wordlists, as well as some instructions on how to point a client workstation at a specific DC if you want to do a slow rollout of Pwned Passwords
+*  Update to the [hardware](hardware/index.md) page to include some resources on mousejacking
+* The [wifi pentesting](pentesting/wireless/index.md) page now includes information on how to test for the KRACK attack
+* The [Kali essentials](scripts/linux/kali_essentials.sh) script now includes [DeathStar](https://github.com/byt3bl33d3r/DeathStar)
+* The [Windows scripts](scripts/windows/index.md) page now includes [ShieldsUp](scripts/windows/shieldsup.ps1) which will quickly enable/disable all radios on your machine
+
+# 2018
 
 ## September 4
 * (*Finally some updates, am I right?*)

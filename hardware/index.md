@@ -1,27 +1,30 @@
 # Hardware
 
-Fing Box
-------
+## Fing Box
 I covered this on the [podcast](https://7ms.us/7ms-285-the-quest-for-critical-security-controls-part-2/) and *really* like it.  It's a neat, cheap ($120) device that helps satisfy some of the CISecurity Critical Security Controls.
 
 One thing it *doesn't* do that I wish it did was support multiple VLANs.  As of 11/21/17 here's Fing's response to that question:
 
 >At the moment we aren't considering adding multi-VLAN support directly into the Fingbox, but if you are interested in something for small business clients we are planning to integrate the possibility to add Domotz Pro to your Fingbox so you can turn it into a full monitoring system including multi-vlan support as well as remote access to devices etc. If you want more information on Domotz, check out www.domotz.com which can give you an idea if this will be something that could be helpful for your clients.
 
-Pineapple
--------
-Some stuff I tinker with on my old school Pineapple MK5
+## Mousejacking
+I recently got into [Mousejacking](https://www.mousejack.com/) and bought a [Crazy Radio PA](https://www.amazon.com/SeeedStudio-Crazyradio-2-4Ghz-Dongle-Antenna-x/dp/B00VYA3A2U) to start injecting keystrokes to wireless keyboards/mice during assessments.
 
-### Reset back to factory settings
-* Set dipswitches to:
-  * Up
-  * Down
-  * Down
-  * Up
-  * Up
+## Pineapple - Nano
+Some notes on running the Nano under Mac OSX
 
-Pwn Pulse
---------
+### Get Internet sharing working (OSX)
+Not sure why Pineapple seems to have such a hard time sharing Interwebs with OSX, but [this guide](http://j2abro.blogspot.com/2016/07/configuring-wifi-pineapple-nano-on-mac.html) is awesome at getting things working right.  The key, after initial setup wizard stuff, is to SSH in and run these little command gems:
+
+````
+uci set network.lan.ipaddr='192.168.2.10'
+uci set network.lan.gateway='192.168.2.1'
+uci commit && reboot
+````
+
+Then, go into **System Preferences -> Internet Sharing** and enable sharing between your LAN/wifi + the Pineapple and you should be good to go!
+
+## Pwn Pulse
 I really, really like the [Pwn Pulse](https://www.pwnieexpress.com/products/pulse-device-detection) and have talked about it several podcast episodes, like [this one](https://7ms.us/7ms-255-pwnpro-101/) and [this one](https://7ms.us/7ms-260-pwnpro-101-part-2/).  This page is a dumping ground for all the tips/tricks and command line shortcuts that I use.
 
 ### Deploying Pulse into customer network
@@ -76,8 +79,7 @@ If you want to take advantage of something like RDP forwarding, open a new Termi
 
 Then you can `apt-get install remmina` on your Kali box, then open Remmina and RDP into localhost in order to get forwarded to the IP address specified in the command above!
 
-Raspberry Pi
---------
+## Raspberry Pi
 
 ### Imaging instructions for Mac
 
@@ -85,7 +87,6 @@ Raspberry Pi
     sudo diskutil umount /dev/disk2
     (if this doesn't work, I issue this:) sudo diskutil unmountDisk /dev/disk2
     sudo dd if=kali-2.1.2-rpi.img of=/dev/disk2 bs=1m
-
 
 ### Reset root password
 Once the RPi boots, I SSH in and reset the root password and generate new keys:
@@ -100,12 +101,7 @@ Finally, I resize the file system with the built-in `rpi-wiggle` script:
 
     /scripts/rpi-wiggle.sh
 
-
-
-
-
-Ubiquiti network gear
---------
+## Ubiquiti network gear
 
 ### EdgeRouterX
 A collection of tidbits for managing EdgeRouterX.  I did a full write-up on some of these things [here](https://7ms.us/7ms-217-installing-ubiquiti-edgerouter-x-and-ap-part-2/).

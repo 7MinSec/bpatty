@@ -30,10 +30,14 @@ Nessus_SortyMcSortleton.ps1
 
 Plugin name, severity, plugin pub date, exploitability ease, synopsis, description, solution, see also, hosts, CVSS base score, CVSS temporal score, number of affected hosts, vulnerability age in days (does nothing), plugin ID.
 
-powershell.md
+Powershell (general)
 ------
 [This page](powershell.md) has some general PowerShell syntax and quick references.
 
 Service_Account_Seeker.ps1
 ---------
 [This script](service_account_seeker.ps1) enumerates Windows servers out of Active Directory, ping them to check availability, and then captures details about each service account in use.
+
+ShieldsUp.ps1
+----------
+[This script](shieldsup.ps1) disables all radios on a Windows machine - be they wired, wireless, Bluetooth, etc.  This helps especially for forensics investigations when you want to stop a machine from communicating with the outside world!
