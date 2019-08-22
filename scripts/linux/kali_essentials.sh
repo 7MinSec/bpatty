@@ -9,10 +9,16 @@ git clone https://github.com/theZiz/aha.git /opt/aha
 git clone https://github.com/leonjza/awesome-nmap-grep.git /opt/awesome-nmap-grep
 
 #bettercap is a nice mitm framework - I did an episode on it here: https://7ms.us/7ms-228-fun-with-bettercap/
-git clone https://github.com/evilsocket/bettercap.git /opt/bettercap
+git clone https://github.com/bettercap/bettercap.git /opt/bettercap
 
 #b374k is a nice PHP shell.  Quick ref to compile a shell: php -f index.php -- -o myShell.php -p myPassword -s -b -z gzcompress -c 9
 git clone https://github.com/b374k/b374k.git /opt/b374k
+
+#bpatty is...well...bpatty!
+git clone https://github.com/braimee/bpatty.git /opt/bpatty
+
+#Bloodhound is awesome (https://stealingthe.network/quick-guide-to-installing-bloodhound-in-kali-rolling)
+apt-get install bloodhound -y
 
 #chuckle is might handy when it comes to SMB relay exploitation
 git clone https://github.com/nccgroup/chuckle.git /opt/chuckle
@@ -22,7 +28,7 @@ wget https://github.com/CoreSecurity/impacket/blob/impacket_0_9_15/examples/smbr
 git clone https://github.com/stasinopoulos/commix.git /opt/commix
 
 #CrackMapExec is "A swiss army knife for pentesting networks" - https://www.youtube.com/watch?time_continue=10&v=Dd4ZAm2mwwA
-apt-get install crackmapexec
+apt-get install crackmapexec -y
 
 #Deathstar is a tool for automating domain admin (see https://gist.github.com/braimee/e3e462b634715ae06121c82d49c274e9)
 git clone https://github.com/byt3bl33d3r/DeathStar.git /opt/deathstar
@@ -52,8 +58,14 @@ git clone https://github.com/CoreSecurity/impacket.git /opt/impacket
 #mailsniper is a great enumeration/pilfering tool to run against Exchange environments
 git clone https://github.com/dafthack/MailSniper.git /opt/mailsniper
 
+#mitm6 is a way to tinker with ip6 and get around some ip4-level protections
+git clone https://github.com/fox-it/mitm6.git /opt/mitm6
+
 #mitmf is a mitm framework that I've not tried out yet
 git clone https://github.com/byt3bl33d3r/MITMf.git /opt/mitmf
+
+#nmap-bootstrap-xsl turns nmap scan output into pretty HTML
+git clone https://github.com/honze-net/nmap-bootstrap-xsl.git /opt/nmap-bootstrap-xsl
 
 #PCCredz parses pcaps for sensitive data
 git clone https://github.com/lgandx/PCredz /opt/pcredz
@@ -90,3 +102,6 @@ git clone https://github.com/drwetter/testssl.sh.git /opt/testssl
 
 #veil generates payloads that can bypass AV
 git clone https://github.com/Veil-Framework/Veil-Evasion /opt/veil-evasion
+
+#wifite is an easy way to audit wireless networks
+git clone https://github.com/derv82/wifite2.git /opt/wifite

@@ -1,3 +1,7 @@
+>Note: this article is a little dated.  Looks like it's [much simpler](https://caldera.readthedocs.io/en/latest/installation.html) to install Caldera now.
+
+---
+
 # Caldera
 This is a quick getting started guide using a Ubuntu 16.04 server.  
 

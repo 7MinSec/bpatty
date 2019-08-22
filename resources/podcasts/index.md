@@ -7,7 +7,6 @@ Podcasts seem to be like opinions (everybody's got one!) but here are some of th
 ------
 [7 Minute Security](http://7ms.us) - I heard it's pretty ok ;-)
 
-
 Building a Life and Career in Information Security
 ------
 [Building a Life and Career in Information Security](http://jayschulman.com) features advice on learning and growing your infosec career.  I was featured in an episode in May, 2016 which you can [listen to here](https://www.jayschulman.com/brian-johnson/).

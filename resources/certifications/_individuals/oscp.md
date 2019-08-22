@@ -1,2 +1,0 @@
-# [OSCP (Offensive Security Certified Professional)](https://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/)
-Well, I can't really say enough great things about this certification.  It is pretty much the only training I've seen that offers near 100% hands-on learning if you want to be an ethical hacker/pentester.  I did a nine-part podcast series on my experience with the training, which you can read more about - and listen to - in my [episode guide](https://7ms.us/episodeguide-featured/#oscp).

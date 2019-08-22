@@ -8,7 +8,7 @@ One thing it *doesn't* do that I wish it did was support multiple VLANs.  As of 
 >At the moment we aren't considering adding multi-VLAN support directly into the Fingbox, but if you are interested in something for small business clients we are planning to integrate the possibility to add Domotz Pro to your Fingbox so you can turn it into a full monitoring system including multi-vlan support as well as remote access to devices etc. If you want more information on Domotz, check out www.domotz.com which can give you an idea if this will be something that could be helpful for your clients.
 
 ## Mousejacking
-I recently got into [Mousejacking](https://www.mousejack.com/) and bought a [Crazy Radio PA](https://www.amazon.com/SeeedStudio-Crazyradio-2-4Ghz-Dongle-Antenna-x/dp/B00VYA3A2U) to start injecting keystrokes to wireless keyboards/mice during assessments.
+I recently got into [Mousejacking](https://www.mousejack.com/) and bought a [Crazy Radio PA](https://www.amazon.com/SeeedStudio-Crazyradio-2-4Ghz-Dongle-Antenna-x/dp/B00VYA3A2U) to start injecting keystrokes to wireless keyboards/mice during assessments.  I did a [podcast episode](https://7ms.us/7ms-355-mousejacking/) on this as well.
 
 ## Pineapple - Nano
 Some notes on running the Nano under Mac OSX

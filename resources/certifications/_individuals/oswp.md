@@ -1,2 +1,0 @@
-# [OSWP (Offensive Security Wireless Professional)](https://www.offensive-security.com/information-security-certifications/oswp-offensive-security-wireless-professional/)
-This is Offensive Security's wireless security training offering.  I learned a ton, and the exam proved to be a fun challenge as well.  Check out [this section](https://7ms.us/episodeguide-featured/#oswp) of my 7 Minute Security episode guide for more info, which features a 4-part audio series on my experience with the training and test.

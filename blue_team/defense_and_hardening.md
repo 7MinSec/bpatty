@@ -44,7 +44,6 @@ ts.TcpClient; $wait = $test.beginConnect("allports.exposed",$_,$null,$null); ($w
 ### Active Directory
 * [Active Directory Control List - Attacks and Defense](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/18/active-directory-access-control-list-attacks-and-defense/) looks to be, in part, a response to "the use of Discretionary Access Control List (DACL) for privilege escalation in a Domain environment."  Articles like [this one](https://wald0.com/?p=112) will give you good insight to the DACL issue.
 
-
 * [Anti-Reconnaissance Tool: SAMRi10](https://www.bleepingcomputer.com/news/security/microsoft-researchers-release-anti-reconnaissance-tool-named-samri10/) is something Microsoft announced in December, 2016 and is used to limit who can perform SAMR queries for information on users within the same domain.
 
 * [Creating strong passwords](http://www.blackhillsinfosec.com/?p=5460) is relatively easy (if not painful for the end user) by following this guide from BHIS.
