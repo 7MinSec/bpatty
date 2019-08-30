@@ -1,5 +1,9 @@
 # Windows scripts
 
+BackyStuffyUppy.ps1
+---
+[This script](https://bpatty.rocks/scripts/windows/backystuffyuppy.ps1) helps you easily backup multiple Windows folders from point A to point B.
+
 Egress_Filtering_Check.ps1
 -----
 [This script](https://bpatty.rocks/scripts/windows/egress_filtering_check.ps1) will check which ports are allowed inbound > out to the Internet.

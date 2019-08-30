@@ -20,6 +20,9 @@ git clone https://github.com/braimee/bpatty.git /opt/bpatty
 #Bloodhound is awesome (https://stealingthe.network/quick-guide-to-installing-bloodhound-in-kali-rolling)
 apt-get install bloodhound -y
 
+#brutescrape scrapes Web sites for verbiage in order to create a wordlist
+git clone https://github.com/cheetz/brutescrape.git /opt/brutescrape
+
 #chuckle is might handy when it comes to SMB relay exploitation
 git clone https://github.com/nccgroup/chuckle.git /opt/chuckle
 wget https://github.com/CoreSecurity/impacket/blob/impacket_0_9_15/examples/smbrelayx.py /opt/chuckle/
@@ -48,8 +51,14 @@ git clone https://github.com/1N3/Findsploit.git /opt/findsploit
 #foospidy is a BIG BUNCH O' PAYLOADS for fuzzing and fun!
 git clone https://github.com/foospidy/payloads.git /opt/foospidy
 
+#hashcombiner takes cracked hashes from a pot file and ties them back to their pwned user
+git clone https://github.com/hackern0v1c3/hash_combiner /opt/hashcombiner
+
 #hatecrack helps you crack hashes
 git clone https://github.com/trustedsec/hate_crack.git /opt/hatecrack
+
+#honeydoc creates docs/spreadsheets with fake names and social security numbers
+git clone https://github.com/jqreator/honeydoc /opt/honeydoc
 
 #impacket is "a collection of Python classes for working with network protocols"
 #I currently primarily use it for ntlmrelayx.py
