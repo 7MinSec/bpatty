@@ -24,7 +24,12 @@ kali_install_rdp.sh
 --------
 [This script](https://bpatty.rocks/scripts/linux/kali_install_rdp.sh) helps you get an RDP server service installed on Kali.
 
+nmap_eyewitness.sh
+---------
+[This script](https://bpatty.rocks/scripts/linux/nmap_eyewitness.sh) automates some nmap scanning and Eyewitness-ing.  
+
 openvpn_route_fix.sh
+-----------
 [This script](https://bpatty.rocks/scripts/linux/openvpn_route_fix.sh) helps keep all your local subnets accessible when using an openvpn connection.
 
 ssott.py

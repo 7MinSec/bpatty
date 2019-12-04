@@ -9,7 +9,9 @@ git clone https://github.com/theZiz/aha.git /opt/aha
 git clone https://github.com/leonjza/awesome-nmap-grep.git /opt/awesome-nmap-grep
 
 #bettercap is a nice mitm framework - I did an episode on it here: https://7ms.us/7ms-228-fun-with-bettercap/
-git clone https://github.com/bettercap/bettercap.git /opt/bettercap
+# Update 9/18: I found it easier to install bettercap from https://github.com/bettercap/bettercap/releases but if you
+# still want to do it via GitHub you can just do:
+# git clone https://github.com/bettercap/bettercap.git /opt/bettercap
 
 #b374k is a nice PHP shell.  Quick ref to compile a shell: php -f index.php -- -o myShell.php -p myPassword -s -b -z gzcompress -c 9
 git clone https://github.com/b374k/b374k.git /opt/b374k
@@ -64,6 +66,9 @@ git clone https://github.com/jqreator/honeydoc /opt/honeydoc
 #I currently primarily use it for ntlmrelayx.py
 git clone https://github.com/CoreSecurity/impacket.git /opt/impacket
 
+#krbrelayx is helpful for the CVE-2019-1040 attack (https://dirkjanm.io/exploiting-CVE-2019-1040-relay-vulnerabilities-for-rce-and-domain-admin/)
+git clone https://github.com/dirkjanm/krbrelayx.git /opt/krbrelayx
+
 #mailsniper is a great enumeration/pilfering tool to run against Exchange environments
 git clone https://github.com/dafthack/MailSniper.git /opt/mailsniper
 
@@ -75,6 +80,9 @@ git clone https://github.com/byt3bl33d3r/MITMf.git /opt/mitmf
 
 #nmap-bootstrap-xsl turns nmap scan output into pretty HTML
 git clone https://github.com/honze-net/nmap-bootstrap-xsl.git /opt/nmap-bootstrap-xsl
+
+#netcreds "Sniffs sensitive data from interface or pcap"
+git clone https://github.com/DanMcInerney/net-creds /opt/netcreds
 
 #PCCredz parses pcaps for sensitive data
 git clone https://github.com/lgandx/PCredz /opt/pcredz
@@ -96,6 +104,9 @@ git clone https://github.com/lgandx/Responder.git /opt/responder
 
 #seclists is a "collection of multiple types of lists used during security assessments"
 git clone https://github.com/danielmiessler/SecLists.git /opt/seclists
+
+#SilentTrinity is "An asynchronous, collaborative post-exploitation agent powered by Python and .NET's DLR"
+git clone https://github.com/byt3bl33d3r/SILENTTRINITY.git /opt/silenttrinity
 
 #sniper is a great automated recon scanner
 git clone https://github.com/1N3/Sn1per.git /opt/sniper
