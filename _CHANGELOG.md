@@ -1,5 +1,9 @@
-# Change log - 2019
+# Change log
 It's a log of changes.  When things change in BATTY, they're logged here. Loggy log log log. Hashtag log.  #log.
+
+## March 24, 2020
+* Updated [Linux systems command line](https://bpatty.rocks/command_line/linux/system/index.md) page to include some helpful links for using the *screen* command
+* 
 
 ## December 4, 2019
 * Fixed the link to [BackyStuffyUppy](https://bpatty.rocks/scripts/windows/backystuffyuppy.ps1) to, you know, actually link to the real script :-)

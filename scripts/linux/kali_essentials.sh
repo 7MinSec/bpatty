@@ -38,6 +38,9 @@ apt-get install crackmapexec -y
 #Deathstar is a tool for automating domain admin (see https://gist.github.com/braimee/e3e462b634715ae06121c82d49c274e9)
 git clone https://github.com/byt3bl33d3r/DeathStar.git /opt/deathstar
 
+#eaphammer does "Targeted evil twin attacks against WPA2-Enterprise networks. Indirect wireless pivots using hostile portal attacks."
+git clone https://github.com/s0lst1c3/eaphammer.git /opt/eaphammer
+
 #egress framework helps you test network segmentation easily with a few python commands
 git clone https://github.com/stufus/egresscheck-framework.git /opt/egress
 
@@ -65,6 +68,9 @@ git clone https://github.com/jqreator/honeydoc /opt/honeydoc
 #impacket is "a collection of Python classes for working with network protocols"
 #I currently primarily use it for ntlmrelayx.py
 git clone https://github.com/CoreSecurity/impacket.git /opt/impacket
+
+#impacket2 is just impacket but dirkjan's fork of it.  See https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/
+git clone https://github.com/dirkjanm/impacket.git /opt/impacket2
 
 #krbrelayx is helpful for the CVE-2019-1040 attack (https://dirkjanm.io/exploiting-CVE-2019-1040-relay-vulnerabilities-for-rce-and-domain-admin/)
 git clone https://github.com/dirkjanm/krbrelayx.git /opt/krbrelayx

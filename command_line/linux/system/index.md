@@ -166,6 +166,8 @@ screen
 
 Info here is heavily referenced from [this Digital Ocean support article](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-screen-on-an-ubuntu-cloud-server).  
 
+Also [this iu.edu article](https://kb.iu.edu/d/ahrm) is one I come back to regularly when I need to re-attach to a screen session after I disconnected from it ungracefully.  
+
 ### Start a new screen session
     screen -R name-of-session
 
@@ -183,6 +185,8 @@ If you had one called *bot* for example, you could reattach to it with:
 I usually just have one session going so I like to *kill 'em all!!!* ;-)
 
     killall screen
+
+I referenced [this article](https://kb.iu.edu/d/ahrm) for most of the commands above.
 
 sed
 ------
