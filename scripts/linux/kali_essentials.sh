@@ -2,6 +2,11 @@
 #This script does some `git-clone`ing to pull down tools I always carry with me on my Kali boxes:
 ##################
 ##################
+
+# First get all the latest updates
+sudo apt-get update -y
+sudo apt-get upgrade -y
+
 #Aha helps take output from testssl.sh and make it nice and HTML-y
 sudo git clone https://github.com/theZiz/aha.git /opt/aha
 
@@ -25,15 +30,13 @@ sudo apt-get install bloodhound -y
 #brutescrape scrapes Web sites for verbiage in order to create a wordlist
 sudo git clone https://github.com/cheetz/brutescrape.git /opt/brutescrape
 
-#chuckle is might handy when it comes to SMB relay exploitation
-sudo git clone https://github.com/nccgroup/chuckle.git /opt/chuckle
-sudo wget https://github.com/CoreSecurity/impacket/blob/impacket_0_9_15/examples/smbrelayx.py /opt/chuckle/
-
-#Commix is a command-injection tool that I've never gotten to run successfully in any live pentests, but the examples sure look neat ;-)
-sudo git clone https://github.com/stasinopoulos/commix.git /opt/commix
-
 #CrackMapExec is "A swiss army knife for pentesting networks" - https://www.youtube.com/watch?time_continue=10&v=Dd4ZAm2mwwA
 sudo apt-get install crackmapexec -y
+
+#As of 7-15-20 I find it easier/better to use the binary version of CME so I'm gonna do this:
+sudo mkdir /opt/cmebin
+cd /opt/cmebin
+sudo get https://github.com/byt3bl33d3r/CrackMapExec/releases/download/v5.0.1dev/cme-ubuntu-latest.zip
 
 #Deathstar is a tool for automating domain admin (see https://gist.github.com/braimee/e3e462b634715ae06121c82d49c274e9)
 sudo git clone https://github.com/byt3bl33d3r/DeathStar.git /opt/deathstar
@@ -43,9 +46,6 @@ sudo git clone https://github.com/s0lst1c3/eaphammer.git /opt/eaphammer
 
 #egress framework helps you test network segmentation easily with a few python commands
 git clone https://github.com/stufus/egresscheck-framework.git /opt/egress
-
-#empire is "a PowerShell and Python post-exploitation agent"
-sudo git clone https://github.com/adaptivethreat/Empire.git /opt/empire
 
 #eyewitness is a nice recon tool for putting some great visualization behind nmap scans
 sudo git clone https://github.com/FortyNorthSecurity/EyeWitness.git /opt/eyewitness
@@ -81,9 +81,6 @@ sudo git clone https://github.com/dafthack/MailSniper.git /opt/mailsniper
 #mitm6 is a way to tinker with ip6 and get around some ip4-level protections
 sudo git clone https://github.com/fox-it/mitm6.git /opt/mitm6
 
-#mitmf is a mitm framework that I've not tried out yet
-sudo git clone https://github.com/byt3bl33d3r/MITMf.git /opt/mitmf
-
 #nmap-bootstrap-xsl turns nmap scan output into pretty HTML
 sudo git clone https://github.com/honze-net/nmap-bootstrap-xsl.git /opt/nmap-bootstrap-xsl
 
@@ -101,9 +98,6 @@ sudo git clone https://github.com/NetSPI/PowerUpSQL.git /opt/powerupsql
 
 #Printer Exploit Toolkit finds printer exploits!
 sudo git clone https://github.com/RUB-NDS/PRET.git /opt/pret
-
-#recon-ng is a great tool for reconning all the things
-sudo git clone https://bitbucket.org/LaNMaSteR53/recon-ng.git /opt/recon-ng
 
 #responder is awesome for LLMNR, NBT-NS and MDNS poisoning
 sudo git clone https://github.com/lgandx/Responder.git /opt/responder
