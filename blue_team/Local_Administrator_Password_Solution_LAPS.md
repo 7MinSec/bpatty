@@ -1,10 +1,11 @@
 # Microsoft LAPS (Local Administrator Password Solution)
 
+## Setup LAPS management workstation
+
 ---
-# NOTE: This guide has been updated and condensed/simplified in [episode #523 of the 7 Minute Security podcast](https://7ms.us/7ms-523-local-administrartor-password-solution-reloaded/).
+NOTE: This guide has been updated and condensed/simplified in [episode #523 of the 7 Minute Security podcast](https://7ms.us/7ms-523-local-administrartor-password-solution-reloaded/).
 ---
 
-## Setup LAPS management workstation
 
 1. From the workstation where you will manage LAPS, log in as a domain admin.
 
