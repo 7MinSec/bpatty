@@ -1,6 +1,11 @@
 # Change log
 It's a log of changes.  When things change in BATTY, they're logged here. Loggy log log log. Hashtag log.  #log.
 
+## June 3, 2022
+* I continue to feel bad for not updating BPATTY regularly.  However, in a shameless bit of self-promotion, I invite you to check out my [Light Pentest LITE eBook](https://ebook.7minsec.com), where for a mere $7.77 you can get a wonderful little playbook of internal network pentesting tips and tricks.  I will slowly be migrating BPATTY content that way in the future.
+
+* I updated the [LAPS](https://bpatty.rocks/#blue_team/Local_Administrator_Password_Solution_LAPS.md) page to point to 7MS [episode #523](https://7ms.us/7ms-523-local-administrartor-password-solution-reloaded/) which offers a refreshed, condensed LAPS install guide.
+
 ## March 24, 2020
 * Updated [Linux systems command line](https://bpatty.rocks/command_line/linux/system/index.md) page to include some helpful links for using the *screen* command
 * Updated [Kali essentials](scripts/linux/kali_essentials.sh) script to include *eaphammer* and a modified *impacket2* fork
