@@ -9,9 +9,9 @@ In February of 2018, Troy Hunt launched a [Pwned Passwords](https://www.troyhunt
 
 Troy and Cloudflare have teamed up to build an [API](https://haveibeenpwned.com/API/v2#PwnedPasswords) so that enterprises can integrate a [k-Anonymity](https://blog.cloudflare.com/validating-leaked-passwords-with-k-anonymity/) check with their applications and services.  For instance, if you wanted to see if the password *P@ssw0rd* (which has a SHA-1 hash of *21BD12DC183F740EE76F27B78EB39C8AD972A757*) exists in Troy's data set, you could make an API call to:
 
-> Request URL: https://api.pwnedpasswords.com/range/21DB1
+> Request URL: https://api.pwnedpasswords.com/range/21BD1
 
-This request will return any hashes with *21DB1* as a prefix, such as:
+This request will return any hashes with *21BD1* as a prefix, such as:
 
 > * (21BD1) 0018A45C4D1DEF81644B54AB7F969B88D65:1 (password "lauragpe")
 * (21BD1) 00D4F6E8FA6EECAD2A3AA415EEC418D38EC:2 (password "alexguo029")
