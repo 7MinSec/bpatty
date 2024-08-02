@@ -1,5 +1,9 @@
 # **B**rian's **P**entesting **a**nd **T**echnical **T**ips for **Y**ou
 
+# Update: as of August 1, 2024 this project will go into read-only mode because we're working on a NEW version of BPATTY which you can see soon (or now!) at [http://bpatty.rocks](http://bpatty.rocks) !!!
+
+---
+
 ## I just want go get started!
 Sure thing.  The easiest way to read BPATTY is probably in wiki form which you can view by going to [http://bpatty.rocks](http://bpatty.rocks).
 
